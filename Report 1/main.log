@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.7)  8 SEP 2025 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.7)  8 SEP 2025 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -445,7 +445,7 @@ Package epstopdf Info: Source file: <Imagenes/UDLAP.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=Imagenes/UDLAP-eps-converted-to.pdf Imagenes/UDLAP.eps>
 (epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
-<Imagenes/UDLAP-eps-converted-to.pdf, id=43, 685.56125pt x 141.52875pt>
+<Imagenes/UDLAP-eps-converted-to.pdf, id=51, 685.56125pt x 141.52875pt>
 File: Imagenes/UDLAP-eps-converted-to.pdf Graphic file (type pdf)
 <use Imagenes/UDLAP-eps-converted-to.pdf>
 Package pdftex.def Info: Imagenes/UDLAP-eps-converted-to.pdf  used on input line 110.
@@ -455,10 +455,10 @@ Package pdftex.def Info: Imagenes/UDLAP-eps-converted-to.pdf  used on input line
 [1
 
 {C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Imagenes/UDLAP-eps-converted-to.pdf>]
-<Imagenes/Circuit 1 and 2.png, id=57, 639.89063pt x 428.35031pt>
+<Imagenes/Circuit 1 and 2.png, id=65, 639.89063pt x 428.35031pt>
 File: Imagenes/Circuit 1 and 2.png Graphic file (type png)
 <use Imagenes/Circuit 1 and 2.png>
-Package pdftex.def Info: Imagenes/Circuit 1 and 2.png  used on input line 157.
+Package pdftex.def Info: Imagenes/Circuit 1 and 2.png  used on input line 158.
 (pdftex.def)             Requested size: 386.95897pt x 259.03835pt.
 
 
@@ -466,83 +466,68 @@ Package pdftex.def Info: Imagenes/Circuit 1 and 2.png  used on input line 157.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.161 A
+l.162 A
        fter the development of the circuits, the team was able to measure th... [1]
-<Imagenes/Prueba1.png, id=67, 645.16031pt x 415.5525pt>
+<Imagenes/Prueba1.png, id=75, 645.16031pt x 415.5525pt>
 File: Imagenes/Prueba1.png Graphic file (type png)
 <use Imagenes/Prueba1.png>
-Package pdftex.def Info: Imagenes/Prueba1.png  used on input line 164.
-(pdftex.def)             Requested size: 645.15872pt x 415.55148pt.
-<Imagenes/Prueba2.png, id=68, 652.68843pt x 415.5525pt>
+Package pdftex.def Info: Imagenes/Prueba1.png  used on input line 165.
+(pdftex.def)             Requested size: 193.54958pt x 124.6667pt.
+<Imagenes/Prueba2.png, id=76, 652.68843pt x 415.5525pt>
 File: Imagenes/Prueba2.png Graphic file (type png)
 <use Imagenes/Prueba2.png>
-Package pdftex.def Info: Imagenes/Prueba2.png  used on input line 166.
-(pdftex.def)             Requested size: 652.68684pt x 415.55148pt.
-
-Overfull \hbox (216.3599pt too wide) in paragraph at lines 164--167
- [][]\OT1/cmr/m/n/12 [scale=0.2] 
- []
+Package pdftex.def Info: Imagenes/Prueba2.png  used on input line 167.
+(pdftex.def)             Requested size: 195.80804pt x 124.6667pt.
 
 
-Overfull \hbox (223.88802pt too wide) in paragraph at lines 164--167
- []\OT1/cmr/m/n/12 [scale=0.2] 
- []
+LaTeX Warning: Citation `gh1562' on page 2 undefined on input line 174.
 
-
-
-[2 <./Imagenes/Circuit 1 and 2.png>]
-Overfull \vbox (198.36711pt too high) has occurred while \output is active []
-
-
-
-[3 <./Imagenes/Prueba1.png> <./Imagenes/Prueba2.png>]
-
-LaTeX Warning: Citation `gh1562' on page 4 undefined on input line 172.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 174.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 176.
 (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 174.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 176.
  (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `Agarwal2019' on page 4 undefined on input line 183.
+[2 <./Imagenes/Circuit 1 and 2.png> <./Imagenes/Prueba1.png> <./Imagenes/Prueba2.png>]
+
+LaTeX Warning: Citation `Agarwal2019' on page 3 undefined on input line 185.
 
 (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 187.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 189.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 187--187
+Overfull \hbox (6.0pt too wide) in paragraph at lines 189--189
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 187--187
+Overfull \hbox (6.0pt too wide) in paragraph at lines 189--189
 [][][][][][][] 
  []
 
 (codigos/AND.vhd)
 
+[3]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 193--193
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 193--193
+[][][][][][][] 
+ []
+
+
+
 [4]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 191--191
-[][][][][][][] 
- []
 
+[5] (main.bbl)
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 191--191
-[][][][][][][] 
- []
-
-
-
-[5]
-
-[6] (main.bbl)
-
-[7
+[6
 
 ] (main.aux)
  ***********
@@ -554,20 +539,20 @@ L3 programming layer <2025-08-13>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F3C171A2123FF65EF89CF34553B15F62;1022.
+(rerunfilecheck)             Checksum: 302711F614A52E7FF556C3B13E10D04B;1425.
  ) 
 Here is how much of TeX's memory you used:
- 15361 strings out of 468133
- 242746 string characters out of 5430713
- 840706 words of memory out of 5000000
- 43724 multiletter control sequences out of 15000+600000
+ 15364 strings out of 468133
+ 242800 string characters out of 5430713
+ 840074 words of memory out of 5000000
+ 43726 multiletter control sequences out of 15000+600000
  635558 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,458b,1281s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on main.pdf (8 pages, 351610 bytes).
+Output written on main.pdf (7 pages, 352311 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

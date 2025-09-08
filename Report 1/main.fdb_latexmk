@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1757347906.41119 "main.aux" "main.bbl" "main" 1757348009.90355 0
+["bibtex main"] 1757348603.26148 "main.aux" "main.bbl" "main" 1757348605.19705 0
   "./bib/bibliografia.bib" 1757298607 467 00fc553b94ce4e79b0e0a7d3bc03e59a ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1757348009 2421 13cad0a0e70dba5b9b940bead4be5757 "pdflatex"
+  "main.aux" 1757348604 2690 08dc51d553889222caba4ee577a8b732 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1757348008.34962 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757348009.90427 0
+["pdflatex"] 1757348603.54976 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757348605.1977 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757293655 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -120,12 +120,12 @@
   "Imagenes/Prueba1.png" 1757347794 24662 695d65ae2b9fc8d2c57f60eaef9c705a ""
   "Imagenes/Prueba2.png" 1757347794 25493 38e7f72517aa2efb59b8ad8a7604ed64 ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757348007 13201 efeaefa88d9593998ace984110e4b4b2 ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757348601 13286 a1e5947b9375af1688b3416ed72006c2 ""
   "codigos/AND.vhd" 1757294261 245 6b23bbee70f94210cfd92d4bd1d55455 ""
-  "main.aux" 1757348009 2421 13cad0a0e70dba5b9b940bead4be5757 "pdflatex"
-  "main.bbl" 1757347906 1332 66d0755b88cd96d8a905e310376497c6 "bibtex main"
-  "main.out" 1757348009 1022 f3c171a2123ff65ef89cf34553b15f62 "pdflatex"
-  "main.tex" 1757348007 13201 efeaefa88d9593998ace984110e4b4b2 ""
+  "main.aux" 1757348604 2690 08dc51d553889222caba4ee577a8b732 "pdflatex"
+  "main.bbl" 1757348603 1332 66d0755b88cd96d8a905e310376497c6 "bibtex main"
+  "main.out" 1757348604 1425 302711f614a52e7ff556c3b13e10d04b "pdflatex"
+  "main.tex" 1757348601 13286 a1e5947b9375af1688b3416ed72006c2 ""
   (generated)
   "main.aux"
   "main.log"
