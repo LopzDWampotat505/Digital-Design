@@ -1,16 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1757298948.18594 "main.aux" "main.bbl" "main" 1757298950.15017 0
+["bibtex main"] 1757344900.39043 "main.aux" "main.bbl" "main" 1757344900.68122 2
   "./bib/bibliografia.bib" 1757298607 467 00fc553b94ce4e79b0e0a7d3bc03e59a ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1757298949 1860 7b0e975fbbd77e547f608771fe8bfa60 "pdflatex"
+  "main.aux" 1757344892 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1757298948.55438 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757298950.15094 0
+["pdflatex"] 1757344897.09915 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757344899.82606 2
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757293655 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
-  "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
-  "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1757294282 13257342 7c37529c7eb19108290fd5f7ea2ba05f ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcti1200.tfm" 993062558 1604 64544291d47abfccebbf78eacbe2faaf ""
@@ -34,15 +32,7 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136765053 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb" 1247596653 11493 4f5ed183a47d3197cf8cd322325db6de ""
+  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmtt12.tfm" 1136765053 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1754220793 146665 9149bce97203d4030d7cbe4f4e85dfc4 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/generic/babel/locale/en/babel-en.ini" 1754220794 3966 caeee5a9e5771d4446aa1ca9015ba1b2 ""
@@ -116,13 +106,15 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1749468414 3468 f21ceb3448a22fec45299f924e7fc48b ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
+  "Circuit1.png" 0 -1 0 ""
+  "Circuit2.png" 0 -1 0 ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757298946 12362 f14b77788e92ed70f598caf23bc2d164 ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757344895 12936 89afc7c9fd988118df3f5e42adb6c649 ""
   "codigos/AND.vhd" 1757294261 245 6b23bbee70f94210cfd92d4bd1d55455 ""
-  "main.aux" 1757298949 1860 7b0e975fbbd77e547f608771fe8bfa60 "pdflatex"
-  "main.bbl" 1757298948 1332 66d0755b88cd96d8a905e310376497c6 "bibtex main"
-  "main.out" 1757298949 1022 f3c171a2123ff65ef89cf34553b15f62 "pdflatex"
-  "main.tex" 1757298946 12362 f14b77788e92ed70f598caf23bc2d164 ""
+  "main.aux" 1757344892 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 1757344900 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 0 -1 0 "pdflatex"
+  "main.tex" 1757344895 12936 89afc7c9fd988118df3f5e42adb6c649 ""
   (generated)
   "main.aux"
   "main.log"
