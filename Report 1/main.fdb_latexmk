@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1757346158.39458 "main.aux" "main.bbl" "main" 1757346160.35684 0
+["bibtex main"] 1757347906.41119 "main.aux" "main.bbl" "main" 1757348009.90355 0
   "./bib/bibliografia.bib" 1757298607 467 00fc553b94ce4e79b0e0a7d3bc03e59a ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1757346159 2408 d5fd2697d3090ab002bf4f8d1bc767f7 "pdflatex"
+  "main.aux" 1757348009 2421 13cad0a0e70dba5b9b940bead4be5757 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1757346158.79288 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757346160.35761 0
+["pdflatex"] 1757348008.34962 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757348009.90427 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757293655 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -117,13 +117,15 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "Imagenes/Circuit 1 and 2.png" 1757345206 16877 ef4d1dab6a8e23939966d662ffdc983c ""
+  "Imagenes/Prueba1.png" 1757347794 24662 695d65ae2b9fc8d2c57f60eaef9c705a ""
+  "Imagenes/Prueba2.png" 1757347794 25493 38e7f72517aa2efb59b8ad8a7604ed64 ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757346158 13144 441ce9486a9bd98bd00c6890f308f497 ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757348007 13201 efeaefa88d9593998ace984110e4b4b2 ""
   "codigos/AND.vhd" 1757294261 245 6b23bbee70f94210cfd92d4bd1d55455 ""
-  "main.aux" 1757346159 2408 d5fd2697d3090ab002bf4f8d1bc767f7 "pdflatex"
-  "main.bbl" 1757346158 1332 66d0755b88cd96d8a905e310376497c6 "bibtex main"
-  "main.out" 1757346159 1022 f3c171a2123ff65ef89cf34553b15f62 "pdflatex"
-  "main.tex" 1757346158 13144 441ce9486a9bd98bd00c6890f308f497 ""
+  "main.aux" 1757348009 2421 13cad0a0e70dba5b9b940bead4be5757 "pdflatex"
+  "main.bbl" 1757347906 1332 66d0755b88cd96d8a905e310376497c6 "bibtex main"
+  "main.out" 1757348009 1022 f3c171a2123ff65ef89cf34553b15f62 "pdflatex"
+  "main.tex" 1757348007 13201 efeaefa88d9593998ace984110e4b4b2 ""
   (generated)
   "main.aux"
   "main.log"
