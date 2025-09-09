@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1757376825.499 "main.aux" "main.bbl" "main" 1757376835.71789 0
+["bibtex main"] 1757435399.3229 "main.aux" "main.bbl" "main" 1757435409.47427 0
   "./bib/bibliografia.bib" 1757298607 467 00fc553b94ce4e79b0e0a7d3bc03e59a ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1757376834 3317 471783d5dfec0b225785c02374bed378 "pdflatex"
+  "main.aux" 1757435408 3317 45a3c146c0792bc0e592b894f973109c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1757376825.77548 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757376835.71856 0
+["pdflatex"] 1757435399.58888 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" "main.pdf" "main" 1757435409.47494 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757293655 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1757294282 13257342 7c37529c7eb19108290fd5f7ea2ba05f ""
@@ -36,6 +36,7 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1754220793 146665 9149bce97203d4030d7cbe4f4e85dfc4 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/generic/babel/locale/en/babel-en.ini" 1754220794 3966 caeee5a9e5771d4446aa1ca9015ba1b2 ""
@@ -117,11 +118,11 @@
   "Imagenes/Resistencia1.png" 1757368106 48895 152877cbd5d511904880e495949c7a8f ""
   "Imagenes/Resistencia2.png" 1757368106 48507 d1da5e9c6bfff09ff779286604bffccc ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757376814 14903 f410208a76798d156064ce8d45dec5ab ""
-  "main.aux" 1757376834 3317 471783d5dfec0b225785c02374bed378 "pdflatex"
-  "main.bbl" 1757376825 1332 66d0755b88cd96d8a905e310376497c6 "bibtex main"
-  "main.out" 1757376834 1037 5b762cbfd81fba72db8abd2b5478d7cf "pdflatex"
-  "main.tex" 1757376814 14903 f410208a76798d156064ce8d45dec5ab ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 1/main.tex" 1757435388 19711 69c0dfc04168327a4331fae28050d447 ""
+  "main.aux" 1757435408 3317 45a3c146c0792bc0e592b894f973109c "pdflatex"
+  "main.bbl" 1757435399 1332 66d0755b88cd96d8a905e310376497c6 "bibtex main"
+  "main.out" 1757435408 1037 5b762cbfd81fba72db8abd2b5478d7cf "pdflatex"
+  "main.tex" 1757435388 19711 69c0dfc04168327a4331fae28050d447 ""
   (generated)
   "main.aux"
   "main.log"

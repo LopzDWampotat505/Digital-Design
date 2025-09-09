@@ -129,7 +129,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{page}{1} %Para comenzar a numerar las páginas desde este punto
 \section{Abstract} %Síntesis del reporte en un solo párrafo
-
+This report will present the results obtained from the first laboratory practice of the Digital Design course. The main objective of this practice was to familiarize ourselves with the use of essential tools in electronics, specifically the multimeter and the power supply. The practice was divided into two parts: first, a simulation of simple digital circuits using Multisim software, and second, the physical assembly of these circuits on a breadboard in the laboratory. The circuits implemented included configurations with pull-up and pull-down resistors for digital inputs, as well as active high and active low configurations for digital outputs. 
 \section{Introduction} %Breve introducción al tema del reporte
 A fundamental part of working with circuits is to have knowledge about the tools that will be used during the design of these components.
 
@@ -148,6 +148,22 @@ A multimeter is defined as an instrument that measures different electrical quan
 \\A power supply is defined as the interface between an external power source, which may be noisy and variable, and the clear-cut requirements of internal circuitry in electronic products. It typically takes power from a conventional AC mains supply, though other options like low-voltage DC or specific aircraft supplies may also be used. \cite{SDPowerSupply}
 
 \section{Methodology} %Desarrollo de la práctica
+A methodology was established, divided into two main phases: simulation in Multisim and physical assembly in the laboratory.
+In the first part, the simulation, Multisim software was used as a tool to build the circuits corresponding to Figures 1 and 2. A DC Voltage Power Supply was configured with the following characteristics:
+\begin{itemize}
+  \item Name: Power supply.
+  \item Output value: 5 V.
+\end{itemize}
+The output of the source was verified using the program’s virtual multimeter. Subsequently, the circuits from Figures 1 and 2 were built, their correct operation was confirmed through simulation, and the results obtained were analyzed.
+In the physical laboratory phase, a real power supply was used with the following parameters:
+\begin{itemize}
+  \item Activated source: Source 3.
+  \item Output voltage: 5 V.
+  \item Output current: 300 mA.
+\end{itemize}
+The output value of the source was checked using a digital multimeter. Likewise, the values of the resistors were verified using two methods: first, by identifying the color code, and then by direct measurement with the multimeter. The continuity of the DIP switch was also tested to ensure proper functionality.
+Subsequently, the circuits of Figure 1 were built, and the corresponding measurements were recorded in tables. Then, the circuits of Figure 2 were constructed, and the experimental values were documented in tables.
+Finally, an analysis was carried out between the results obtained in the simulation and those obtained experimentally in the laboratory.
 
 \section{Results} %Resultados obtenidos
 \subsection{Digital lab experimentation}
@@ -267,7 +283,16 @@ Finally, for the fourth circuit, the following table was made:
   \label{tab:activehigh}
 \end{table}
 \section{Analysis} %Análisis de los resultados obtenidos
+In the first part, corresponding to the digital inputs (Figure~1), the operation of the circuits with pull-up and pull-down resistors was verified. For the pull-up configuration, when the switch was in the "On" position, the measured voltage was approximately 0~V, corresponding to a low logic state (Low). When the switch was set to "Off", the voltage rose to 4.99~V, identified as a high logic state (High). In the pull-down circuit, the results were the opposite: with the switch activated ("On"), 5.00~V were measured (high state), while with the switch deactivated ("Off"), the voltage dropped to 0~V (low state). These measurements confirm the expected behavior of both methods, showing that the use of pull-up and pull-down resistors ensures a defined logic level at the digital input.
+
+In the second part, corresponding to the digital outputs (Figure~2), the Active Low and Active High circuits were analyzed. For the Active Low configuration, it was observed that the LED remained off when the logic output was at a high level and only turned on when the output was set to a low level. In contrast, in the Active High circuit, the LED turned on with a high logic output and turned off when it was set to a low level. The measured voltages ($\approx$~4.99~V in the active state and 0~V in the inactive state) match the expected values according to the design, confirming the operating principle of both configurations.
+
+Overall, the experimental results are consistent with those obtained in the simulation. The small differences (for example, 4.99~V instead of 5.00~V) are attributed to component tolerances, voltage drops in the connections, and the accuracy of the measuring instruments. Nevertheless, these variations are minimal and do not affect the logical behavior of the circuits. Therefore, it can be concluded that the simulation was a faithful representation of the actual operation, and that the laboratory practice allowed for an experimental validation of the theory.
+\clearpage %Asegura que inicie en una nueva página
 \section{Conclusions} %Conclusiones del reporte
+The lab practice allowed the team to learn the proper usage of both the multimeter abd power supply, ensuring the correct utilization in future circuits.
+Additionally, the implementation of both a breadboard circuit and a Multisim simulation, was a showcase of proper understanding of the tools to be used in the class.
+Finally, the verification of the correct operation of digital circuits using the multimeter was a success, as the results obtained were consistent with the expected values, confirming the theoretical concepts learned in class.
 %%%%%%% Bibliografía %%%%%%%%
 \clearpage %Asegura que la bibliografía inicie en una nueva página
 \bibliographystyle{bst/IEEEtran} %Estilo de bibliografía NO MODIFICAR PARA MANTENER FORMATO
