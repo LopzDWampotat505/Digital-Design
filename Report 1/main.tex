@@ -184,66 +184,90 @@ For the physical lab, the team developed the same circuits in a breadboard, obta
   \caption{Circuits developed in breadboard}
   \label{fig:breadboard_circuits}
 \end{figure}
-After the development of the circuits, the team was able to measure the voltage, and resistance in both circuits.
-This measurements, where taken note of, to ensure that the results were as expected.
+These measurements were taken to ensure that the results were as expected.
+
 \begin{figure}[H]
   \centering
   \begin{minipage}{0.25\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Circuito 1.png}
+    \includegraphics[width=\textwidth]{Resistencia1.png}
   \end{minipage}
   \hspace{0.05\textwidth}
   \begin{minipage}{0.25\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Circuito 2.png}
+    \includegraphics[width=\textwidth]{Resistencia2.png}
   \end{minipage}
   \begin{minipage}{0.25\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Circuito 2.png}
+    \includegraphics[width=\textwidth]{MedidaCircuito.png}
   \end{minipage}
-  \caption{Circuits developed in breadboard}
-  \label{fig:breadboard_circuits}
+  \caption{Measurements taken in breadboard circuits}
+  \label{fig:breadboard_measurement}
 \end{figure}
+
+Finally, in order to have a correct method for testing the functionality of logic gates in the future, the circuit functionality was turned into a table for easy understanding.
+
+For the first circuit, the following table was made:
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Switch status} & \textbf{Voltage measured} & \textbf{Logic state} \\
+    \hline
+    On & 0 & Low \\
+    Off & 4.99 & High \\
+    \hline
+  \end{tabular}
+  \caption{Pull-up Resistor}
+  \label{tab:pullup}
+\end{table}
+
+For the second circuit, the following table was made:
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Switch status} & \textbf{Voltage measured} & \textbf{Logic state} \\
+    \hline
+    On & 5.00 & High \\
+    Off & 0 & Low \\
+    \hline
+  \end{tabular}
+  \caption{Pull-down Resistor}
+  \label{tab:pulldown}
+\end{table}
+
+For the third circuit, the following table was made:
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Output logic state} & \textbf{Voltage measured} & \textbf{LED status} \\
+    \hline
+    High & 0 & Off \\
+    Low & 4.99 & On \\
+    \hline
+  \end{tabular}
+  \caption{Active Low}
+  \label{tab:activelow}
+\end{table}
+
+Finally, for the fourth circuit, the following table was made:
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Output logic state} & \textbf{Voltage measured} & \textbf{LED status} \\
+    \hline
+    High & 4.99 & On \\
+    Low & 0 & Off \\
+    \hline
+  \end{tabular}
+  \caption{Active High}
+  \label{tab:activehigh}
+\end{table}
 \section{Analysis} %Análisis de los resultados obtenidos
 \section{Conclusions} %Conclusiones del reporte
-\cite{gh1562} %Citar una referencia
-
-$\cancelto{0}{x}$ %Cancelar x y colocar un cero
-\begin{itemize}
-    \item Item 1
-    \item Item 2
-    \item Item 3
-    \item Item 4
-\end{itemize}
-
-\subsection{Subsección}
-\cite{Agarwal2019} %Citar referencia
-\subsubsection{Sub-subsección}
-
-%En este caso el código puede ser mandado a llamar desde un archivo
-\lstinputlisting[language=VHDL,caption=Código desde archivo]{codigos/AND.vhd}
-\newpage
-
-% En este caso será necesario copiar y pegar todo el código 
-\begin{lstlisting}[language=VHDL, caption=Código en VHDL]
-  library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.std_logic_unsigned.all;
-entity Contador0_9 is
-    Port ( clock_100Mhz : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           Anode_Activate : out STD_LOGIC_VECTOR (3 downto 0);
-           LED_out : out STD_LOGIC_VECTOR (6 downto 0);
-           Led0: out STD_LOGIC:='0';
-           Led1: out std_logic:='0');-- COMMENT
-end Contador0_9;
-\end{lstlisting}
-
-\newpage %Termina la pagina y empieza una nueva
-\appendix % A partir de este comando, todas las secciones por venir serán parte del apéndice
-\section{Códigos completos}
-
-
 %%%%%%% Bibliografía %%%%%%%%
 \clearpage %Asegura que la bibliografía inicie en una nueva página
 \bibliographystyle{bst/IEEEtran} %Estilo de bibliografía NO MODIFICAR PARA MANTENER FORMATO
