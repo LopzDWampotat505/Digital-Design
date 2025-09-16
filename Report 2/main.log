@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.7)  16 SEP 2025 16:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.7)  16 SEP 2025 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,7 +387,11 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 ) (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count327
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `tab:and_gate' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
@@ -445,7 +449,7 @@ Package epstopdf Info: Source file: <Imagenes/UDLAP.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=Imagenes/UDLAP-eps-converted-to.pdf Imagenes/UDLAP.eps>
 (epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
-<Imagenes/UDLAP-eps-converted-to.pdf, id=39, 685.56125pt x 141.52875pt>
+<Imagenes/UDLAP-eps-converted-to.pdf, id=43, 685.56125pt x 141.52875pt>
 File: Imagenes/UDLAP-eps-converted-to.pdf Graphic file (type pdf)
 <use Imagenes/UDLAP-eps-converted-to.pdf>
 Package pdftex.def Info: Imagenes/UDLAP-eps-converted-to.pdf  used on input line 110.
@@ -460,55 +464,197 @@ Package pdftex.def Info: Imagenes/UDLAP-eps-converted-to.pdf  used on input line
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.162 
-       [1]
-<Imagenes/Circuit 1 and 2.png, id=57, 639.89063pt x 428.35031pt>
-File: Imagenes/Circuit 1 and 2.png Graphic file (type png)
-<use Imagenes/Circuit 1 and 2.png>
-Package pdftex.def Info: Imagenes/Circuit 1 and 2.png  used on input line 169.
-(pdftex.def)             Requested size: 338.58632pt x 226.65855pt.
-<Imagenes/Prueba1.png, id=59, 645.16031pt x 415.5525pt>
-File: Imagenes/Prueba1.png Graphic file (type png)
-<use Imagenes/Prueba1.png>
-Package pdftex.def Info: Imagenes/Prueba1.png  used on input line 176.
-(pdftex.def)             Requested size: 193.54958pt x 124.6667pt.
-<Imagenes/Prueba2.png, id=60, 652.68843pt x 415.5525pt>
-File: Imagenes/Prueba2.png Graphic file (type png)
-<use Imagenes/Prueba2.png>
-Package pdftex.def Info: Imagenes/Prueba2.png  used on input line 178.
-(pdftex.def)             Requested size: 195.80804pt x 124.6667pt.
-
-
-[2 <./Imagenes/Circuit 1 and 2.png>]
-<Imagenes/Circuito 1.png, id=67, 3035.34pt x 4047.12pt>
-File: Imagenes/Circuito 1.png Graphic file (type png)
-<use Imagenes/Circuito 1.png>
-Package pdftex.def Info: Imagenes/Circuito 1.png  used on input line 188.
-(pdftex.def)             Requested size: 120.92421pt x 161.17793pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 189.
+l.161 \end{itemize}
+                    [1]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 171.
  (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 189.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 171.
  (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Imagenes/Circuito 2.png, id=68, 4300.065pt x 5733.42pt>
-File: Imagenes/Circuito 2.png Graphic file (type png)
-<use Imagenes/Circuito 2.png>
-Package pdftex.def Info: Imagenes/Circuito 2.png  used on input line 193.
-(pdftex.def)             Requested size: 120.92421pt x 161.14706pt.
-<Imagenes/Resistencia1.png, id=69, 772.38562pt x 447.92343pt>
-File: Imagenes/Resistencia1.png Graphic file (type png)
-<use Imagenes/Resistencia1.png>
-Package pdftex.def Info: Imagenes/Resistencia1.png  used on input line 204.
-(pdftex.def)             Requested size: 120.92421pt x 70.12456pt.
-<Imagenes/Resistencia2.png, id=70, 764.10469pt x 445.665pt>
-File: Imagenes/Resistencia2.png Graphic file (type png)
-<use Imagenes/Resistencia2.png>
-Package pdftex.def Info: Imagenes/Resistencia2.png  used on input line 209.
-(pdftex.def)             Requested size: 120.92421pt x 70.52582pt.
-<Imagenes/MedidaCircuito.png, id=71, 4300.065pt x 5733.42pt>
-File: Imagenes/MedidaCircuito.png Graphic file (type png)
-<use Imagenes/MedidaCircuito.png>
-Package pdftex.def Info: Imagenes/MedidaCircuito
+
+[2]
+<Imagenes/Point5.jpg, id=74, 1284.8pt x 963.6pt>
+File: Imagenes/Point5.jpg Graphic file (type jpg)
+<use Imagenes/Point5.jpg>
+Package pdftex.def Info: Imagenes/Point5.jpg  used on input line 265.
+(pdftex.def)             Requested size: 193.47578pt x 145.09248pt.
+
+
+[3]
+<Imagenes/LogiGates.png, id=82, 716.6775pt x 468.24937pt>
+File: Imagenes/LogiGates.png Graphic file (type png)
+<use Imagenes/LogiGates.png>
+Package pdftex.def Info: Imagenes/LogiGates.png  used on input line 274.
+(pdftex.def)             Requested size: 193.47578pt x 126.40758pt.
+<Imagenes/Point5Multisim.png, id=84, 846.16125pt x 427.5975pt>
+File: Imagenes/Point5Multisim.png Graphic file (type png)
+<use Imagenes/Point5Multisim.png>
+Package pdftex.def Info: Imagenes/Point5Multisim.png  used on input line 281.
+(pdftex.def)             Requested size: 193.47578pt x 97.76466pt.
+ (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 289.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 289--289
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 289--289
+[][][][][][][] 
+ []
+
+
+
+[4 <./Imagenes/Point5.jpg> <./Imagenes/LogiGates.png> <./Imagenes/Point5Multisim.png>] (codigos/AND.vhd
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 18.
+ (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 18.
+)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 290--290
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 290--290
+[][][][][][][] 
+ []
+
+(codigos/OR.vhd)
+
+[5]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 291--291
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 291--291
+[][][][][][][] 
+ []
+
+(codigos/NOT.vhd)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 292--292
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 292--292
+[][][][][][][] 
+ []
+
+(codigos/NAND.vhd
+
+[6])
+Overfull \hbox (6.0pt too wide) in paragraph at lines 293--293
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 293--293
+[][][][][][][] 
+ []
+
+(codigos/NOR.vhd)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 294--294
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 294--294
+[][][][][][][] 
+ []
+
+(codigos/XOR.vhd
+
+[7])
+Overfull \hbox (6.0pt too wide) in paragraph at lines 295--295
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 295--295
+[][][][][][][] 
+ []
+
+(codigos/XNOR.vhd)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 297--297
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 297--297
+[][][][][][][] 
+ []
+
+(codigos/point5.vhd
+
+[8]
+Overfull \hbox (221.30191pt too wide) in paragraph at lines 22--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 299--299
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 299--299
+[][][][][][][] 
+ []
+
+(codigos/point5testbench.vhd
+
+[9]
+
+[10]
+
+[11])
+
+[12]
+
+[13
+
+] (main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
+[]\OT1/cmr/m/n/12 Intel Cor-po-ra-tion, ``Vhdl def-i-ni-tion,'' [][]$https : / / www . intel . com / content / www / us / en /
+ []
+
+)
+
+[14
+
+] (main.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B7CD66FA609A1740FBE794F40999F69B;1120.
+ ) 
+Here is how much of TeX's memory you used:
+ 15747 strings out of 468133
+ 248997 string characters out of 5430713
+ 874401 words of memory out of 5000000
+ 43789 multiletter control sequences out of 15000+600000
+ 635558 words of font info for 71 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,13n,79p,890b,2020s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (15 pages, 603540 bytes).
+PDF statistics:
+ 570 PDF objects out of 1000 (max. 8388607)
+ 347 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -129,7 +129,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{page}{1} %Para comenzar a numerar las páginas desde este punto
 \section{Abstract} %Síntesis del reporte en un solo párrafo
-This report will present the results obtained from the first laboratory practice of the Digital Design course. The main objective of this practice was to familiarize ourselves with the use of essential tools in electronics, specifically the multimeter and the power supply. The practice was divided into two parts: first, a simulation of simple digital circuits using Multisim software, and second, the physical assembly of these circuits on a breadboard in the laboratory. The circuits implemented included configurations with pull-up and pull-down resistors for digital inputs, as well as active high and active low configurations for digital outputs. 
+This report will present the results obtained from the second laboratory practice of the Digital Design course. The main objective of this practice was to familiarize ourselves with the
+functioning of logic gates and boolean functions. Showcasing both a physical and simulation function based on logic gates.
 \section{Introduction} %Breve introducción al tema del reporte
 
 \section{Objectives} %Objetivos de la práctica
@@ -141,7 +142,9 @@ The objectives of this lab are:
   \item Obtain truth table and canonic form of a Boolean function.
   \item Program and simulate Boolean functions using VHDL.
 \end{itemize}
-
+For the purpose of this lab, it is important to know about the components used, in the first place, "logic gates are defined as simple digital circuits that take one or more binary inputs and produce a binary output"\cite{HARRIS20221}.
+On the other hand, boolean funtions consists of a number of Boolean variables joined by the Boolean connectives, like AND and OR. \cite{HOLDSWORTH200228}
+And last, but not least, the software utilized in the experiment is VHDL (Hardware Description Language), which is a language that describes the behavior of electronic circuits, most commonly digital circuits. \cite{IntelVHDLDef}
 \section{Methodology} %Desarrollo de la práctica
 A methodology was established, divided into two main phases: simulation in Multisim and physical assembly in the laboratory.
 In the first part, the simulation, Multisim software was used as a tool to build the circuits corresponding to Figures 1 and 2. A DC Voltage Power Supply was configured with the following characteristics:
@@ -161,122 +164,143 @@ Subsequently, the circuits of Figure 1 were built, and the corresponding measure
 Finally, an analysis was carried out between the results obtained in the simulation and those obtained experimentally in the laboratory.
 
 \section{Results} %Resultados obtenidos
-\subsection{Digital lab experimentation}
-During the lab, the team was able to obtain these results from the experimentation in both the breadboard and Multisim. The results are precented as follows:
-For the first part, the team developed the simulation of the circuit 1 and 2 in Multisim, obtaining the following diagrams:
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{Circuit 1 and 2.png}
-    \caption{Circuits developed in Multisim}
-    \label{fig:multisim_circuits}
-\end{figure}
-After the development of the circuits, the team was able to measure the voltage in the output of both circuits. Obtaining this values based on the measurement of the circuits in Multisim:
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.3]{Prueba1.png}
-    \hfill
-    \includegraphics[scale=0.3]{Prueba2.png}
-    \caption{Circuits developed in Multisim}
-    \label{fig:multisim_circuits_measurements}
-\end{figure}
 \subsection{Physical lab experimentation}
-For the physical lab, the team developed the same circuits in a breadboard, obtaining the following circuits:
+For the physical lab, the team developed the basic circuits for each logic gate, obtaining the following tables:
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Input}} & \textbf{Output} \\
+\hline
+\textbf{A} & \textbf{B} & \textbf{Y} \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+1 & 1 & 1 \\
+\hline
+\end{tabular}
+\caption{Truth Table for a 2-Input AND Gate, the 74HC08 integrated circuit.}
+\label{tab:and_gate}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c||c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Input}} & \textbf{Output} \\
+\hline
+\textbf{A} & \textbf{B} & \textbf{Y} \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 1 \\
+\hline
+\end{tabular}
+\caption{Truth Table for a 2-Input OR Gate, the 74HC32 integrated circuit.}
+\label{tab:or_gate}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Input} & \textbf{Output} \\
+\hline
+\textbf{A} & \textbf{Y} \\
+\hline
+0 & 1  \\
+1 & 0  \\
+\hline
+\end{tabular}
+\caption{Truth Table for a 1-Input NOT Gate, the 74HC04 integrated circuit.}
+\label{tab:and_gate}
+\end{table}
+
+After ensuring that the truth tables were consistent with the datasheets obtained in the pre-lab, the team started analysing the following boolean function:
+$$
+F(A, B, C, D) = (\bar{B} \cdot D) + (\bar{A} \cdot B \cdot \bar{C}) + (A \cdot \bar{B} \cdot C) + (A \cdot B \cdot \bar{C})
+$$ \\
+And after analysing the function, the following truth table was formulated:
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c||c|}
+\hline
+\multicolumn{4}{|c||}{\textbf{Input}} & \textbf{Output} \\
+\hline
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Y} \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 1 \\
+0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 1 & 1 \\
+0 & 1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 0 & 0 \\
+0 & 1 & 1 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 1 \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 0 & 1 & 1 \\
+1 & 1 & 1 & 0 & 0 \\
+1 & 1 & 1 & 1 & 0 \\
+\hline
+\end{tabular}
+\caption{Point 5 truth table.}
+\label{tab:truth_table_point_5}
+\end{table}
+
+From which, we were able to build the canonic form of the function, based on the maxterms of the truth table, which is represented this way in this way: 
+\begin{multline*}
+F(A,B,C,D) = (A+B+C+D) \cdot (A+B+\bar{C}+D) \cdot (A+\bar{B}+\bar{C}+D) \cdot (A+\bar{B}+\bar{C}+\bar{D}) \\
+\cdot (\bar{A}+B+C+D) \cdot (\bar{A}+\bar{B}+\bar{C}+D) \cdot (\bar{A}+\bar{B}+\bar{C}+\bar{D})
+\end{multline*}
+
+Based on this process, the team built a circuit to showcase the functionality of the boolean function:
 \begin{figure}[H]
   \centering
-  \begin{minipage}{0.25\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Circuito 1.png}
-  \end{minipage}
-  \hspace{0.05\textwidth}
-  \begin{minipage}{0.25\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Circuito 2.png}
-  \end{minipage}
-  \caption{Circuits developed in breadboard}
-  \label{fig:breadboard_circuits}
+  \includegraphics[width=0.4\textwidth]{Point5.jpg}
+  \caption{Circuit built in breadboard simulating the Point 5 function.}
+  \label{fig:circuit_point_5}
 \end{figure}
-These measurements were taken to ensure that the results were as expected.
-
+\subsection{Digital lab experimentation}
+After the development of the physical lab, the team developed in Multisim the same circuits developed in the physical lab, to properly organize and correct if necessary any errors.
+In the first place, each logic gate was developed and tested:
 \begin{figure}[H]
   \centering
-  \begin{minipage}{0.25\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Resistencia1.png}
-  \end{minipage}
-  \hspace{0.05\textwidth}
-  \begin{minipage}{0.25\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{Resistencia2.png}
-  \end{minipage}
-  \begin{minipage}{0.25\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{MedidaCircuito.png}
-  \end{minipage}
-  \caption{Measurements taken in breadboard circuits}
-  \label{fig:breadboard_measurement}
+  \includegraphics[width=0.4\textwidth]{LogiGates.png}
+  \caption{Simulation of the Logic Gates}
+  \label{fig:sim_logic_gates}
+\end{figure}
+And then, the point 5 circuit was designed in the plataform:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Point5Multisim.png}
+  \caption{Simulation of the point 5 funciton circuit}
+  \label{fig:sim_point_5}
 \end{figure}
 
-Finally, in order to have a correct method for testing the functionality of logic gates in the future, the circuit functionality was turned into a table for easy understanding.
+\subsection{Codes}
+Finally, the team developed codes in VHDL to prove the functionality of the circuits and function.
+The first codes where developed in multiple files, one per logic gate:
+\lstinputlisting[language=VHDL,caption=Code 1: AND gate]{codigos/AND.vhd}
+\lstinputlisting[language=VHDL,caption=Code 2: OR gate]{codigos/OR.vhd}
+\lstinputlisting[language=VHDL,caption=Code 3: NOT gate]{codigos/NOT.vhd}
+\lstinputlisting[language=VHDL,caption=Code 4: NAND gate]{codigos/NAND.vhd}
+\lstinputlisting[language=VHDL,caption=Code 5: NOR gate]{codigos/NOR.vhd}
+\lstinputlisting[language=VHDL,caption=Code 6: XOR gate]{codigos/XOR.vhd}
+\lstinputlisting[language=VHDL,caption=Code 7: XNOR gate]{codigos/XNOR.vhd}
+After the development of these codes in EDA PLygrounds, the team created a code that showcases the boolean function of point 5:
+\lstinputlisting[language=VHDL,caption=Code 8: Point 5 Code]{codigos/point5.vhd}
+And to test this code, the team created the following:
+\lstinputlisting[language=VHDL,caption=Code 1: Point 5 Testbench]{codigos/point5testbench.vhd}
 
-For the first circuit, the following table was made:
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|l|c|c|}
-    \hline
-    \textbf{Switch status} & \textbf{Voltage measured} & \textbf{Logic state} \\
-    \hline
-    On & 0 & Low \\
-    Off & 4.99 & High \\
-    \hline
-  \end{tabular}
-  \caption{Pull-up Resistor}
-  \label{tab:pullup}
-\end{table}
 
-For the second circuit, the following table was made:
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|l|c|c|}
-    \hline
-    \textbf{Switch status} & \textbf{Voltage measured} & \textbf{Logic state} \\
-    \hline
-    On & 5.00 & High \\
-    Off & 0 & Low \\
-    \hline
-  \end{tabular}
-  \caption{Pull-down Resistor}
-  \label{tab:pulldown}
-\end{table}
 
-For the third circuit, the following table was made:
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|l|c|c|}
-    \hline
-    \textbf{Output logic state} & \textbf{Voltage measured} & \textbf{LED status} \\
-    \hline
-    High & 0 & Off \\
-    Low & 4.99 & On \\
-    \hline
-  \end{tabular}
-  \caption{Active Low}
-  \label{tab:activelow}
-\end{table}
 
-Finally, for the fourth circuit, the following table was made:
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|l|c|c|}
-    \hline
-    \textbf{Output logic state} & \textbf{Voltage measured} & \textbf{LED status} \\
-    \hline
-    High & 4.99 & On \\
-    Low & 0 & Off \\
-    \hline
-  \end{tabular}
-  \caption{Active High}
-  \label{tab:activehigh}
-\end{table}
 \section{Analysis} %Análisis de los resultados obtenidos
 In the first part, corresponding to the digital inputs (Figure~1), the operation of the circuits with pull-up and pull-down resistors was verified. For the pull-up configuration, when the switch was in the "On" position, the measured voltage was approximately 0~V, corresponding to a low logic state (Low). When the switch was set to "Off", the voltage rose to 4.99~V, identified as a high logic state (High). In the pull-down circuit, the results were the opposite: with the switch activated ("On"), 5.00~V were measured (high state), while with the switch deactivated ("Off"), the voltage dropped to 0~V (low state). These measurements confirm the expected behavior of both methods, showing that the use of pull-up and pull-down resistors ensures a defined logic level at the digital input.
 

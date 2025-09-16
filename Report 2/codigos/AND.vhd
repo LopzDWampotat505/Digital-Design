@@ -1,15 +1,20 @@
--- Simple AND gate design
+-- Code your design here
 library IEEE;
 use IEEE.std_logic_1164.all;
+entity ent_andGate is
 
-entity and_gate is
-port(
-  a in std_logic;
-  b in std_logic;
-  q out std_logic);
-end and_gate;
+    port(A : in std_logic;      -- AND gate input
+         B : in std_logic;      -- AND gate input
+         Y : out std_logic);    -- AND gate output
 
-architecture rtl of and_gate is
-begin
-    q = a and b;
-end rtl;
+end ent_andGate;
+
+-- Architecture definition
+
+architecture arq_andGate of ent_andGate is
+
+ begin
+    
+    Y <= A and B;
+
+end arq_andGate; 

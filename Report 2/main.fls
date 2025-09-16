@@ -194,30 +194,6 @@ INPUT C:\Users\juanp\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\Imagenes\Circuit 1 and 2.png
-INPUT .\Imagenes\Circuit 1 and 2.png
-INPUT .\Imagenes\Circuit 1 and 2.png
-INPUT .\Imagenes\Circuit 1 and 2.png
-INPUT .\Imagenes\Circuit 1 and 2.png
-INPUT .\Imagenes\Circuit 1 and 2.png
-INPUT .\Imagenes\Prueba1.png
-INPUT .\Imagenes\Prueba1.png
-INPUT .\Imagenes\Prueba1.png
-INPUT .\Imagenes\Prueba1.png
-INPUT .\Imagenes\Prueba1.png
-INPUT .\Imagenes\Prueba1.png
-INPUT .\Imagenes\Prueba2.png
-INPUT .\Imagenes\Prueba2.png
-INPUT .\Imagenes\Prueba2.png
-INPUT .\Imagenes\Prueba2.png
-INPUT .\Imagenes\Prueba2.png
-INPUT .\Imagenes\Prueba2.png
-INPUT .\Imagenes\Circuito 1.png
-INPUT .\Imagenes\Circuito 1.png
-INPUT .\Imagenes\Circuito 1.png
-INPUT .\Imagenes\Circuito 1.png
-INPUT .\Imagenes\Circuito 1.png
-INPUT .\Imagenes\Circuito 1.png
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -241,43 +217,76 @@ INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT .\Imagenes\Circuito 2.png
-INPUT .\Imagenes\Circuito 2.png
-INPUT .\Imagenes\Circuito 2.png
-INPUT .\Imagenes\Circuito 2.png
-INPUT .\Imagenes\Circuito 2.png
-INPUT .\Imagenes\Circuito 2.png
-INPUT .\Imagenes\Resistencia1.png
-INPUT .\Imagenes\Resistencia1.png
-INPUT .\Imagenes\Resistencia1.png
-INPUT .\Imagenes\Resistencia1.png
-INPUT .\Imagenes\Resistencia1.png
-INPUT .\Imagenes\Resistencia1.png
-INPUT .\Imagenes\Resistencia2.png
-INPUT .\Imagenes\Resistencia2.png
-INPUT .\Imagenes\Resistencia2.png
-INPUT .\Imagenes\Resistencia2.png
-INPUT .\Imagenes\Resistencia2.png
-INPUT .\Imagenes\Resistencia2.png
-INPUT .\Imagenes\MedidaCircuito.png
-INPUT .\Imagenes\MedidaCircuito.png
-INPUT .\Imagenes\MedidaCircuito.png
-INPUT .\Imagenes\MedidaCircuito.png
-INPUT .\Imagenes\MedidaCircuito.png
-INPUT .\Imagenes\MedidaCircuito.png
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\Imagenes\Point5.jpg
+INPUT .\Imagenes\Point5.jpg
+INPUT .\Imagenes\Point5.jpg
+INPUT .\Imagenes\Point5.jpg
+INPUT .\Imagenes\Point5.jpg
+INPUT .\Imagenes\Point5.jpg
+INPUT .\Imagenes\LogiGates.png
+INPUT .\Imagenes\LogiGates.png
+INPUT .\Imagenes\LogiGates.png
+INPUT .\Imagenes\LogiGates.png
+INPUT .\Imagenes\LogiGates.png
+INPUT .\Imagenes\LogiGates.png
+INPUT .\Imagenes\Point5Multisim.png
+INPUT .\Imagenes\Point5Multisim.png
+INPUT .\Imagenes\Point5Multisim.png
+INPUT .\Imagenes\Point5Multisim.png
+INPUT .\Imagenes\Point5Multisim.png
+INPUT .\Imagenes\Point5Multisim.png
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT .\codigos\AND.vhd
+INPUT .\codigos\AND.vhd
+INPUT codigos\AND.vhd
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1200.tfm
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
+INPUT .\codigos\OR.vhd
+INPUT .\codigos\OR.vhd
+INPUT codigos\OR.vhd
+INPUT .\codigos\NOT.vhd
+INPUT .\codigos\NOT.vhd
+INPUT codigos\NOT.vhd
+INPUT .\codigos\NAND.vhd
+INPUT .\codigos\NAND.vhd
+INPUT codigos\NAND.vhd
+INPUT .\codigos\NOR.vhd
+INPUT .\codigos\NOR.vhd
+INPUT codigos\NOR.vhd
+INPUT .\codigos\XOR.vhd
+INPUT .\codigos\XOR.vhd
+INPUT codigos\XOR.vhd
+INPUT .\codigos\XNOR.vhd
+INPUT .\codigos\XNOR.vhd
+INPUT codigos\XNOR.vhd
+INPUT .\codigos\point5.vhd
+INPUT .\codigos\point5.vhd
+INPUT codigos\point5.vhd
+INPUT .\codigos\point5testbench.vhd
+INPUT .\codigos\point5testbench.vhd
+INPUT codigos\point5testbench.vhd
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
+INPUT C:\Users\juanp\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1200.pk
+INPUT C:\Users\juanp\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1200.pk
 INPUT C:\Users\juanp\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\juanp\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -286,3 +295,5 @@ INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
