@@ -21,6 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{UNAMCompuertas}
+{Grupo de Invstigación en Sistemas Inteligentes, Universidad Nacional
+  Autónoma de México}, ``Compuertas lógicas – sistemas digitales,''
+  \url{https://virtual.cuautitlan.unam.mx/intar/sistdig/compuertas-logicas},
+  2018, accessed: 2024-10-27.
+
 \bibitem{HARRIS20221}
 \BIBentryALTinterwordspacing
 S.~L. Harris and D.~Harris, ``1 - from zero to one,'' in \emph{Digital Design

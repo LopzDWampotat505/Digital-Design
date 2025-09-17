@@ -132,6 +132,17 @@
 This report will present the results obtained from the second laboratory practice of the Digital Design course. The main objective of this practice was to familiarize ourselves with the
 functioning of logic gates and boolean functions. Showcasing both a physical and simulation function based on logic gates.
 \section{Introduction} %Breve introducción al tema del reporte
+Logic gates are the fundamental building blocks of digital electronics, as they allow the processing of binary signals through basic logical operations such as AND, OR, and NOT. A logic gate is a device that receives one or more binary input signals (0 or 1) and produces a binary output depending on the logical operation it performs. These operations enable the structured and predictable manipulation of digital information.
+There are several types of logic gates, among the most common are:
+\begin{itemize}
+  \item AND, which outputs 1 only when all its inputs are 1.
+  \item OR, which outputs 1 if at least one of its inputs is 1.
+  \item NOT, which inverts the value of its input, turning 0 into 1 and vice versa.
+  \item Additionally, there are combinations such as NAND, NOR, XOR, and XNOR, which are used to construct more complex functions and optimize circuits.
+\end{itemize}\cite{UNAMCompuertas}
+From these operations, it is possible to build more complex Boolean functions, representing relationships between binary variables using logical connectors, forming the foundation of digital system design. These functions are essential for developing integrated circuits, microprocessors, memory devices, and modern electronic systems.
+In this context, the main objectives of this lab were to implement and verify the operation of basic logic gates, obtain the truth table and canonical form of a Boolean function, and simulate and program digital circuits using VHDL.
+In this way, the lab not only aims to experimentally verify the theoretical principles of Boolean algebra but also to develop skills in using simulation software and hardware description languages, which are essential tools in modern digital system design.
 
 \section{Objectives} %Objetivos de la práctica
 The objectives of this lab are:
@@ -145,23 +156,48 @@ The objectives of this lab are:
 For the purpose of this lab, it is important to know about the components used, in the first place, "logic gates are defined as simple digital circuits that take one or more binary inputs and produce a binary output"\cite{HARRIS20221}.
 On the other hand, boolean funtions consists of a number of Boolean variables joined by the Boolean connectives, like AND and OR. \cite{HOLDSWORTH200228}
 And last, but not least, the software utilized in the experiment is VHDL (Hardware Description Language), which is a language that describes the behavior of electronic circuits, most commonly digital circuits. \cite{IntelVHDLDef}
-\section{Methodology} %Desarrollo de la práctica
-A methodology was established, divided into two main phases: simulation in Multisim and physical assembly in the laboratory.
-In the first part, the simulation, Multisim software was used as a tool to build the circuits corresponding to Figures 1 and 2. A DC Voltage Power Supply was configured with the following characteristics:
+\section{Methodology}
+A methodology was established, divided into three main phases: physical
+implementation in the laboratory, simulation in Multisim, and programming in
+EDA Playground.
+
+\subsection{Physical Laboratory Phase}
+In the physical laboratory, the following procedure was carried out:
 \begin{itemize}
-  \item Name: Power supply.
-  \item Output value: 5 V.
+    \item The power supply was configured with the following parameters:
+    \begin{itemize}
+        \item Activated source: Source 3.
+        \item Output voltage: 5 V.
+        \item Output current: 300 mA.
+    \end{itemize}
+    \item Using the datasheets, the power terminals, inputs, and outputs of each logic gate were identified.
+    \item The basic circuit of each logic gate was built.
+    \item The truth table presented in the datasheet was verified and compared with the one obtained from the real circuit.
+    \item The truth table and the canonical form of the Boolean function were obtained:
+    $$
+    F(A,B,C,D) = (\bar{B} \cdot D) + (\bar{A} \cdot B \cdot \bar{C}) + (A \cdot \bar{B} \cdot C) + (A \cdot B \cdot \bar{C})
+    $$
+    \item The circuit corresponding to the Boolean function was built.
+    \item The truth table of the Boolean function was verified against the one obtained experimentally from the real circuit.
 \end{itemize}
-The output of the source was verified using the program’s virtual multimeter. Subsequently, the circuits from Figures 1 and 2 were built, their correct operation was confirmed through simulation, and the results obtained were analyzed.
-In the physical laboratory phase, a real power supply was used with the following parameters:
+
+\subsection{Multisim Simulation Phase}
+In the Multisim environment, the following tasks were performed:
 \begin{itemize}
-  \item Activated source: Source 3.
-  \item Output voltage: 5 V.
-  \item Output current: 300 mA.
+    \item The circuits corresponding to the basic logic gates (AND, OR, XOR, NOT, NAND, NOR, and XNOR) were constructed, simulated, and their correct operation was verified.
+    \item The Boolean function defined in point 5 of the laboratory phase was constructed and simulated, confirming its proper functioning.
 \end{itemize}
-The output value of the source was checked using a digital multimeter. Likewise, the values of the resistors were verified using two methods: first, by identifying the color code, and then by direct measurement with the multimeter. The continuity of the DIP switch was also tested to ensure proper functionality.
-Subsequently, the circuits of Figure 1 were built, and the corresponding measurements were recorded in tables. Then, the circuits of Figure 2 were constructed, and the experimental values were documented in tables.
+
+\subsection{EDA Playground Programming Phase}
+Finally, in the EDA Playground platform, the following steps were carried
+out:
+\begin{itemize}
+    \item A single file was created to program and verify the correct operation of the basic logic gates (AND, OR, XOR, NOT, NAND, NOR, and XNOR).
+    \item The Boolean function F(ABCD) was programmed and simulated.
+\end{itemize}
+
 Finally, an analysis was carried out between the results obtained in the simulation and those obtained experimentally in the laboratory.
+
 
 \section{Results} %Resultados obtenidos
 \subsection{Physical lab experimentation}
@@ -302,16 +338,14 @@ And to test this code, the team created the following:
 
 
 \section{Analysis} %Análisis de los resultados obtenidos
-In the first part, corresponding to the digital inputs (Figure~1), the operation of the circuits with pull-up and pull-down resistors was verified. For the pull-up configuration, when the switch was in the "On" position, the measured voltage was approximately 0~V, corresponding to a low logic state (Low). When the switch was set to "Off", the voltage rose to 4.99~V, identified as a high logic state (High). In the pull-down circuit, the results were the opposite: with the switch activated ("On"), 5.00~V were measured (high state), while with the switch deactivated ("Off"), the voltage dropped to 0~V (low state). These measurements confirm the expected behavior of both methods, showing that the use of pull-up and pull-down resistors ensures a defined logic level at the digital input.
-
-In the second part, corresponding to the digital outputs (Figure~2), the Active Low and Active High circuits were analyzed. For the Active Low configuration, it was observed that the LED remained off when the logic output was at a high level and only turned on when the output was set to a low level. In contrast, in the Active High circuit, the LED turned on with a high logic output and turned off when it was set to a low level. The measured voltages ($\approx$~4.99~V in the active state and 0~V in the inactive state) match the expected values according to the design, confirming the operating principle of both configurations.
-
-Overall, the experimental results are consistent with those obtained in the simulation. The small differences (for example, 4.99~V instead of 5.00~V) are attributed to component tolerances, voltage drops in the connections, and the accuracy of the measuring instruments. Nevertheless, these variations are minimal and do not affect the logical behavior of the circuits. Therefore, it can be concluded that the simulation was a faithful representation of the actual operation, and that the laboratory practice allowed for an experimental validation of the theory.
-\clearpage %Asegura que inicie en una nueva página
+Based on the data obtained during the laboratory practice, the observed behavior of the logic gates corresponds correctly to the expected truth tables. The discrepancies that initially appeared in the practical implementation were due to wiring errors and circuit organization, which were later corrected.
+After completing the laboratory, the circuits were reproduced in Multisim to ensure proper organization and eliminate any possible mistakes. Each logic gate was tested individually, confirming its correct functionality. Finally, the circuits were implemented in EDA Playground using VHDL, where their behavior was simulated and verified. The results in this environment also matched the theoretical expectations, validating the practical and simulated work.
+In conclusion, both the laboratory implementation and the digital simulations in Multisim and VHDL confirm the correct functionality of the logic gates and the designed circuits.
 \section{Conclusions} %Conclusiones del reporte
-The lab practice allowed the team to learn the proper usage of both the multimeter abd power supply, ensuring the correct utilization in future circuits.
-Additionally, the implementation of both a breadboard circuit and a Multisim simulation, was a showcase of proper understanding of the tools to be used in the class.
-Finally, the verification of the correct operation of digital circuits using the multimeter was a success, as the results obtained were consistent with the expected values, confirming the theoretical concepts learned in class.
+The development of this practice made it possible to implement and verify the operation of three basic logic gates, both in the laboratory and in the simulation environments. The use of the multimeter was essential to confirm the correct functioning of the digital circuits, strengthening the understanding of measurement and verification processes in electronics.
+Additionally, the Boolean function was analyzed by obtaining its truth table and canonical form, which was then implemented and validated experimentally. This analysis was complemented with simulations in Multisim and programming in VHDL through EDA Playground, confirming the correct logical behavior of the circuits and the function in different environments.
+In this way, the proposed objectives were satisfactorily achieved, as the laboratory practice not only allowed the experimental validation of theoretical principles but also demonstrated the usefulness of digital simulation tools such as Multisim and VHDL for predicting and verifying circuit behavior.
+
 %%%%%%% Bibliografía %%%%%%%%
 \clearpage %Asegura que la bibliografía inicie en una nueva página
 \bibliographystyle{bst/IEEEtran} %Estilo de bibliografía NO MODIFICAR PARA MANTENER FORMATO

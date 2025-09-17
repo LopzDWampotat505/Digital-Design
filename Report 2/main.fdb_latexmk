@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1758066306.32416 "main.aux" "main.bbl" "main" 1758066308.42722 0
-  "./bib/bibliografia.bib" 1758061993 2361 7979f8c816986eac5567191a25b220b2 ""
+["bibtex main"] 1758073489.14861 "main.aux" "main.bbl" "main" 1758073489.51298 0
+  "./bib/bibliografia.bib" 1758073488 2725 c6cc2cc04288d9d96996ddc0971b3f59 ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1758066307 4827 e9dbe602afc897831932dfeb50a0f4d0 "pdflatex"
+  "main.aux" 1758073394 5285 941da1f0313c028e7e81fd6de379e41e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758066306.60872 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 2/main.tex" "main.pdf" "main" 1758066308.4279 0
+["pdflatex"] 1758073393.89544 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 2/main.tex" "main.pdf" "main" 1758073489.51334 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757777563 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -120,7 +120,7 @@
   "Imagenes/Point5.jpg" 1758063574 180235 00125eb7d241b2f98bf520d2f9c3218e ""
   "Imagenes/Point5Multisim.png" 1758065166 42986 f93cd03599c2df672c3f968622bb1f27 ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 2/main.tex" 1758066303 19618 89e9b5ebbdacd6de262dadb017dae4ba ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 2/main.tex" 1758073391 21408 59f02ddce5851f38aeb89babb3f8d880 ""
   "codigos/AND.vhd" 1758066281 400 9c06b64db5c7217309fe3cdd4d382065 ""
   "codigos/NAND.vhd" 1758064337 411 82c1540263cb44494f1fd4283751c379 ""
   "codigos/NOR.vhd" 1758064337 405 882c23648e40922101b1a8b1ee4333e6 ""
@@ -130,10 +130,10 @@
   "codigos/XOR.vhd" 1758064337 400 9636c12ebdd39a9c6349a24fe9f05187 ""
   "codigos/point5.vhd" 1758064337 525 07f4a0ffc796a467fb962b0043cb5414 ""
   "codigos/point5testbench.vhd" 1758064337 2052 b68acd641a992d6a339073704fb5d098 ""
-  "main.aux" 1758066307 4827 e9dbe602afc897831932dfeb50a0f4d0 "pdflatex"
-  "main.bbl" 1758066306 1961 e694a47118a04ca46fe1bb1b25375e61 "bibtex main"
-  "main.out" 1758066307 1120 b7cd66fa609a1740fbe794f40999f69b "pdflatex"
-  "main.tex" 1758066303 19618 89e9b5ebbdacd6de262dadb017dae4ba ""
+  "main.aux" 1758073394 5285 941da1f0313c028e7e81fd6de379e41e "pdflatex"
+  "main.bbl" 1758073489 2244 36bd72bd40bdab97c39e5306ea1c5dc4 "bibtex main"
+  "main.out" 1758073394 1725 f418e6e9d60956d4aade146ac4922a1a "pdflatex"
+  "main.tex" 1758073391 21408 59f02ddce5851f38aeb89babb3f8d880 ""
   (generated)
   "main.aux"
   "main.log"
