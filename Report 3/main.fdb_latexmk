@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1758594747.64231 "main.aux" "main.bbl" "main" 1758594750.18158 0
+["bibtex main"] 1758650201.56337 "main.aux" "main.bbl" "main" 1758650293.66981 0
   "./bib/bibliografia.bib" 1758506751 5532 eca6b45a32cf3292e601cbf40d0c523f ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1758594749 4899 e742370ab03fb88796c66b184b33effe "pdflatex"
+  "main.aux" 1758650292 7092 2b69850543f2e4e41dbbdfb40c06ba39 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758594748.07667 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" "main.pdf" "main" 1758594750.18315 0
+["pdflatex"] 1758650291.71578 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" "main.pdf" "main" 1758650293.67052 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758163085 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -36,11 +36,14 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136765053 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1754220793 146665 9149bce97203d4030d7cbe4f4e85dfc4 ""
@@ -123,14 +126,14 @@
   "Imagenes/Schematic 2 Mult.png" 1758594606 38106 9f28bf9bf4d8f177c06bf7f7253aea18 ""
   "Imagenes/Schematic 2.png" 1758590422 8779 1b7a6ce70ec9d4dc58f1f9ae84fcacfa ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" 1758594744 21363 73139949f44b28562790bc825f692559 ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" 1758650291 28126 d52c86b9974841a0bd88f4e68aaaa536 ""
   "codigos/Schematic 1.vhd" 1758591237 469 972fb2569011130ae7919e8fd8e5638e ""
   "codigos/Schematic 2.vhd" 1758591237 432 7a90c45a292701dcb483806fb7d5a3ff ""
   "codigos/testbench.vhd" 1758591237 2048 fd9e8ac42e03c709c19b3a0cd1e1fbaa ""
-  "main.aux" 1758594749 4899 e742370ab03fb88796c66b184b33effe "pdflatex"
-  "main.bbl" 1758594747 3441 7b11b4b90d6997e3e19cced6821441a3 "bibtex main"
-  "main.out" 1758594749 1634 bce8c85b55db0530fc8c44e6971f07ea "pdflatex"
-  "main.tex" 1758594744 21363 73139949f44b28562790bc825f692559 ""
+  "main.aux" 1758650292 7092 2b69850543f2e4e41dbbdfb40c06ba39 "pdflatex"
+  "main.bbl" 1758650201 3441 7b11b4b90d6997e3e19cced6821441a3 "bibtex main"
+  "main.out" 1758650292 4902 822dbaec0218748f6e2cbae3df984845 "pdflatex"
+  "main.tex" 1758650291 28126 d52c86b9974841a0bd88f4e68aaaa536 ""
   (generated)
   "main.aux"
   "main.log"

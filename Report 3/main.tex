@@ -132,7 +132,8 @@
 This report will present the results obtained from the third laboratory practice of the Digital Design course. The main objective of this practice was to continue to familiarize ourselves with the
 functioning of logic gates and boolean functions. Showcasing both a program in VHDL and simulation function based on logic gates.
 \section{Introduction} %Breve introducción al tema del reporte
-In this lab, we will study some basic compounded gates after learning about the most fundamental logic gates.  To carry out more intricate operations, these gates are made by combining several simple logic gates.  We can start creating increasingly complex circuits that can perform a greater variety of tasks by comprehending how these compounded gates operate.  This will enable us to increase our understanding of and proficiency in the field of electronics while also delving deeper into the realm of digital logic.
+The analysis and design of digital circuits is based on the representation and manipulation of Boolean functions through logic gates. These gates allow the implementation of fundamental operations in digital electronics, and when combined, enable the construction of complex systems. Therefore, it is essential to understand both the algebraic expressions and their translation into schematics, as well as the reverse process of generating schematics from Boolean functions.
+The main objective of this laboratory practice was to establish the bidirectional relationship between Boolean functions and logic circuits: deriving expressions from schematics and, conversely, constructing schematics from given functions. Additionally, modern digital design tools, such as Multisim simulation and VHDL programming using the EDA Playground platform, were incorporated, allowing for both experimental and virtual validation of circuit functionality.
 \begin{itemize}
   \item NAND, output is false only if all inputs are true.
   \item NOR, output is true only if any input is false.
@@ -155,47 +156,38 @@ For this experiment, it is fundamental to explain the procedure to convert a sch
 \\Once a schematic is created or obtained, the truth table must be generated, since the truth table is defined as a canonical representation of a Boolean function that exhaustively enumerates every truth assignment and its corresponding function value. \cite{JIANG2009299}
 \\And it is through this truth table that a canonic function can be obtained, which refers to a Boolean function that is expressed either as a sum of minterms or as a product of maxterms. It represents the standard form of a Boolean function that can be manipulated to simplify its expression. \cite{HOLDSWORTH200243}
 \section{Methodology}
-A methodology was established, divided into three main phases: physical
-implementation in the laboratory, simulation in Multisim, and programming in
-EDA Playground.
+The methodology applied in this laboratory practice was structured into three main phases: physical implementation in the laboratory, simulation in Multisim, and programming in EDA Playground.
 
 \subsection{Physical Laboratory Phase}
-In the physical laboratory, the following procedure was carried out:
+During the laboratory work, the following activities were carried out:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Schematic 1.jpg}
+  \caption{Schematic 1, from which the truth table and function are based}
+  \label{fig:schematic_1.1}
+\end{figure}
 \begin{itemize}
-    \item The power supply was configured with the following parameters:
-    \begin{itemize}
-        \item Activated source: Source 3.
-        \item Output voltage: 5 V.
-        \item Output current: 300 mA.
-    \end{itemize}
-    \item Using the datasheets, the power terminals, inputs, and outputs of each logic gate were identified.
-    \item The basic circuit of each logic gate was built.
-    \item The truth table presented in the datasheet was verified and compared with the one obtained from the real circuit.
-    \item The truth table and the canonical form of the Boolean function were obtained:
-    $$
-    F(A,B,C,D) = (\bar{B} \cdot D) + (\bar{A} \cdot B \cdot \bar{C}) + (A \cdot \bar{B} \cdot C) + (A \cdot B \cdot \bar{C})
-    $$
-    \item The circuit corresponding to the Boolean function was built.
-    \item The truth table of the Boolean function was verified against the one obtained experimentally from the real circuit.
+    \item The Boolean function and the truth table corresponding to the schematic shown in Figure 1 were obtained through logical analysis of its structure.
+    \item The schematic and truth table of the Boolean function provided in the practice were determined:
+    $$F(A,B,C,D) = (B' \cdot D) \cdot (A \oplus B) + (C \cdot A)$$
+    \item The consistency between the derived truth tables and the constructed schematics was verified, ensuring the correct representation of the logical expressions.
 \end{itemize}
 
 \subsection{Multisim Simulation Phase}
-In the Multisim environment, the following tasks were performed:
+In the Multisim simulation environment, the following procedures were performed:
 \begin{itemize}
-    \item The circuits corresponding to the basic logic gates (AND, OR, XOR, NOT, NAND, NOR, and XNOR) were constructed, simulated, and their correct operation was verified.
-    \item The Boolean function defined in point 5 of the laboratory phase was constructed and simulated, confirming its proper functioning.
+    \item Both circuits were virtually constructed using the logic components available in the software.
+    \item Simulations were executed to validate the expected behavior of each circuit.
+    \item The obtained results were compared with the analytically derived truth tables to confirm the correctness of the designs.
 \end{itemize}
 
 \subsection{EDA Playground Programming Phase}
-Finally, in the EDA Playground platform, the following steps were carried
-out:
+Finally, in the EDA Playground platform, the following actions were conducted:
 \begin{itemize}
-    \item A single file was created to program and verify the correct operation of the basic logic gates (AND, OR, XOR, NOT, NAND, NOR, and XNOR).
-    \item The Boolean function F(ABCD) was programmed and simulated.
+    \item Both Boolean functions were programmed using the VHDL language, following proper coding conventions.
+    \item Testbenches were created and applied to verify the correct functionality of the circuits under all possible input combinations.
+    \item The simulation results were validated against those obtained in the previous phases.
 \end{itemize}
-
-Finally, an analysis was carried out between the results obtained in the simulation and those obtained experimentally in the laboratory.
-
 
 \section{Results} %Resultados obtenidos
 \subsection{Physical lab experimentation}
@@ -247,16 +239,6 @@ And, after developing the code in EDA Playgrounds, the following Wave was genera
   \caption{Wave made from the function of the Schematic 1.}
   \label{fig:schematic_1_Wave}
 \end{figure}
-
-
-
-
-
-
-
-
-
-
 For the second experiment, the team was given a function, with the mission of obtaining the schematic and truth table:
 $$
 F(A,B,C,D) = (\bar{B} \cdot D) \cdot (A \oplus B) + (\overline{C \cdot A})
@@ -327,18 +309,135 @@ Finally, in order to generate the previous Waves and to prove the truth tables, 
 And to test this codes, the team created the following:
 \lstinputlisting[language=VHDL,caption=Code 1 and 2 Testbench]{codigos/testbench.vhd}
 
+\section{Analysis of Results}
+
+\subsection{Detailed Analysis of the Figure and Determination of the Logic Function}
+
+\subsubsection{Gate Identification and Description (According to Figure 1)}
+By carefully examining the provided figure, each logic block was identified and how they interact to form the final output was established. The gates are described as follows:
+\begin{itemize}
+    \item \textbf{Top left gate: NAND with inputs A and B.}
+    $$N = (A \cdot B)'$$
+    This gate produces a high output for all input combinations, except when A and B are both 1, where the output is 0. It plays a key role in controlling the upper right section of the circuit.
+    \item \textbf{Middle left gate: XNOR with inputs B and C, with a negation bubble at the output.}
+    $$M = B \text{ XNOR } C = (B \oplus C)'$$
+    The output is high when B and C are equal and low when they differ. The bubble indicates that the XOR operation is reversed, producing XNOR behavior.
+    \item \textbf{Lower left gate: XOR with inputs C and D, with no negation on the output.}
+    $$X = C \oplus D$$
+    The output is high only when C and D are different, introducing variability depending on the relationship between the two inputs.
+    \item \textbf{Upper center-right gate: NOR with N and M inputs.}
+    $$T = (N + M)'$$
+    The output T will be high only when both inputs N and M are low, acting as a detector for conditions where the previous signals are zero and affecting the final output.
+    \item \textbf{Bottom center-right gate: OR with inputs M and X.}
+    $$B_2 = M + X$$
+    Output $B_2$ will be high if at least one of the inputs is 1, ensuring that partial conditions detected by M or X activate the signal.
+    \item \textbf{Final gate (right): NAND with inputs T and $B_2$, producing output Y.}
+    $$F_1 = (T \cdot B_2)'$$
+    The final output is high in most combinations and only goes low when T and $B_2$ are simultaneously high, representing the critical condition of the circuit.
+\end{itemize}
+Therefore, the final output is:
+$$Y = (((A \cdot B)' + (B \oplus C)')' \cdot ((B \oplus C)' + (C \oplus D)))'$$
+
+\subsubsection{Compound Boolean Expression and Step-by-Step Analysis of the Output}
+Replacing the above definitions in the final output:
+$$Y = (T \cdot B_2)'$$
+
+\paragraph{Conditions for Y = 0}
+For the Y output to be 0, both inputs of the final NAND must be high:
+$$T = 1 \text{ and } B_2 = 1$$
+\begin{itemize}
+    \item \textbf{Analyzing T:}
+    $$T = (N + M)'$$
+    For $T = 1$, the inner sum must be 0:
+    $$N + M = 0 \Rightarrow N = 0 \text{ and } M = 0$$
+    \item \textbf{Analyzing $B_2$:}
+    $$B_2 = M + X$$
+    For $B_2 = 1$, at least one input must be high:
+    $$M + X = 1 \Rightarrow X = 1 \text{ (since } M = 0 \text{)}$$
+\end{itemize}
+
+\paragraph{Translation to Input Combinations}
+\begin{itemize}
+    \item $N = (A \cdot B)' = 0 \rightarrow A \cdot B = 1 \rightarrow A = 1 \text{ and } B = 1$
+    \item $M = (B \oplus C)' = 0 \rightarrow B \oplus C = 1 \rightarrow B \text{ and } C \text{ are different, with } B = 1 \rightarrow C = 0$
+    \item $X = C \oplus D = 1 \rightarrow C \neq D, \text{ with } C = 0 \rightarrow D = 1$
+\end{itemize}
+The only combination that satisfies all the conditions is:
+$$(A,B,C,D) = (1,1,0,1)$$
+Thus, $Y = A \cdot B \cdot C' \cdot D$, and its minterms representation is decimal row 13 (binary 1101). In maxterms product:
+$$Y = \prod M(13)$$
+
+\subsubsection{Verification Using Truth Tables and Simulation}
+\begin{itemize}
+    \item Table 1 confirms that the output is 1 for 15 of the 16 possible input combinations, perfectly matching the algebraic analysis.
+    \item The only row with $Y = 0$ corresponds exactly to the combination $(1, 1, 0, 1)$, as deduced step by step.
+    \item Simulation in Multisim and EDA Playground, represented in waveforms, shows that the output remains high for most input vectors and presents a single low pulse for the indicated combination, verifying the consistency between the truth table, the Boolean expression, and the practical simulation.
+\end{itemize}
+
+\subsection{Detailed Analysis of the Function and Determination of the Logic}
+
+\subsubsection{Identification and Description of the Gates (According to the Provided Function)}
+The proposed function is:
+$$F(A,B,C,D) = (B' \cdot D) \cdot (A \oplus B) + (A \cdot C)$$
+Analyzing each logic block:
+\begin{itemize}
+    \item \textbf{NOT gate at B:} $B'$
+    Inverts the value of input B, enabling conditions dependent on B being 0.
+    \item \textbf{AND gate between B' and D:} $E = B' \cdot D$
+    The output E will be high when $B=0$ and $D=1$.
+    \item \textbf{XOR gate between A and B:} $X = A \oplus B$
+    This output is high only when A and B are different.
+    \item \textbf{AND gate between E and X:} $T = (B' \cdot D) \cdot (A \oplus B)$
+    This block detects the specific condition: $B=0$, $D=1$, and $A \neq B$.
+    \item \textbf{AND gate between A and C:} $U = A \cdot C$
+    Activates the output when $A=1$ and $C=1$, regardless of B or D.
+    \item \textbf{Final OR gate between T and U:} $Y = T + U$
+    The output will be high if either of the two conditions is met: the combination of the first branch (T) or the direct condition $A \cdot C$.
+\end{itemize}
+Thus, the output is described as:
+$$Y = (B' \cdot D) \cdot (A \oplus B) + (A \cdot C)$$
+Once the analysis of the function was completed, the diagram that reflects its logical behavior was developed, which facilitated the interpretation and verification of the obtained result.
+
+\subsubsection{Compound Boolean Expression and Step-by-Step Analysis of the Output}
+\paragraph{Conditions for Output = 1}
+The output is 1 when at least one branch of the OR is 1:
+\begin{itemize}
+    \item \textbf{Branch 1 (T):}
+    $$(B' \cdot D) \cdot (A \oplus B) = 1$$
+    This requires simultaneously:
+    \begin{itemize}
+        \item $B = 0$ and $D = 1$
+        \item $A \neq B$ (i.e., $A=1$)
+    \end{itemize}
+    Therefore, Branch 1 is activated with: $(A,B,C,D) = (1,0,*,1)$ (C is irrelevant in this branch).
+    \item \textbf{Branch 2 (U):}
+    $$A \cdot C = 1$$
+    This requires $A=1$ and $C=1$, regardless of B and D.
+\end{itemize}
+
+\paragraph{Translation to Input Combinations}
+\begin{itemize}
+    \item From Branch 1, we obtain minterms: $(1,0,0,1)$ and $(1,0,1,1) \rightarrow \text{decimals } 9 \text{ and } 11$.
+    \item From Branch 2, we obtain minterms:
+    \begin{itemize}
+        \item $(1,*,1,0) \rightarrow (1,0,1,0) \text{ and } (1,1,1,0) \rightarrow \text{decimals } 10 \text{ and } 14$
+        \item $(1,*,1,1) \rightarrow (1,0,1,1) \text{ and } (1,1,1,1) \rightarrow \text{decimals } 11 \text{ and } 15$
+    \end{itemize}
+\end{itemize}
+Joining results:
+$$Y = \sum m(9, 10, 11, 14, 15)$$
+
+\subsubsection{Verification via Truth Table and Simulation}
+\begin{itemize}
+    \item Table 2 confirms that the output is 1 for 5 of the 16 possible input combinations, perfectly matching the algebraic analysis.
+    \item Simulation in Multisim and EDA Playground, represented in waveforms, shows that the output remains high for most input vectors and presents a single low pulse for the indicated combination, verifying the consistency between the truth table, the Boolean expression, and the practical simulation.
+\end{itemize}
+This detailed analysis confirms that the circuit design correctly implements the intended logic function. The methodology (gate identification, partial output analysis, and verification of the conditions for Y = 0) ensures accurate results and provides a complete understanding of the role of each block within the circuit.
 
 
 
-\section{Analysis} %Análisis de los resultados obtenidos
-Based on the data obtained during the laboratory practice, the observed behavior of the logic gates corresponds correctly to the expected truth tables. The discrepancies that initially appeared in the practical implementation were due to wiring errors and circuit organization, which were later corrected.
-After completing the laboratory, the circuits were reproduced in Multisim to ensure proper organization and eliminate any possible mistakes. Each logic gate was tested individually, confirming its correct functionality. Finally, the circuits were implemented in EDA Playground using VHDL, where their behavior was simulated and verified. The results in this environment also matched the theoretical expectations, validating the practical and simulated work.
-In conclusion, both the laboratory implementation and the digital simulations in Multisim and VHDL confirm the correct functionality of the logic gates and the designed circuits.
 \section{Conclusions} %Conclusiones del reporte
-The development of this practice made it possible to implement and verify the operation of three basic logic gates, both in the laboratory and in the simulation environments. The use of the multimeter was essential to confirm the correct functioning of the digital circuits, strengthening the understanding of measurement and verification processes in electronics.
-Additionally, the Boolean function was analyzed by obtaining its truth table and canonical form, which was then implemented and validated experimentally. This analysis was complemented with simulations in Multisim and programming in VHDL through EDA Playground, confirming the correct logical behavior of the circuits and the function in different environments.
-In this way, the proposed objectives were satisfactorily achieved, as the laboratory practice not only allowed the experimental validation of theoretical principles but also demonstrated the usefulness of digital simulation tools such as Multisim and VHDL for predicting and verifying circuit behavior.
-
+The development of this practice allowed the fulfillment of the laboratory objectives, as Boolean functions were obtained from schematics, and schematics were interpreted from Boolean functions. Additionally, the Boolean functions were programmed and simulated using VHDL, confirming their correct logical behavior. The detailed identification of gates, analysis of partial outputs, and the creation of truth tables and canonical forms allowed algebraic validation of the results. Simulations performed in Multisim and EDA Playground corroborated the consistency between theory and practice, demonstrating the usefulness of digital simulation tools for predicting and verifying circuit operation. In this way, the practice not only enabled experimental validation of theoretical principles but also reinforced the understanding of programming and simulation of Boolean functions in digital environments.
 %%%%%%% Bibliografía %%%%%%%%
 \clearpage %Asegura que la bibliografía inicie en una nueva página
 \bibliographystyle{bst/IEEEtran} %Estilo de bibliografía NO MODIFICAR PARA MANTENER FORMATO
