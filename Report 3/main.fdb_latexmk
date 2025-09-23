@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1758591257.43997 "main.aux" "main.bbl" "main" 1758591259.48414 0
+["bibtex main"] 1758594747.64231 "main.aux" "main.bbl" "main" 1758594750.18158 0
   "./bib/bibliografia.bib" 1758506751 5532 eca6b45a32cf3292e601cbf40d0c523f ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1758591258 4633 fdcec6f92aaf8cf33350a40c441ed135 "pdflatex"
+  "main.aux" 1758594749 4899 e742370ab03fb88796c66b184b33effe "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758591257.74432 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" "main.pdf" "main" 1758591259.48483 0
+["pdflatex"] 1758594748.07667 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" "main.pdf" "main" 1758594750.18315 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758163085 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -118,17 +118,19 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "Imagenes/EDAWave.png" 1758588589 9308 055b1134262c1e26d2d5b8ee895540e8 ""
   "Imagenes/EDAWave1.png" 1758590657 7579 2783aafccd87839d963d64818fb28eb9 ""
+  "Imagenes/Schematic 1 Mult.png" 1758594559 41199 b9e9b84007f6177bb8c477467b5edb20 ""
   "Imagenes/Schematic 1.jpg" 1758506999 18495 33add60099c9a36d62357a48430ddc15 ""
+  "Imagenes/Schematic 2 Mult.png" 1758594606 38106 9f28bf9bf4d8f177c06bf7f7253aea18 ""
   "Imagenes/Schematic 2.png" 1758590422 8779 1b7a6ce70ec9d4dc58f1f9ae84fcacfa ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" 1758591254 21161 a8ada9ed1575fb37e0bc2ea551686c79 ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" 1758594744 21363 73139949f44b28562790bc825f692559 ""
   "codigos/Schematic 1.vhd" 1758591237 469 972fb2569011130ae7919e8fd8e5638e ""
   "codigos/Schematic 2.vhd" 1758591237 432 7a90c45a292701dcb483806fb7d5a3ff ""
   "codigos/testbench.vhd" 1758591237 2048 fd9e8ac42e03c709c19b3a0cd1e1fbaa ""
-  "main.aux" 1758591258 4633 fdcec6f92aaf8cf33350a40c441ed135 "pdflatex"
-  "main.bbl" 1758591257 3441 7b11b4b90d6997e3e19cced6821441a3 "bibtex main"
-  "main.out" 1758591258 1634 bce8c85b55db0530fc8c44e6971f07ea "pdflatex"
-  "main.tex" 1758591254 21161 a8ada9ed1575fb37e0bc2ea551686c79 ""
+  "main.aux" 1758594749 4899 e742370ab03fb88796c66b184b33effe "pdflatex"
+  "main.bbl" 1758594747 3441 7b11b4b90d6997e3e19cced6821441a3 "bibtex main"
+  "main.out" 1758594749 1634 bce8c85b55db0530fc8c44e6971f07ea "pdflatex"
+  "main.tex" 1758594744 21363 73139949f44b28562790bc825f692559 ""
   (generated)
   "main.aux"
   "main.log"

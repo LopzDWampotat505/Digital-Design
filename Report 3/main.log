@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.7)  22 SEP 2025 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.7)  22 SEP 2025 20:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -498,27 +498,35 @@ File: Imagenes/EDAWave1.png Graphic file (type png)
 <use Imagenes/EDAWave1.png>
 Package pdftex.def Info: Imagenes/EDAWave1.png  used on input line 305.
 (pdftex.def)             Requested size: 483.69687pt x 69.36197pt.
-File: Imagenes/EDAWave1.png Graphic file (type png)
-<use Imagenes/EDAWave1.png>
-Package pdftex.def Info: Imagenes/EDAWave1.png  used on input line 313.
-(pdftex.def)             Requested size: 483.69687pt x 69.36197pt.
- (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+<Imagenes/Schematic 1 Mult.png, id=111, 972.63374pt x 375.65344pt>
+File: Imagenes/Schematic 1 Mult.png Graphic file (type png)
+<use Imagenes/Schematic 1 Mult.png>
+Package pdftex.def Info: Imagenes/Schematic 1 Mult.png  used on input line 313.
+(pdftex.def)             Requested size: 483.69687pt x 186.81169pt.
+<Imagenes/Schematic 2 Mult.png, id=112, 965.85844pt x 331.99031pt>
+File: Imagenes/Schematic 2 Mult.png Graphic file (type png)
+<use Imagenes/Schematic 2 Mult.png>
+Package pdftex.def Info: Imagenes/Schematic 2 Mult.png  used on input line 319.
+(pdftex.def)             Requested size: 483.69687pt x 166.25815pt.
+
+
+[5 <./Imagenes/EDAWave1.png>] (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 325.
 
-[5 <./Imagenes/EDAWave1.png>]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 319.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 319--319
+Overfull \hbox (6.0pt too wide) in paragraph at lines 325--325
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 319--319
+Overfull \hbox (6.0pt too wide) in paragraph at lines 325--325
 [][][][][][][] 
  []
 
 (codigos/Schematic 1.vhd
+
+[6 <./Imagenes/Schematic 1 Mult.png> <./Imagenes/Schematic 2 Mult.png>]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 22.
  (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
@@ -526,24 +534,22 @@ File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 22.
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 320--320
+Overfull \hbox (6.0pt too wide) in paragraph at lines 326--326
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 320--320
+Overfull \hbox (6.0pt too wide) in paragraph at lines 326--326
 [][][][][][][] 
  []
 
-(codigos/Schematic 2.vhd
-
-[6])
-Overfull \hbox (6.0pt too wide) in paragraph at lines 322--322
+(codigos/Schematic 2.vhd)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 328--328
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 322--322
+Overfull \hbox (6.0pt too wide) in paragraph at lines 328--328
 [][][][][][][] 
  []
 
@@ -555,14 +561,16 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 322--322
 
 [9])
 
-[10] (main.bbl
+[10]
+
+[11] (main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 48--51
 []\OT1/cmr/m/n/12 Intel Cor-po-ra-tion, ``Vhdl def-i-ni-tion,'' [][]$https : / / www . intel . com / content / www / us / en /
  []
 
 )
 
-[11
+[12
 
 ] (main.aux)
  ***********
@@ -573,17 +581,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BCE8C85B55DB0530FC8C44E6971F07EA;1634.
  ) 
 Here is how much of TeX's memory you used:
- 15589 strings out of 468133
- 246459 string characters out of 5430713
- 871640 words of memory out of 5000000
- 43775 multiletter control sequences out of 15000+600000
+ 15610 strings out of 468133
+ 247104 string characters out of 5430713
+ 870825 words of memory out of 5000000
+ 43794 multiletter control sequences out of 15000+600000
  635558 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,617b,2020s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,617b,2122s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (12 pages, 392554 bytes).
+Output written on main.pdf (13 pages, 437321 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 218 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 436 PDF objects out of 1000 (max. 8388607)
+ 220 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
