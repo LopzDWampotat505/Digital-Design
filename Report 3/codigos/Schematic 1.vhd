@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 
 -- Entity declaration
 
-entity ent_example_5 is
+entity ent_lab_3 is
 
     port(A : in std_logic;      -- OR gate input
          B : in std_logic;
@@ -11,14 +11,14 @@ entity ent_example_5 is
          D : in std_logic;
          Y : out std_logic);    -- OR gate output
 
-end ent_example_5;
+end ent_lab_3;
 
 -- Architecture definition
 
-architecture arq_example_5 of ent_example_5 is
+architecture arq_lab_3 of ent_lab_3 is
 
  begin
     
-    Y <= (((not B)and D)or((not A)and B and (not C))or(A and (not B) and C)or(A and B and (not C)));
+    Y <= (((A nand B)nor(B xnor C))nand((B xnor C)or(C xor D)));
 
-end arq_example_5; 
+end arq_lab_3; 

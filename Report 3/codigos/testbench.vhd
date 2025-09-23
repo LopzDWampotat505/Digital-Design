@@ -8,7 +8,7 @@ end testbench;
 architecture tb of testbench is
 
 -- DUT component
-component ent_example_5 is
+component ent_lab_3_2 is
 port(
   A: in std_logic;
   B : in std_logic;
@@ -22,7 +22,7 @@ signal a_in, b_in, c_in, d_in, q_out: std_logic;
 begin
 
   -- Connect UUT
-  UUT: ent_example_5 port map(a_in, b_in, c_in, d_in, q_out);
+  UUT: ent_lab_3_2 port map(a_in, b_in, c_in, d_in, q_out);
 
   process
   begin

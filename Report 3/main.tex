@@ -207,94 +207,88 @@ In this lab, the physical circuits were not built, but based on a schematic, the
   \label{fig:schematic_1}
 \end{figure}
 After analysing this circuit, the following function was formulated:
-\begin{multline}
-Y =\overline{(\overline{(\overline{A \cdot B}) + \overline{(B \oplus C)}}) \cdot (\overline{(B \oplus C)} + (C \oplus D)))}
-\end{multline}
-
-
-
-
-
-
-
-
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Input}} & \textbf{Output} \\
-\hline
-\textbf{A} & \textbf{B} & \textbf{Y} \\
-\hline
-0 & 0 & 0 \\
-0 & 1 & 0 \\
-1 & 0 & 0 \\
-1 & 1 & 1 \\
-\hline
-\end{tabular}
-\caption{Truth Table for a 2-Input AND Gate, the 74HC08 integrated circuit.}
-\label{tab:and_gate}
-\end{table}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c||c|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Input}} & \textbf{Output} \\
-\hline
-\textbf{A} & \textbf{B} & \textbf{Y} \\
-\hline
-0 & 0 & 0 \\
-0 & 1 & 1 \\
-1 & 0 & 1 \\
-1 & 1 & 1 \\
-\hline
-\end{tabular}
-\caption{Truth Table for a 2-Input OR Gate, the 74HC32 integrated circuit.}
-\label{tab:or_gate}
-\end{table}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\textbf{Input} & \textbf{Output} \\
-\hline
-\textbf{A} & \textbf{Y} \\
-\hline
-0 & 1  \\
-1 & 0  \\
-\hline
-\end{tabular}
-\caption{Truth Table for a 1-Input NOT Gate, the 74HC04 integrated circuit.}
-\label{tab:and_gate}
-\end{table}
-
-After ensuring that the truth tables were consistent with the datasheets obtained in the pre-lab, the team started analysing the following boolean function:
 $$
-F(A, B, C, D) = (\bar{B} \cdot D) + (\bar{A} \cdot B \cdot \bar{C}) + (A \cdot \bar{B} \cdot C) + (A \cdot B \cdot \bar{C})
-$$ \\
-And after analysing the function, the following truth table was formulated:
-\begin{table}[h!]
+Y =\overline{(\overline{(\overline{A \cdot B}) + \overline{(B \oplus C)}}) \cdot (\overline{(B \oplus C)} + (C \oplus D)))}
+$$
+And, based on both the function and the schematic, the following truth table was generated:
+\begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c||c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
-\multicolumn{4}{|c||}{\textbf{Input}} & \textbf{Output} \\
+\multicolumn{4}{|c|}{\textbf{Input}} & \textbf{Output} \\
 \hline
 \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Y} \\
 \hline
-0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 \\
 0 & 0 & 0 & 1 & 1 \\
-0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 & 1 \\
 0 & 0 & 1 & 1 & 1 \\
 0 & 1 & 0 & 0 & 1 \\
 0 & 1 & 0 & 1 & 1 \\
-0 & 1 & 1 & 0 & 0 \\
-0 & 1 & 1 & 1 & 0 \\
-1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 1 \\
+0 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 & 1 \\
 1 & 0 & 0 & 1 & 1 \\
 1 & 0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 0 & 1 & 0 \\
+1 & 1 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\caption{Truth Table for the first schematic provided}
+\label{tab:truth_table_1}
+\end{table}
+And, after developing the code in EDA Playgrounds, the following Wave was generating, showcasing the values of the function:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{EDAWave.png}
+  \caption{Wave made from the function of the Schematic 1.}
+  \label{fig:schematic_1_Wave}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+For the second experiment, the team was given a function, with the mission of obtaining the schematic and truth table:
+$$
+F(A,B,C,D) = (\bar{B} \cdot D) \cdot (A \oplus B) + (\overline{C \cdot A})
+$$
+And after analysing the function, the following schematic was generated
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Schematic 2.png}
+  \caption{Schematic 2, based on the function given.}
+  \label{fig:schematic_2}
+\end{figure}
+
+And, based on both the function and the schematic, the following truth table was generated:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Input}} & \textbf{Output} \\
+\hline
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Y} \\
+\hline
+0 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 1 & 1 \\
+0 & 0 & 1 & 0 & 1 \\
+0 & 0 & 1 & 1 & 1 \\
+0 & 1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 0 & 1 \\
+0 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 1 \\
+1 & 0 & 1 & 0 & 0 \\
 1 & 0 & 1 & 1 & 1 \\
 1 & 1 & 0 & 0 & 1 \\
 1 & 1 & 0 & 1 & 1 \\
@@ -302,32 +296,30 @@ And after analysing the function, the following truth table was formulated:
 1 & 1 & 1 & 1 & 0 \\
 \hline
 \end{tabular}
-\caption{Point 5 truth table.}
-\label{tab:truth_table_point_5}
+\caption{Truth Table for the first schematic provided}
+\label{tab:truth_table_2}
 \end{table}
-
-From which, we were able to build the canonic form of the function, based on the maxterms of the truth table, which is represented this way in this way: 
-\begin{multline*}
-F(A,B,C,D) = (A+B+C+D) \cdot (A+B+\bar{C}+D) \cdot (A+\bar{B}+\bar{C}+D) \cdot (A+\bar{B}+\bar{C}+\bar{D}) \\
-\cdot (\bar{A}+B+C+D) \cdot (\bar{A}+\bar{B}+\bar{C}+D) \cdot (\bar{A}+\bar{B}+\bar{C}+\bar{D})
-\end{multline*}
-
-Based on this process, the team built a circuit to showcase the functionality of the boolean function:
-
+And, after developing the code in EDA Playgrounds, the following Wave was generating, showcasing the values of the function:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{EDAWave1.png}
+  \caption{Wave made from the function of the Schematic 2.}
+  \label{fig:schematic_2_Wave}
+\end{figure}
+\subsection{Simulation}
+Based on the schematics of the previous experiments, the following simulation was built on MultiSim:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{EDAWave1.png}
+  \caption{MultiSim schematics made for the previous schematics.}
+  \label{fig:multisim}
+\end{figure}
 \subsection{Codes}
-Finally, the team developed codes in VHDL to prove the functionality of the circuits and function.
-The first codes where developed in multiple files, one per logic gate:
-\lstinputlisting[language=VHDL,caption=Code 1: AND gate]{codigos/AND.vhd}
-\lstinputlisting[language=VHDL,caption=Code 2: OR gate]{codigos/OR.vhd}
-\lstinputlisting[language=VHDL,caption=Code 3: NOT gate]{codigos/NOT.vhd}
-\lstinputlisting[language=VHDL,caption=Code 4: NAND gate]{codigos/NAND.vhd}
-\lstinputlisting[language=VHDL,caption=Code 5: NOR gate]{codigos/NOR.vhd}
-\lstinputlisting[language=VHDL,caption=Code 6: XOR gate]{codigos/XOR.vhd}
-\lstinputlisting[language=VHDL,caption=Code 7: XNOR gate]{codigos/XNOR.vhd}
-After the development of these codes in EDA PLygrounds, the team created a code that showcases the boolean function of point 5:
-\lstinputlisting[language=VHDL,caption=Code 8: Point 5 Code]{codigos/point5.vhd}
-And to test this code, the team created the following:
-\lstinputlisting[language=VHDL,caption=Code 1: Point 5 Testbench]{codigos/point5testbench.vhd}
+Finally, in order to generate the previous Waves and to prove the truth tables, the team created the following codes:
+\lstinputlisting[language=VHDL,caption=Code 1: For exercise 1]{codigos/Schematic 1.vhd}
+\lstinputlisting[language=VHDL,caption=Code 2: For exercise 2]{codigos/Schematic 2.vhd}
+And to test this codes, the team created the following:
+\lstinputlisting[language=VHDL,caption=Code 1 and 2 Testbench]{codigos/testbench.vhd}
 
 
 

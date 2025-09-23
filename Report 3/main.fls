@@ -224,41 +224,44 @@ INPUT .\Imagenes\Schematic 1.jpg
 INPUT .\Imagenes\Schematic 1.jpg
 INPUT .\Imagenes\Schematic 1.jpg
 INPUT .\Imagenes\Schematic 1.jpg
+INPUT .\Imagenes\EDAWave.png
+INPUT .\Imagenes\EDAWave.png
+INPUT .\Imagenes\EDAWave.png
+INPUT .\Imagenes\EDAWave.png
+INPUT .\Imagenes\EDAWave.png
+INPUT .\Imagenes\EDAWave.png
+INPUT .\Imagenes\Schematic 2.png
+INPUT .\Imagenes\Schematic 2.png
+INPUT .\Imagenes\Schematic 2.png
+INPUT .\Imagenes\Schematic 2.png
+INPUT .\Imagenes\Schematic 2.png
+INPUT .\Imagenes\Schematic 2.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
+INPUT .\Imagenes\EDAWave1.png
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT .\codigos\AND.vhd
-INPUT .\codigos\AND.vhd
-INPUT codigos\AND.vhd
+INPUT .\codigos\Schematic 1.vhd
+INPUT .\codigos\Schematic 1.vhd
+INPUT codigos\Schematic 1.vhd
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1200.tfm
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\omlcmr.fd
-INPUT .\codigos\OR.vhd
-INPUT .\codigos\OR.vhd
-INPUT codigos\OR.vhd
-INPUT .\codigos\NOT.vhd
-INPUT .\codigos\NOT.vhd
-INPUT codigos\NOT.vhd
-INPUT .\codigos\NAND.vhd
-INPUT .\codigos\NAND.vhd
-INPUT codigos\NAND.vhd
-INPUT .\codigos\NOR.vhd
-INPUT .\codigos\NOR.vhd
-INPUT codigos\NOR.vhd
-INPUT .\codigos\XOR.vhd
-INPUT .\codigos\XOR.vhd
-INPUT codigos\XOR.vhd
-INPUT .\codigos\XNOR.vhd
-INPUT .\codigos\XNOR.vhd
-INPUT codigos\XNOR.vhd
-INPUT .\codigos\point5.vhd
-INPUT .\codigos\point5.vhd
-INPUT codigos\point5.vhd
-INPUT .\codigos\point5testbench.vhd
-INPUT .\codigos\point5testbench.vhd
-INPUT codigos\point5testbench.vhd
+INPUT .\codigos\Schematic 2.vhd
+INPUT .\codigos\Schematic 2.vhd
+INPUT codigos\Schematic 2.vhd
+INPUT .\codigos\testbench.vhd
+INPUT .\codigos\testbench.vhd
+INPUT codigos\testbench.vhd
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl

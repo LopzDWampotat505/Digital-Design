@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1758507707.62219 "main.aux" "main.bbl" "main" 1758507709.57297 0
+["bibtex main"] 1758591257.43997 "main.aux" "main.bbl" "main" 1758591259.48414 0
   "./bib/bibliografia.bib" 1758506751 5532 eca6b45a32cf3292e601cbf40d0c523f ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1758507708 4833 e2b3e15cc770c79a27560197c612ff7c "pdflatex"
+  "main.aux" 1758591258 4633 fdcec6f92aaf8cf33350a40c441ed135 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1758507707.90581 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" "main.pdf" "main" 1758507709.57374 0
+["pdflatex"] 1758591257.74432 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" "main.pdf" "main" 1758591259.48483 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758163085 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -116,22 +116,19 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1749468414 3468 f21ceb3448a22fec45299f924e7fc48b ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
+  "Imagenes/EDAWave.png" 1758588589 9308 055b1134262c1e26d2d5b8ee895540e8 ""
+  "Imagenes/EDAWave1.png" 1758590657 7579 2783aafccd87839d963d64818fb28eb9 ""
   "Imagenes/Schematic 1.jpg" 1758506999 18495 33add60099c9a36d62357a48430ddc15 ""
+  "Imagenes/Schematic 2.png" 1758590422 8779 1b7a6ce70ec9d4dc58f1f9ae84fcacfa ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" 1758507705 21436 2db64393894ac13f9d75183d54f7a86c ""
-  "codigos/AND.vhd" 1758066281 400 9c06b64db5c7217309fe3cdd4d382065 ""
-  "codigos/NAND.vhd" 1758064337 411 82c1540263cb44494f1fd4283751c379 ""
-  "codigos/NOR.vhd" 1758064337 405 882c23648e40922101b1a8b1ee4333e6 ""
-  "codigos/NOT.vhd" 1758064337 349 610c77942504bbdf8520ffc02bd37a71 ""
-  "codigos/OR.vhd" 1758064337 396 ebe6c34d55338869bfac9585883639a7 ""
-  "codigos/XNOR.vhd" 1758064337 410 43e582fa79d7c9a2497e3897079dda6f ""
-  "codigos/XOR.vhd" 1758064337 400 9636c12ebdd39a9c6349a24fe9f05187 ""
-  "codigos/point5.vhd" 1758064337 525 07f4a0ffc796a467fb962b0043cb5414 ""
-  "codigos/point5testbench.vhd" 1758064337 2052 b68acd641a992d6a339073704fb5d098 ""
-  "main.aux" 1758507708 4833 e2b3e15cc770c79a27560197c612ff7c "pdflatex"
-  "main.bbl" 1758507707 3441 7b11b4b90d6997e3e19cced6821441a3 "bibtex main"
-  "main.out" 1758507708 1526 146766480eb474e3760b60b3b97e20ea "pdflatex"
-  "main.tex" 1758507705 21436 2db64393894ac13f9d75183d54f7a86c ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 3/main.tex" 1758591254 21161 a8ada9ed1575fb37e0bc2ea551686c79 ""
+  "codigos/Schematic 1.vhd" 1758591237 469 972fb2569011130ae7919e8fd8e5638e ""
+  "codigos/Schematic 2.vhd" 1758591237 432 7a90c45a292701dcb483806fb7d5a3ff ""
+  "codigos/testbench.vhd" 1758591237 2048 fd9e8ac42e03c709c19b3a0cd1e1fbaa ""
+  "main.aux" 1758591258 4633 fdcec6f92aaf8cf33350a40c441ed135 "pdflatex"
+  "main.bbl" 1758591257 3441 7b11b4b90d6997e3e19cced6821441a3 "bibtex main"
+  "main.out" 1758591258 1634 bce8c85b55db0530fc8c44e6971f07ea "pdflatex"
+  "main.tex" 1758591254 21161 a8ada9ed1575fb37e0bc2ea551686c79 ""
   (generated)
   "main.aux"
   "main.log"
