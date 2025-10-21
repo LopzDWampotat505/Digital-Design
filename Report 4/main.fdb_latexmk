@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1761057992.97867 "main.aux" "main.bbl" "main" 1761057997.71636 0
+["bibtex main"] 1761082389.53329 "main.aux" "main.bbl" "main" 1761082392.8716 0
   "./bib/bibliografia.bib" 1761057605 6041 1dc17ad271e389c82ddd7d3a4d79471a ""
   "./bst/IEEEtran.bst" 1761057605 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1761057996 8907 1f00a9ffb57c047618f440ab2a11c5bd "pdflatex"
+  "main.aux" 1761082391 8916 436f4cf1da721134ceac044ab353a7ff "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761057993.82858 "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" "main.pdf" "main" 1761057997.71764 0
+["pdflatex"] 1761082389.90288 "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" "main.pdf" "main" 1761082392.87314 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1761057982 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1761057991 14064 cb71bd0d4641a8d8fbaebe60490046fb ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1761057989 17172 07c379091c5273b7361bfdc86a196796 ""
@@ -128,7 +128,7 @@
   "Imagenes/Mult Wave.png" 1761057605 7879 f84b0b90ea266b046a02ec7ef5956c96 ""
   "Imagenes/MultBasys3.jpg" 1761057605 244490 b8b1b1c9dcf21e7db152ab8bf42cbfee ""
   "Imagenes/UDLAP.eps" 1761057605 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" 1761057841 28538 682a7627102fa1e0502cc21046c8b3df ""
+  "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" 1761082385 28538 31da11158ec21f03df0d92a817e2080f ""
   "codigos/VHDL/Comp/design.vhd" 1761057605 486 a608cc24222006944e4a1c1517b84e6a ""
   "codigos/VHDL/Comp/testbench.vhd" 1761057605 810 fa91b15f36546fc1ba40a53604991d32 ""
   "codigos/VHDL/Demult/design.vhd" 1761057605 432 c954a92c12ab31da07d42540804c6837 ""
@@ -137,10 +137,10 @@
   "codigos/VHDL/Half/testbench.vhd" 1761057605 735 08131fa0ca600bf242b0dd0145fbe0f9 ""
   "codigos/VHDL/Mult/design.vhd" 1761057605 404 6e364b7588d0be7a99d091b68aad4b9a ""
   "codigos/VHDL/Mult/testbench.vhd" 1761057605 1161 cbcd138faeb29b6f64b6056fef1352da ""
-  "main.aux" 1761057996 8907 1f00a9ffb57c047618f440ab2a11c5bd "pdflatex"
-  "main.bbl" 1761057993 1619 c65c555b61540aaa1eb0ba08faff9abf "bibtex main"
-  "main.out" 1761057996 4648 8e343e438761812a4a1d34a7118509b2 "pdflatex"
-  "main.tex" 1761057841 28538 682a7627102fa1e0502cc21046c8b3df ""
+  "main.aux" 1761082391 8916 436f4cf1da721134ceac044ab353a7ff "pdflatex"
+  "main.bbl" 1761082389 1619 c65c555b61540aaa1eb0ba08faff9abf "bibtex main"
+  "main.out" 1761082391 4648 62ed86ec0b9af4bc4bb5a8d82f0eeddb "pdflatex"
+  "main.tex" 1761082385 28538 31da11158ec21f03df0d92a817e2080f ""
   (generated)
   "main.aux"
   "main.log"
