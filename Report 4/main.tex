@@ -1,0 +1,367 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Plantilla realizada por César Martínez cesar.martinez@udlap.mx %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%VERSION 1.0%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt]{article}  %tipo de documento y tamaño de letra normal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Paquetes basicos, pueden encontrar información especifica de cada uno de ellos en  (https://www.ctan.org/) %%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[spanish]{babel} %Indica que escribiermos en español
+\usepackage[english]{babel} %Indica que escribiermos en inglés
+%Comentar la línea del idioma que NO usarán en su reporte
+\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
+\usepackage{amsmath} % Comandos extras para matemáticas (cajas para ecuaciones,etc)
+\usepackage{amssymb} % Simbolos matematicos (por lo tanto)
+\usepackage{graphicx} % Incluir imágenes en LaTeX
+\usepackage{color} % Para colorear texto
+\usepackage{subfigure} % subfiguras
+\usepackage{enumerate} % enumerar
+\usepackage{commath} % funcionalidades extras para diferenciales, integrales,etc (\od, \dif, etc)
+\usepackage{cancel} % para cancelar expresiones (\cancelto{0}{x})
+\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se queden donde queramos
+\usepackage{appendix} %Para crear apendices
+\usepackage{xcolor} %Definir colores personalizados
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% PAQUETES CON OPCIONES ESPECIFICAS PRECARGADAS %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Permitir agregar código, colocarlo en un rectángulo y  numerarlo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings} %Sirve para pegar codigo fuente de programas
+\usepackage{caption} %Agregar titulos a los codigos
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{%
+  \parbox{\textwidth}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}\vskip-4pt}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\lstset{frame=lrb,xleftmargin=\fboxsep,xrightmargin=-\fboxsep}
+\renewcommand{\lstlistingname}{Código}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Definir márgenes del documento%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \usepackage{anysize} % Para personalizar el ancho de  los márgenes
+\marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Hipervinculos activos y a color %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=black]{hyperref}
+\usepackage{hyperref} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Encabezado y pie de pagina %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UDLAP} %encabezado izquierda
+\fancyhead[R]{\footnotesize CEM}   % encabezado derecha
+\fancyfoot[R]{\footnotesize \curso}  % Pie derecha
+\fancyfoot[C]{\thepage}  % centro
+\fancyfoot[L]{}  %izquierda
+\renewcommand{\footrulewidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Carpeta donde se deben colocar las imagenes %%%%%%%%%%%%%%%%%%%%
+\graphicspath{{Imagenes/}} %Colocar aqui todas las imagenes del documento pueden estar en formato png, eps o jpg, se recomienda eps para mayor calidad.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Termina carga de paquetes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Modificar campos que aparecerán en portada %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\titulo{Lab report \#4}%titulo del documento
+\def\materia{Course: Digital design LRT2022-7} %Clave nombre de la materia y sección
+\def\curso{Digital design} %Nombre de la materia para footnote
+\def\fecha{October 20th, 25} %En formato mes, dia año
+\def\equipo {2}%Verificar en blackboard el número asignado
+\def\ida{183339} %Nombre y Id´s de todos los integrantes que hayan trabajado en el proyecto
+\def\esta{Juan Pablo Lopez Moreno}
+\def\lica{LMT}%LRT,LBM,LIS,LMT
+\def\idb{185406}
+\def\estb{Amy Marianee Ramírez Sánchez}
+\def\licb{LMT}%LRT,LBM,LIS,LMT
+%Copiar y pegar más líneas si su equipo tiene más de 5 integrantes, eliminar si está formado por menos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} %Inicia el documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%No es necesario modificar ninguna de las siguientes lineas, sólo si el número de estudiantes que conforman su equipo es menor o mayor a 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}														
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}						
+\thispagestyle{empty} 												
+\vspace*{-1.5cm}								
+\textsc{\huge Universidad de las Américas Puebla}\\[1.5cm]	
+\textsc{\LARGE Escuela de ingeniería}\\[1.5cm]	
+\textsc{\LARGE Departamento de computación, electrónica y mecatrónica}\\[1.5cm]												
+\includegraphics[width=150mm]{UDLAP}  									\vspace*{1cm}														\HRule \\[0.4cm]												
+{ \huge \bfseries \titulo}\\[0.4cm]	
+\HRule \\[1cm]														
+{ \Large \bfseries \materia}\\[1cm] 	
+{ \Large \bfseries Equipo: \equipo}\\[1cm] 							
+\begin{flushleft} \Large											
+\ida \hspace{0.5cm}\esta \hspace{0.5cm} \lica\\
+\idb \hspace{0.5cm}\estb \hspace{0.5cm} \licb\\
+%Copiar y pegar más líneas si su equipo tiene más de 2 integrantes, eliminar si la entrega es individual
+\end{flushleft}														
+\vfill																
+\begin{center}													
+{\Large  \fecha, San Andrés Cholula, Puebla}						
+\end{center}												 		
+\end{center}							 								\newpage						
+%%%%%%%%%%%%%%%%%%%% TERMINA PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1} %Para comenzar a numerar las páginas desde este punto
+\section{Abstract} %Síntesis del reporte en un solo párrafo
+This report will present the results obtained from the forth laboratory practice of the Digital Design course. The main objective of this practice was to begin the development of
+FPGAs, continuing the use of VHDL as a programming language. The practice focused on the implementation and simulation of combinational logic circuits using both schematic diagrams and Boolean functions. 
+\section{Introduction} %Breve introducción al tema del reporte
+Wih the evolution of technologies, digital systems have increasingly incorporated more complex logic behind their functionality, for these reason, technologies have to evolve and improve to suit these needs.
+For this reason, FPGAs (Field Programmable Gate Arrays) have become a popular choice for implementing digital logic circuits due to their flexibility and reconfigurability. FPGAs allow designers to program custom logic functions directly onto the hardware, enabling rapid prototyping and development of complex digital systems.
+In order to understand the functioning of the Gate Arrays used, a couple of combinational logic gates will be explored in the lab practice, these gates are as follows:
+\begin{itemize}
+  \item Half-substractor, performs the binary subtraction of two single-bit binary numbers. It has two inputs, A and B, and two outputs, Difference and Borrow.
+  \item Multiplexer, combinational circuit that has many data inputs and a single output, depending on control or select inputs.
+  \item Demultiplexer, data distributor combinational circuit. It works in a reverse way of the Multiplexer.
+  \item Magnitud Comparator, combinational circuit that compares two digital or binary numbers in order to find out whether one binary number is equal, less than, or greater than the other binary number.
+\end{itemize}\cite{GfGCombinational}
+It's critical to comprehend not only how these combinational circuits operate but also the various ways in which they can be connected within a program or FPGA. Additionally, we can investigate the plethora of possibilities in the field of digital logic by experimenting with various configurations.
+\section{Objectives} %Objetivos de la práctica
+The objectives of this lab are:
+\begin{itemize}
+    \item Program and simulate basic combinational logic circuits VHDL.
+    \item Implement basic combination circuits on the Basys 3 board.
+\end{itemize}
+For the purpose of this lab, we must understand the following concepts:
+\begin{itemize}
+    \item Combinational Logic Circuits
+    \item VHDL Programming
+    \item FPGA Implementation
+\end{itemize}
+Of which, we must begin explaining combiantional logic circuits, which are very well-known components in digital electronics, which can provide an output instantly based on the current input. Unlike sequential circuits, a combinational circuit listens for input signals and generates output regardless of the past input or state, as it has no feedback or memory component.\cite{GfGCombinational}
+VHDL, which has been used in previous labs, is a hardware description language that allows designers to describe the behavior and structure of digital systems. VHDL is widely used for designing FPGAs and ASICs (Application-Specific Integrated Circuits) due to its ability to model complex digital systems at various levels of abstraction.\cite{IntelVHDLDef}
+Finally,field programmable gate array (FPGA) is a versatile type of integrated circuit, which, unlike traditional logic devices such as application-specific integrated circuits (ASICs), is designed to be programmable (and often reprogrammable) to suit different purposes, notably high-performance computing (HPC) and prototyping.\cite{IBMFPGA} FPGA implementation involves programming the FPGA device with the designed VHDL code to realize the desired combinational logic circuit. This process includes synthesis, mapping, placement, and routing of the design onto the FPGA fabric. 
+\section{Methodology}
+The methodology applied in this laboratory practice was structured into three main phases: physical implementation in the laboratory, simulation in Multisim, and programming in EDA Playground.
+
+\subsection{Physical Laboratory Phase}
+During the laboratory work, the following activities were carried out:
+
+\begin{itemize}
+    \item The Boolean function and the truth table corresponding to the schematic shown in Figure 1 were obtained through logical analysis of its structure.
+    \item The schematic and truth table of the Boolean function provided in the practice were determined:
+    $$F(A,B,C,D) = (B' \cdot D) \cdot (A \oplus B) + (C \cdot A)$$
+    \item The consistency between the derived truth tables and the constructed schematics was verified, ensuring the correct representation of the logical expressions.
+\end{itemize}
+
+\subsection{Multisim Simulation Phase}
+In the Multisim simulation environment, the following procedures were performed:
+\begin{itemize}
+    \item Both circuits were virtually constructed using the logic components available in the software.
+    \item Simulations were executed to validate the expected behavior of each circuit.
+    \item The obtained results were compared with the analytically derived truth tables to confirm the correctness of the designs.
+\end{itemize}
+
+\subsection{EDA Playground Programming Phase}
+Finally, in the EDA Playground platform, the following actions were conducted:
+\begin{itemize}
+    \item Both Boolean functions were programmed using the VHDL language, following proper coding conventions.
+    \item Testbenches were created and applied to verify the correct functionality of the circuits under all possible input combinations.
+    \item The simulation results were validated against those obtained in the previous phases.
+\end{itemize}
+
+\section{Results} %Resultados obtenidos
+In this lab, the physical circuits were not built, but based on certain truth tables, EDAWaves were generated in order to accomplish every single combinational circuit given.:
+\subsection{Half-substractor}
+For the half-substractor, the following truth table was used to generate the EDA Code:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Input}} & \multicolumn{2}{c|}{\textbf{Output}} \\
+\hline
+\textbf{A} & \textbf{B} & \textbf{AC} & \textbf{R} \\
+\hline
+0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 1 \\
+1 & 0 & 0 & 1 \\
+1 & 1 & 0 & 0 \\
+\hline
+\end{tabular}
+\caption{Truth Table for the Half-substractor}
+\label{tab:truth_table_2}
+\end{table}
+
+Based on this truth table, the following Code was generated in EDA Playgrounds:
+\lstinputlisting[language=VHDL,caption=Code 1: For exercise 1]{codigos/VHDL/Half/design.vhd}
+With it's appropriate testbench:
+\lstinputlisting[language=VHDL,caption=Code 2: Testbench for exercise 1]{codigos/VHDL/Half/testbench.vhd}
+And, after developing the code in EDA Playgrounds, the following Wave was generating, showcasing the values of the function:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Half Wave.png}
+  \caption{Wave generated for the Half-substractor.}
+  \label{fig:schematic_1}
+\end{figure}
+Finally, the code was synthezised and implemented in the Basys 3 board, obtaining the expected results.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{HalfBasys3.jpg}
+  \caption{Evidence of the functioning of the Half-substractor in the Basys 3 board.}
+  \label{fig:schematic_2}
+\end{figure}
+
+\subsection{Multiplexor}
+For the multiplexor, the following truth table was used to generate the EDA Code:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Input}} & \multicolumn{1}{c|}{\textbf{Output}} \\
+\hline
+\textbf{Se} & \textbf{$I_1$} & \textbf{$I_0$} & \textbf{out} \\
+\hline
+0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 \\
+0 & 1 & 0 & 0 \\
+0 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 \\
+1 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\caption{Truth Table for the 2-to-1 Multiplexor}
+\label{tab:truth_table_mux}
+\end{table}
+
+Based on this truth table, the following Code was generated in EDA Playgrounds:
+\lstinputlisting[language=VHDL,caption=Code 1: For exercise 2]{codigos/VHDL/Mult/design.vhd}
+With it's appropriate testbench:
+\lstinputlisting[language=VHDL,caption=Code 2: Testbench for exercise 2]{codigos/VHDL/Mult/testbench.vhd}
+And, after developing the code in EDA Playgrounds, the following Wave was generating, showcasing the values of the function:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Mult Wave.png}
+  \caption{Wave generated for the Multiplexor.}
+  \label{fig:schematic_3}
+\end{figure}
+Finally, the code was synthezised and implemented in the Basys 3 board, obtaining the expected results.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{MultBasys3.jpg}
+  \caption{Evidence of the functioning of the Multiplexor in the Basys 3 board.}
+  \label{fig:schematic_4}
+\end{figure}
+
+\subsection{Demultiplexor}
+For the demultiplexor, the following truth table was used to generate the EDA Code:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Input}} & \multicolumn{2}{c|}{\textbf{Output}} \\
+\hline
+\textbf{Se} & \textbf{$I_0$} & \textbf{$O_1$} & \textbf{$O_0$} \\
+\hline
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 1 \\
+\hline
+1 & 0 & 0 & 0 \\
+1 & 1 & 1 & 0 \\
+\hline
+\end{tabular}
+\caption{Truth Table for the 1-to-2 Demultiplexor}
+\label{tab:truth_table_demux_2}
+\end{table}
+
+Based on this truth table, the following Code was generated in EDA Playgrounds:
+\lstinputlisting[language=VHDL,caption=Code 1: For exercise 1]{codigos/VHDL/Demult/design.vhd}
+With it's appropriate testbench:
+\lstinputlisting[language=VHDL,caption=Code 2: Testbench for exercise 1]{codigos/VHDL/Demult/testbench.vhd}
+And, after developing the code in EDA Playgrounds, the following Wave was generating, showcasing the values of the function:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Demult Wave.png}
+  \caption{Wave generated for the Demultiplexor.}
+  \label{fig:schematic_1}
+\end{figure}
+Finally, the code was synthezised and implemented in the Basys 3 board, obtaining the expected results.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{DemultBasys3.jpg}
+  \caption{Evidence of the functioning of the Demultiplexor in the Basys 3 board.}
+  \label{fig:schematic_2}
+\end{figure}
+
+\subsection{Magnitud Comparator}
+For the comparator, the following truth table was used to generate the EDA Code:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Input}} & \multicolumn{3}{c|}{\textbf{Output}} \\
+\hline
+\textbf{A} & \textbf{B} & \textbf{$A>B$} & \textbf{$A=B$} & \textbf{$A<B$} \\
+\hline
+0 & 0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 0 \\
+1 & 1 & 0 & 1 & 0 \\
+\hline
+\end{tabular}
+\caption{Truth Table for a 1-bit Magnitude Comparator}
+\label{tab:truth_table_comparator}
+\end{table}
+
+Based on this truth table, the following Code was generated in EDA Playgrounds:
+\lstinputlisting[language=VHDL,caption=Code 1: For exercise 1]{codigos/VHDL/Comp/design.vhd}
+With it's appropriate testbench:
+\lstinputlisting[language=VHDL,caption=Code 2: Testbench for exercise 1]{codigos/VHDL/Comp/testbench.vhd}
+And, after developing the code in EDA Playgrounds, the following Wave was generating, showcasing the values of the function:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Comp Wave.png}
+  \caption{Wave generated for the Magnitud Comparator.}
+  \label{fig:schematic_1}
+\end{figure}
+Finally, the code was synthezised and implemented in the Basys 3 board, obtaining the expected results.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{CompBasys3.jpg}
+  \caption{Evidence of the functioning of the Magnitud Comparator in the Basys 3 board.}
+  \label{fig:schematic_2}
+\end{figure}
+
+\section{Conclusions} %Conclusiones del reporte
+The development of this practice allowed the fulfillment of the laboratory objectives, as Boolean functions were obtained from schematics, and schematics were interpreted from Boolean functions. Additionally, the Boolean functions were programmed and simulated using VHDL, confirming their correct logical behavior. The detailed identification of gates, analysis of partial outputs, and the creation of truth tables and canonical forms allowed algebraic validation of the results. Simulations performed in Multisim and EDA Playground corroborated the consistency between theory and practice, demonstrating the usefulness of digital simulation tools for predicting and verifying circuit operation. In this way, the practice not only enabled experimental validation of theoretical principles but also reinforced the understanding of programming and simulation of Boolean functions in digital environments.
+%%%%%%% Bibliografía %%%%%%%%
+\clearpage %Asegura que la bibliografía inicie en una nueva página
+\bibliographystyle{bst/IEEEtran} %Estilo de bibliografía NO MODIFICAR PARA MANTENER FORMATO
+\bibliography{bib/bibliografia} %Fuentes bibliográficas Se recomienda utilizar un gestor de referencias (zotero, jabref, etc..)
+%%%%%%% Bibliografía %%%%%%%%      
+\end{document} %Termina el documento
+%% Known issues and TODO list%%%
+% Warning overfull \hbox en los códigos
+% Código en texto blanco y negro y comentarios en negritas => Cambiar a formato en colores

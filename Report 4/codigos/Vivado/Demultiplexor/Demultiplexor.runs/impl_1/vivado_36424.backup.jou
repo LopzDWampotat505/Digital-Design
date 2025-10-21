@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 15 11:10:17 2025
+# Process ID: 36424
+# Current directory: C:/Users/183339/Downloads/Demultiplexor/Demultiplexor.runs/impl_1
+# Command line: vivado.exe -log ent_demult.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ent_demult.tcl -notrace
+# Log file: C:/Users/183339/Downloads/Demultiplexor/Demultiplexor.runs/impl_1/ent_demult.vdi
+# Journal file: C:/Users/183339/Downloads/Demultiplexor/Demultiplexor.runs/impl_1\vivado.jou
+# Running On: PCCN112-02, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 137044 MB
+#-----------------------------------------------------------
+source ent_demult.tcl -notrace
