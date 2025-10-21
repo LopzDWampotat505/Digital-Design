@@ -158,34 +158,80 @@ Of which, we must begin explaining combiantional logic circuits, which are very 
 VHDL, which has been used in previous labs, is a hardware description language that allows designers to describe the behavior and structure of digital systems. VHDL is widely used for designing FPGAs and ASICs (Application-Specific Integrated Circuits) due to its ability to model complex digital systems at various levels of abstraction.\cite{IntelVHDLDef}
 Finally,field programmable gate array (FPGA) is a versatile type of integrated circuit, which, unlike traditional logic devices such as application-specific integrated circuits (ASICs), is designed to be programmable (and often reprogrammable) to suit different purposes, notably high-performance computing (HPC) and prototyping.\cite{IBMFPGA} FPGA implementation involves programming the FPGA device with the designed VHDL code to realize the desired combinational logic circuit. This process includes synthesis, mapping, placement, and routing of the design onto the FPGA fabric. 
 \section{Methodology}
-The methodology applied in this laboratory practice was structured into three main phases: physical implementation in the laboratory, simulation in Multisim, and programming in EDA Playground.
+The methodology applied in this laboratory practice was structured into three main phases: logical analysis, simulation in EDA Playground, and physical implementation on the Basys 3 board.
 
-\subsection{Physical Laboratory Phase}
-During the laboratory work, the following activities were carried out:
+\subsection{Logical Analysis Phase}
+During this first stage, the following activities were carried out:
+\begin{enumerate}
+    \item The truth tables corresponding to the half-subtractor, multiplexer, magnitude comparator, and demultiplexer circuits, all of one bit, were obtained.
+    \item Based on the truth tables, the corresponding Karnaugh maps were developed in order to simplify the Boolean expressions and obtain the minimal logical function for each circuit.
+    \item Finally, the obtained results were documented for use in the subsequent simulation and programming phases.
+\end{enumerate}
 
-\begin{itemize}
-    \item The Boolean function and the truth table corresponding to the schematic shown in Figure 1 were obtained through logical analysis of its structure.
-    \item The schematic and truth table of the Boolean function provided in the practice were determined:
-    $$F(A,B,C,D) = (B' \cdot D) \cdot (A \oplus B) + (C \cdot A)$$
-    \item The consistency between the derived truth tables and the constructed schematics was verified, ensuring the correct representation of the logical expressions.
-\end{itemize}
+\subsection{EDA Playground Simulation Phase}
+In the EDA Playground digital simulation environment, the following procedures were performed:
+\begin{enumerate}
+    \item The half-subtractor, multiplexer, magnitude comparator, and demultiplexer circuits were programmed using the VHDL language.
+    \item Testbenches were developed to verify the behavior of each circuit under all possible input combinations.
+    \item The results obtained from the simulations were analyzed and compared with the previously developed truth tables and simplified functions, ensuring the correct logical implementation of each design.
+\end{enumerate}
 
-\subsection{Multisim Simulation Phase}
-In the Multisim simulation environment, the following procedures were performed:
-\begin{itemize}
-    \item Both circuits were virtually constructed using the logic components available in the software.
-    \item Simulations were executed to validate the expected behavior of each circuit.
-    \item The obtained results were compared with the analytically derived truth tables to confirm the correctness of the designs.
-\end{itemize}
+\subsection{Basys 3 Board Implementation Phase}
+Finally, the physical implementation of the circuits was carried out on the Basys 3 board, following the steps described below:
+\begin{enumerate}
+    \item The code for each circuit was synthesized, and the corresponding bitstream files were generated.
+    \item Pin constraints (\texttt{.xdc} file) were assigned to map the logical signals to the physical components of the board (switches, LEDs, and displays).
+    \item The designs were loaded onto the Basys 3 board, verifying their correct operation through practical input and output tests.
+\end{enumerate}
 
-\subsection{EDA Playground Programming Phase}
-Finally, in the EDA Playground platform, the following actions were conducted:
-\begin{itemize}
-    \item Both Boolean functions were programmed using the VHDL language, following proper coding conventions.
-    \item Testbenches were created and applied to verify the correct functionality of the circuits under all possible input combinations.
-    \item The simulation results were validated against those obtained in the previous phases.
-\end{itemize}
+\section{Analysis of Results}
+In this laboratory practice, four fundamental digital circuits were analyzed---half-subtractor, 2:1 multiplexer, 1$\to$2 demultiplexer, and 1-bit magnitude comparator---following three stages: logical analysis through truth tables, simulation in EDA Playground using VHDL, and practical verification on the Basys 3 board. The observed behavior in each phase is described in detail below.
 
+\subsection{Half-Subtractor}
+\subsubsection{Truth Table Analysis}
+The half-subtractor possesses inputs $A$ (minuend) and $B$ (subtrahend) and generates two outputs: $R$, representing the logical difference ($A - B$), and $AC$, which indicates whether a borrow was required.
+When both inputs are zero, no difference or borrow occurs, and both outputs remain inactive. If $A = 0$ and $B = 1$, subtracting a larger number from a smaller one yields a difference ($R$) equal to one and activates the borrow ($AC = 1$), reflecting the necessity of borrowing from the higher-order bit. When $A = 1$ and $B = 0$, no borrow is required, and the difference equals one, activating only $R$. Finally, when $A = 1$ and $B = 1$, the inputs are equal, the subtraction results in zero, and no output is activated.
+The observed behavior confirms that $R$ functions as an XOR operation and $AC$ as an AND operation with inversion of the minuend.
+
+\subsubsection{EDA Playground Analysis}
+During simulation, the generated waveforms matched the expected values precisely. The $R$ output activated only when the inputs differed, while $AC$ activated exclusively when $A$ was less than $B$. State transitions occurred without delays or interference, validating the correct implementation of the logical equations in the VHDL code.
+
+\subsubsection{Basys 3 Implementation}
+On the Basys 3 board, switches were employed to represent inputs $A$ and $B$, while LEDs displayed outputs $AC$ and $R$. Physical testing demonstrated that the LED corresponding to $R$ illuminated when the inputs differed, and $AC$ lit solely when subtracting 1 from 0. The observed behavior fully coincided with simulation and theoretical expectations, demonstrating correct and stable implementation.
+
+\subsection{2:1 Multiplexer}
+\subsubsection{Truth Table Analysis}
+The 2:1 multiplexer features three inputs: the selection signal $Se$ and data inputs $I1$ and $I0$. Its output, $out$, reflects the value of one of the two inputs depending on the state of $Se$.
+When $Se = 0$, the output adopts the value of $I0$, disregarding $I1$. Conversely, when $Se = 1$, the output assumes the value of $I1$. This behavior confirms that the output is solely dependent on the selector.
+
+\subsubsection{EDA Playground Analysis}
+During simulation, the waveforms exhibited precise switching between data inputs as $Se$ varied. When the selector was low, the output followed $I0$; when high, it followed $I1$. No overshoots or indeterminate signals were observed, validating the correct VHDL implementation.
+
+\subsubsection{Basys 3 Implementation}
+In the physical test, the board switches controlled $Se$, $I1$, and $I0$, and the LED displayed the output. The observed results aligned with theoretical expectations: with the selector at 0, the output reproduced $I0$; with the selector at 1, it reproduced $I1$. The response was immediate, without switching errors, confirming the accuracy of the logical design and proper pin assignment.
+
+\subsection{1$\to$2 Demultiplexer}
+\subsubsection{Truth Table Analysis}
+The demultiplexer receives the selection signal $Se$ and data input $I0$, generating two outputs: $O1$ and $O0$.
+When $Se = 0$, the input data is directed exclusively to $O0$, while $O1$ remains low. When $Se = 1$, the signal is transferred to $O1$, and $O0$ is deactivated. This confirms that the circuit directs the input to a single active output based on the selector.
+
+\subsubsection{EDA Playground Analysis}
+Simulation verified that both outputs were never active simultaneously. When the selector changed, the active output correctly switched between $O0$ and $O1$ according to input $I0$. Waveforms demonstrated clean transitions, free of residual signals or timing errors.
+
+\subsubsection{Basys 3 Implementation}
+For the physical implementation, switches were assigned to $Se$ and $I0$, and LEDs indicated outputs $O1$ and $O0$. Testing confirmed that when the selector was low, only $O0$ responded to the input; when high, the response transferred to $O1$. These results corroborated the correct distribution of the signal and the fidelity of the logical design relative to the simulation.
+
+\subsection{1-bit Magnitude Comparator}
+\subsubsection{Truth Table Analysis}
+The magnitude comparator receives two input bits, $A$ and $B$, and produces three outputs: $A > B$, $A = B$, and $A < B$.
+When both inputs are zero, they are equal, activating the $A = B$ output. If $A = 0$ and $B = 1$, $A$ is smaller, activating $A < B$. If $A = 1$ and $B = 0$, $A$ is greater, activating $A > B$. Finally, when both inputs are 1, $A = B$ is activated again.
+In all cases, only one output remains active, confirming the exclusive nature of the comparator's design.
+
+\subsubsection{EDA Playground Analysis}
+Simulation waveforms exhibited clear and stable behavior. Each output responded exclusively to the corresponding relationship between inputs, without overlapping signals. The circuit reacted instantly to changes in $A$ and $B$, demonstrating precise logic without coding errors.
+
+\subsubsection{Basys 3 Implementation}
+In the physical test, switches represented inputs $A$ and $B$, and three LEDs displayed outputs $A > B$, $A = B$, and $A < B$. Observations indicated that each LED activated solely under its corresponding condition: “greater” when $A$ exceeded $B$, “equal” when inputs matched, and “less” when $B$ exceeded $A$. The complete agreement between simulation and practice confirmed the correct synthesis and mapping of the comparator.
 \section{Results} %Resultados obtenidos
 In this lab, the physical circuits were not built, but based on certain truth tables, EDAWaves were generated in order to accomplish every single combinational circuit given.:
 \subsection{Half-substractor}
@@ -354,8 +400,10 @@ Finally, the code was synthezised and implemented in the Basys 3 board, obtainin
   \label{fig:schematic_2}
 \end{figure}
 
-\section{Conclusions} %Conclusiones del reporte
-The development of this practice allowed the fulfillment of the laboratory objectives, as Boolean functions were obtained from schematics, and schematics were interpreted from Boolean functions. Additionally, the Boolean functions were programmed and simulated using VHDL, confirming their correct logical behavior. The detailed identification of gates, analysis of partial outputs, and the creation of truth tables and canonical forms allowed algebraic validation of the results. Simulations performed in Multisim and EDA Playground corroborated the consistency between theory and practice, demonstrating the usefulness of digital simulation tools for predicting and verifying circuit operation. In this way, the practice not only enabled experimental validation of theoretical principles but also reinforced the understanding of programming and simulation of Boolean functions in digital environments.
+\section{Conclusion}
+This laboratory practice allowed for the analysis, simulation, and implementation of four fundamental digital circuits: half-subtractor, 2:1 multiplexer, 1$\to$2 demultiplexer, and 1-bit magnitude comparator. By comparing theoretical results, simulations in EDA Playground, and physical verification on the Basys 3 board, it was confirmed that all circuits functioned according to the intended designs.
+The analysis of truth tables enabled a clear understanding of each circuit's logical behavior, while digital simulation validated the correct VHDL implementation, showing clean transitions and the absence of timing errors or interference. The Basys 3 implementation demonstrated the fidelity of the design by physically reproducing the expected operations using switches and LEDs, confirming the circuits’ stability and accuracy.
+In conclusion, this practice reinforced the understanding of fundamental digital logic principles, the importance of verification through simulation, and the relevance of physical implementation to validate theoretical designs. Additionally, it strengthened skills in using digital design tools, such as EDA Playground and FPGA boards, which are essential for developing reliable and efficient digital systems.
 %%%%%%% Bibliografía %%%%%%%%
 \clearpage %Asegura que la bibliografía inicie en una nueva página
 \bibliographystyle{bst/IEEEtran} %Estilo de bibliografía NO MODIFICAR PARA MANTENER FORMATO
