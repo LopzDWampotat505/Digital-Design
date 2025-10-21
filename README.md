@@ -11,18 +11,15 @@ The primary goal of this repository is to serve as an organized archive of all m
 The repository is organized by practice, with each lab having its own self-contained directory. The structure for a single lab report (e.g., "Report 1") is as follows:
 
 .
-└── 📁 Report 1
-    ├── 📁 Imagenes
+└── Report 1/
+    ├── Imagenes/
     │   └── waveform.png
-    ├── 📁 bib
+    ├── bib/
     │   └── references.bib
-    ├── 📁 codigos
+    ├── codigos/
     │   └── design.vhd
-    ├── 📄 main.tex
-    └── 📄 main.pdf
-└── 📁 Report 2
-    └── ... (similar structure)
-
+    ├── main.tex
+    └── main.pdf
 
 
 Report X/: The main folder for each lab practice.
