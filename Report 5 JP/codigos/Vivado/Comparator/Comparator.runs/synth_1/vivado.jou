@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 15 10:53:38 2025
+# Process ID: 22260
+# Current directory: C:/Users/183339/Downloads/WED_15_10/WED_15_10.runs/synth_1
+# Command line: vivado.exe -log ent_comp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ent_comp.tcl
+# Log file: C:/Users/183339/Downloads/WED_15_10/WED_15_10.runs/synth_1/ent_comp.vds
+# Journal file: C:/Users/183339/Downloads/WED_15_10/WED_15_10.runs/synth_1\vivado.jou
+# Running On: PCCN112-02, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 137044 MB
+#-----------------------------------------------------------
+source ent_comp.tcl -notrace
