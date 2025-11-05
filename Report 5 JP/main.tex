@@ -1,9 +1,10 @@
 \documentclass{article}
 \usepackage[english,activeacute]{babel}
 \usepackage{listings}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsfonts,amssymb,amstext,amsthm,amscd}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{here} %usar el comandao[H] Para fijar la posición de las imágenes
 \usepackage{multicol}
 \graphicspath{{Imagenes/}}
@@ -15,7 +16,7 @@
 \pagestyle{fancyplain}
 \fancyhead[R]{LRT2022 Digital design}
 \fancyhead[C]{}
-\fancyhead[L]{Fall 2024}
+\fancyhead[L]{Fall 2025}
 \fancyfoot[L]{}
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{}
@@ -31,13 +32,14 @@
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------
 %Titulo y autor
 \author{}% No llenar, el documento debe ser anónimo..
-\title{Individual assignment}
+\title{Report 5: Combinational Logic Circuits (Individual Assignment)}% Escriba el título del informe
 \date{LMT}%Escriba su carrera
 \maketitle
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Escribir resumen 150-200 palabras
 \begin{abstract}
-Este es el abstract.              
+During this practice, the development of combinational circuits using VHDL was carried out, with the purpose of learning
+to develop and simulate the functionality of these circuits, but also as a way to begin to develop circuits with a specific application in mind.
 \end{abstract}
 
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -87,6 +89,7 @@ Finally, the physical implementation of the circuits was carried out on the Basy
 \end{enumerate}
 
 \section{Results}\label{Results}
+
 \subsection{Rock Paper Scissors Game}\label{R,P,S Game}
 For the rock, paper, scissors game, the program was thougt out to have two players and a begin button, 
 where each player could flip switches to select their choce. And once the play switch was raised, leds would light up to indicate
@@ -165,26 +168,171 @@ And the simulation on EDA Waves was generated as follows:
 And finally, the circuit was implemented on the Basys 3 board, obtaining the following results:
 \begin{figure}[H]
   \centering
-  \includegraphics[width = 0.5\textwidth]{AWIN.jpg}
+  \includegraphics[width = 0.3\textwidth]{AWIN.jpg}
   \caption{Basys 3 Board Implementation for Rock Paper Scissors Game, A Wins}
   \label{fig:AWIN}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width = 0.5\textwidth]{BWIN.jpg}
+  \includegraphics[width = 0.3\textwidth]{BWIN.jpg}
   \caption{Basys 3 Board Implementation for Rock Paper Scissors Game, B Wins}
   \label{fig:bwin}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width = 0.5\textwidth]{TIE.jpg}
+  \includegraphics[width = 0.3\textwidth]{TIE.jpg}
   \caption{Basys 3 Board Implementation for Rock Paper Scissors Game, Tie}
   \label{fig:tie}
 \end{figure}
 
+\subsection{Water Pump}\label{Cisterna}
+For the water pump program, the objective was to design a combinational system capable of controlling the filling of a water tank through a
+hydraulic system composed of a tank, a motor, and a cistern.
+The system has four level sensors, two called A and B, corresponding to the water tank’s
+high and low levels. Another two, C and D, correspond to the high and low levels of the
+cistern.
+The sensors are equal to zero when no liquid is present and equal to one when there is.
+An output M is required to activate the motor of a pump, with which the water will be
+taken from the cistern to the tank.
+The system should turn on the motor (M = 1) only when the cistern is not empty and the
+tank is not full of water. For this circuit, the simplified boolean expression obtained was:\\
+\begin{equation}
+  \mathbf{M} = \neg A \cdot D
+\end{equation}
 
+And based on these truth tables, a code was generated in VHDL to simulate and implement the circuit. The code is shown below:
+\lstinputlisting[language=VHDL, caption=VHDL Code for Water Pump Program, label=lst:vhdl_juego]{codigos/VHDL/Cisterna/design.vhd}
+From which, the following testbench was created to verify the functionality of the code:
+\lstinputlisting[language=VHDL, caption=VHDL Testbench for Water Pump Program, label=lst:vhdl_tb_juego]{codigos/VHDL/Cisterna/testbench.vhd}
+And the simulation on EDA Waves was generated as follows:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{Cis.png}
+	\caption{EDA Waves Simulation for Water Pump Program}
+	\label{fig:lab_cis_eda}
+\end{figure}
+And finally, the circuit was implemented on the Basys 3 board, obtaining the following results:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.3\textwidth]{ONCIS1.jpg}
+  \caption{Basys 3 Board Implementation for Water Pump Program, On Condition 1}
+  \label{fig:CISCOND1}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.3\textwidth]{ONCIS2.jpg}
+  \caption{Basys 3 Board Implementation for Water Pump Program, On Condition 2}
+  \label{fig:CISCOND2}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.3\textwidth]{OFFCIS.jpg}
+  \caption{Basys 3 Board Implementation for Water Pump Program, Off Condition}
+  \label{fig:CISOFF}
+\end{figure}
 
+\subsection{Coin detector}\label{Monedas}
+Lastly for the coin detector circuit, the objective was to design a combinational circuit to detect which types of coins are inserted into a vending
+machine. Accepted coins are  \$1 (UP), \$5 (CP), and \$10 (DP).
+Three photocells are placed conveniently so that the \$1 coin only covers photocell C; the
+\$5 coin covers photocells B and C; and the \$10 coin covers the three photocells A, B, and
+C.
+The system consists of three inputs, A, B, and C, which take the value of 1 when a coin is
+present and 0 when there is no coin in that photocell. It is convenient to include a fourth
+output M that takes the value of 1 when an unexpected input combination occurs.  For this circuit, the truth table obtained was:\\
 
+\begin{table}[H]
+\centering
+\begin{tabular}{|c c c | c c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Inputs}} & \multicolumn{2}{c|}{\textbf{Outputs}} \\
+\hline
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{\texttt{MON}} & \textbf{Case From Code} \\
+\hline
+0 & 0 & 0 & \textbf{"000"} & \texttt{when "000"} \\
+1 & 0 & 0 & \textbf{"100"} & \texttt{when "100"} \\
+1 & 1 & 0 & \textbf{"010"} & \texttt{when "110"} \\
+1 & 1 & 1 & \textbf{"001"} & \texttt{when "111"} \\ \hline
+\multicolumn{3}{|c|}{\text{All Others}} & \textbf{"111"} & \texttt{when others} \\ \hline
+\end{tabular}
+\caption{Simplified Truth Table for ent\_mon}
+\label{tab:Money truth_table}
+\end{table}
+
+And based on these truth tables, a code was generated in VHDL to simulate and implement the circuit. The code is shown below:
+\lstinputlisting[language=VHDL, caption=VHDL Code for Water Pump Program, label=lst:vhdl_juego]{codigos/VHDL/Monedas/design.vhd}
+From which, the following testbench was created to verify the functionality of the code:
+\lstinputlisting[language=VHDL, caption=VHDL Testbench for Water Pump Program, label=lst:vhdl_tb_juego]{codigos/VHDL/Monedas/testbench.vhd}
+And the simulation on EDA Waves was generated as follows:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{mon.png}
+	\caption{EDA Waves Simulation for Coin Detector Program}
+	\label{fig:lab_mon_eda}
+\end{figure}
+And finally, the circuit was implemented on the Basys 3 board, obtaining the following results:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.3\textwidth]{1coin.jpg}
+  \caption{Basys 3 Board Implementation for Coin Detector Program, \$1 Coin Detected}
+  \label{fig:1_coin}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.3\textwidth]{5coin.jpg}
+  \caption{Basys 3 Board Implementation for Coin Detector Program, \$5 Coin Detected}
+  \label{fig:5_coin}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.3\textwidth]{10 coin.jpg}
+  \caption{Basys 3 Board Implementation for Coin Detector Program, \$10 Coin Detected}
+  \label{fig:10_coin}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.3\textwidth]{error.jpg}
+
+  \caption{Basys 3 Board Implementation for Coin Detector Program, Error Condition}
+  \label{fig:ERROR}
+\end{figure}
+
+\section{Analysis of Results}\label{Analysis}
+In this laboratory practice, three combinational logic circuits were designed and verified: a Rock Paper Scissors game, a Water Pump controller, and a Coin Detector. The analysis followed the three main phases outlined in the methodology: logical analysis based on functional requirements and truth tables, VHDL simulation in EDA Playground, and physical implementation and testing on the Basys 3 board. The observed behavior in each phase is described in detail below.
+
+\subsection{Rock Paper Scissors Game}
+\subsubsection{Logical Analysis}
+The logic for the game was defined by five inputs: a "play" button (\texttt{PB}) and two-bit inputs for Player A (\texttt{JAA}, \texttt{JAB}) and Player B (\texttt{JBA}, \texttt{JBB}). The system generates three mutually exclusive outputs: Player A wins (\texttt{GJA}), Player B wins (\texttt{GJB}), and Tie (\texttt{E}). As detailed in the truth tables (Tables \ref{tab:vhdl_juego_inputs} and \ref{tab:vhdl_juego_outputs}), the outputs are only processed when the \texttt{PB} input is high. The logic correctly maps the game's rules: \texttt{GJA} is '1' when Player A's combination beats Player B's (e.g., Paper vs. Rock), \texttt{GJB} is '1' for the reverse, and \texttt{E} is '1' when both player inputs are identical (a draw). When \texttt{PB} is low, all outputs remain '0'.
+
+\subsubsection{EDA Playground Analysis}
+The simulation waveforms, shown in Figure \ref{fig:lab_ppt_eda}, were analyzed using the testbench from Listing \ref{lst:vhdl_tb_juego}. The testbench systematically cycled through various input combinations. The output vector (\texttt{SAL}) responded exactly as predicted by the truth tables. For instance, when Player A and Player B inputs were identical and \texttt{PB} was high, the \texttt{E} (tie) bit activated. When Player A's input represented a winning move against Player B, \texttt{GJA} activated. The transitions were clean and occurred without interference, validating the VHDL logic in Listing \ref{lst:vhdl_juego}.
+
+\subsubsection{Basys 3 Implementation}
+On the Basys 3 board, switches were employed to represent the player inputs and the \texttt{PB} signal. Three distinct LEDs were assigned to the \texttt{GJA}, \texttt{GJB}, and \texttt{E} outputs. Physical testing confirmed the simulation results perfectly. As shown in Figure \ref{fig:AWIN}, setting Player A to a winning combination and activating 'play' illuminated the \texttt{GJA} LED. Figure \ref{fig:bwin} demonstrates a win for Player B, and Figure \ref{fig:tie} shows the \texttt{E} LED active during a draw. The physical behavior was immediate and fully matched the theoretical design.
+
+\subsection{Water Pump}
+\subsubsection{Logical Analysis}
+The water pump system is controlled by four sensors: tank high (\texttt{A}), tank low (\texttt{B}), cistern high (\texttt{C}), and cistern low (\texttt{D}). A single output \texttt{M} activates the motor. The primary requirement is to activate the motor (\texttt{M = 1}) only when the cistern is not empty AND the tank is not full. The "cistern not empty" condition is met when sensor \texttt{D} is active (\texttt{D=1}), as it detects water at the low level. The "tank not full" condition is met when sensor \texttt{A} is inactive (\texttt{A=0}). This leads to the simplified Boolean expression $\mathbf{M} = \neg A \cdot D$, as shown in Equation (1). This demonstrates that the states of sensors \texttt{B} and \texttt{C} are "don't care" conditions for the motor's activation logic.
+
+\subsubsection{EDA Playground Analysis}
+The simulation in EDA Playground (Figure \ref{fig:lab_cis_eda}) was performed using the VHDL code that directly implements the simplified equation $\mathbf{M} = \neg A \cdot D$. The testbench (Listing \ref{lst:vhdl_tb_juego}) iterated through all 16 possible states of the four sensors. The resulting waveforms confirmed that the output \texttt{M} was high *only* during the time intervals when \texttt{A='0'} and \texttt{D='1'}. For all other 14 combinations (e.g., \texttt{A='1'} or \texttt{D='0'}), the motor output \texttt{M} remained low, precisely validating the VHDL implementation.
+
+\subsubsection{Basys 3 Implementation}
+For physical implementation, four switches represented sensors \texttt{A}, \texttt{B}, \texttt{C}, and \texttt{D}, while a single LED represented the motor \texttt{M}. The physical tests corroborated the logical analysis. Figures \ref{fig:CISCOND1} and \ref{fig:CISCOND2} show the two valid "ON" conditions ($\neg A \cdot D$), where the \texttt{M} LED is illuminated. Figure \ref{fig:CISOFF} shows one of the many "OFF" conditions (in this case, \texttt{A='1'}, representing a full tank). The immediate response of the LED to the switch positions was in complete agreement with the simulation and the derived Boolean function.
+
+\subsection{Coin detector}
+\subsubsection{Logical Analysis}
+The coin detector identifies three valid coin types based on inputs from three photocells: \texttt{A}, \texttt{B}, and \texttt{C}. The system outputs indicate the specific coin or an error state. As per the problem description, a \$1 coin activates only \texttt{C} (input "001"). A \$5 coin activates \texttt{B} and \texttt{C} (input "011"). A \$10 coin activates all three, \texttt{A}, \texttt{B}, and \texttt{C} (input "111"). The "000" input signifies no coin. Any other combination (e.g., "100", "010", "110") is an invalid or unexpected physical state and triggers the error output (defined as "111" in the VHDL code). This logic ensures that only physically possible combinations of sensors are recognized as valid coins.
+
+\subsubsection{EDA Playground Analysis}
+The simulation waveforms in Figure \ref{fig:lab_mon_eda} verify the correct logical behavior. The testbench cycled through all 8 possible input combinations for \texttt{A}, \texttt{B}, and \texttt{C}. As expected, the input "001" (representing the \$1 coin) produced the corresponding unique output ("100"). The input "011" (\$5 coin) and "111" (\$10 coin) likewise triggered their unique outputs ("010" and "001", respectively). Crucially, all other invalid combinations, such as "100", correctly activated the error state ("111"), validating the robustness of the VHDL design against unexpected inputs.
+
+\subsubsection{Basys 3 Implementation}
+Physical implementation on the Basys 3 board used three switches for inputs \texttt{A}, \texttt{B}, and \texttt{C}, and three LEDs to display the output \texttt{MON}. The results precisely mirrored the simulation. Figure \ref{fig:1_coin} shows the \$1 coin state (input "001") activating the first LED. Figure \ref{fig:5_coin} shows the \$5 coin state (input "011") activating the second LED. Figure \ref{fig:10_coin} shows the \$10 coin state (input "111") activating the third LED. Furthermore, Figure \ref{fig:ERROR} demonstrates an invalid input combination ("010") correctly activating all three LEDs, signaling the error condition. This complete agreement between the physical test and the simulation confirms a successful synthesis.
+
+\section{Conclusions}\label{Conclusion}
+It is now safe to say that the goals were met after this practice was developed.  A structured method that included logical analysis, VHDL simulation, and physical testing on the Basys 3 board was used to successfully design and build combinational logic circuits. 
+ The truth tables, simulation waveforms, and real-world operation all showed that each circuit (the Rock Paper Scissors game, the Water Pump controller, and the Coin Detector) worked properly.
 % Bibliografía 
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------
 \bibliographystyle{bst/IEEEtran} %Estilo de bibliografía NO MODIFICAR PARA MANTENER FORMATO

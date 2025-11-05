@@ -1,6 +1,6 @@
-PWD c:\Users\juanp\OneDrive\Documentos\GitHub\Digital-Design\Report 5
+PWD c:\Users\juanp\OneDrive\Documentos\GitHub\Digital-Design\Report 5 JP
 INPUT C:\Users\juanp\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\juanp\OneDrive\Documentos\GitHub\Digital-Design\Report 5\main.tex
+INPUT c:\Users\juanp\OneDrive\Documentos\GitHub\Digital-Design\Report 5 JP\main.tex
 OUTPUT main.log
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -35,9 +35,6 @@ INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.c
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\latin1.def
-INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\latin1.def
-INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\base\latin1.def
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
@@ -68,10 +65,10 @@ INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphi
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\here\here.sty
-INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\here\here.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\here\here.sty
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\here\here.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\tools\multicol.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\tools\multicol.sty
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
@@ -180,6 +177,74 @@ INPUT .\Imagenes\TIE.jpg
 INPUT .\Imagenes\TIE.jpg
 INPUT .\Imagenes\TIE.jpg
 INPUT .\Imagenes\TIE.jpg
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT .\codigos\VHDL\Cisterna\design.vhd
+INPUT .\codigos\VHDL\Cisterna\design.vhd
+INPUT codigos\VHDL\Cisterna\design.vhd
+INPUT .\codigos\VHDL\Cisterna\testbench.vhd
+INPUT .\codigos\VHDL\Cisterna\testbench.vhd
+INPUT codigos\VHDL\Cisterna\testbench.vhd
+INPUT .\Imagenes\Cis.png
+INPUT .\Imagenes\Cis.png
+INPUT .\Imagenes\Cis.png
+INPUT .\Imagenes\Cis.png
+INPUT .\Imagenes\Cis.png
+INPUT .\Imagenes\Cis.png
+INPUT .\Imagenes\ONCIS1.jpg
+INPUT .\Imagenes\ONCIS1.jpg
+INPUT .\Imagenes\ONCIS1.jpg
+INPUT .\Imagenes\ONCIS1.jpg
+INPUT .\Imagenes\ONCIS1.jpg
+INPUT .\Imagenes\ONCIS1.jpg
+INPUT .\Imagenes\ONCIS2.jpg
+INPUT .\Imagenes\ONCIS2.jpg
+INPUT .\Imagenes\ONCIS2.jpg
+INPUT .\Imagenes\ONCIS2.jpg
+INPUT .\Imagenes\ONCIS2.jpg
+INPUT .\Imagenes\ONCIS2.jpg
+INPUT .\Imagenes\OFFCIS.jpg
+INPUT .\Imagenes\OFFCIS.jpg
+INPUT .\Imagenes\OFFCIS.jpg
+INPUT .\Imagenes\OFFCIS.jpg
+INPUT .\Imagenes\OFFCIS.jpg
+INPUT .\Imagenes\OFFCIS.jpg
+INPUT .\codigos\VHDL\Monedas\design.vhd
+INPUT .\codigos\VHDL\Monedas\design.vhd
+INPUT codigos\VHDL\Monedas\design.vhd
+INPUT .\codigos\VHDL\Monedas\testbench.vhd
+INPUT .\codigos\VHDL\Monedas\testbench.vhd
+INPUT codigos\VHDL\Monedas\testbench.vhd
+INPUT .\Imagenes\mon.png
+INPUT .\Imagenes\mon.png
+INPUT .\Imagenes\mon.png
+INPUT .\Imagenes\mon.png
+INPUT .\Imagenes\mon.png
+INPUT .\Imagenes\mon.png
+INPUT .\Imagenes\1coin.jpg
+INPUT .\Imagenes\1coin.jpg
+INPUT .\Imagenes\1coin.jpg
+INPUT .\Imagenes\1coin.jpg
+INPUT .\Imagenes\1coin.jpg
+INPUT .\Imagenes\1coin.jpg
+INPUT .\Imagenes\5coin.jpg
+INPUT .\Imagenes\5coin.jpg
+INPUT .\Imagenes\5coin.jpg
+INPUT .\Imagenes\5coin.jpg
+INPUT .\Imagenes\5coin.jpg
+INPUT .\Imagenes\5coin.jpg
+INPUT .\Imagenes\10 coin.jpg
+INPUT .\Imagenes\10 coin.jpg
+INPUT .\Imagenes\10 coin.jpg
+INPUT .\Imagenes\10 coin.jpg
+INPUT .\Imagenes\10 coin.jpg
+INPUT .\Imagenes\10 coin.jpg
+INPUT .\Imagenes\error.jpg
+INPUT .\Imagenes\error.jpg
+INPUT .\Imagenes\error.jpg
+INPUT .\Imagenes\error.jpg
+INPUT .\Imagenes\error.jpg
+INPUT .\Imagenes\error.jpg
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
@@ -204,6 +269,8 @@ INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\juanp\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
