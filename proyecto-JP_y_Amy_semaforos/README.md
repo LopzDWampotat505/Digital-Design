@@ -114,19 +114,14 @@ Para Ultimaker:
 
 **Paso 3:** Hacer pruebas básicas sobre el funcionamiento de los sistemas, una vez conectados a la FPGA 
 
-<video controls muted width="600">
-    <source src="media/videos/Pruebas_iniciales.mp4" type="video/mp4">
-    Lo sentimos, el video no pudo ser cargado.
-</video>
+<img src="media/videos/Pruebas_iniciales.gif" width="400" alt="Pruebas iniciales">
 
 **Paso 4:** Revisar para errores en hardware y software (debugging)
 
 **Paso 5:** Hacer el armado básico de las carcasas de los sistemas y volver a probar para encontrar fallas o errores
 
-<video controls muted width="600">
-    <source src="media/videos/Pruebas_carcasa.mp4" type="video/mp4">
-    Lo sentimos, el video no pudo ser cargado.
-</video>
+<img src="media/videos/Pruebas_carcasa.gif" width="400" alt="Pruebas iniciales">
+
 
 **Paso 6:** Hacer la instalación general para revisar tamaño de cables y planear organización
 
@@ -138,10 +133,7 @@ Para Ultimaker:
 
 **Paso 8:** Realizar ensamble final y hacer la prueba de funcionalidad completa
 
-<video controls muted width="600">
-    <source src="media/videos/Final.mp4" type="video/mp4">
-    Lo sentimos, el video no pudo ser cargado.
-</video>
+<img src="media/videos/Final.gif" width="400" alt="Pruebas iniciales">
 
 **Paso FINAL** Presentarselo a tu profesor
 
