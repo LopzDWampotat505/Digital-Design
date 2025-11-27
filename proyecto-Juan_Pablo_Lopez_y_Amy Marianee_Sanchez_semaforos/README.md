@@ -7,7 +7,9 @@
 
 
 Prueba
-![Semáforo Calzada Zavaleta](.../media/images/semaforo_zavaleta.png)
+---
+
+![Semáforo Calzada Zavaleta](proyecto-Juan_Pablo_Lopez_y_Amy Marianee_Sanchez_semaforos/media/images/semaforo_zavaleta.png)
 
 
 
