@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Nov 26 17:15:29 2025
+# Process ID: 40640
+# Current directory: C:/Users/183339/Downloads/Flip_flop_t/Flip_flop_t.runs/impl_1
+# Command line: vivado.exe -log t_flipflop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source t_flipflop.tcl -notrace
+# Log file: C:/Users/183339/Downloads/Flip_flop_t/Flip_flop_t.runs/impl_1/t_flipflop.vdi
+# Journal file: C:/Users/183339/Downloads/Flip_flop_t/Flip_flop_t.runs/impl_1\vivado.jou
+# Running On: PCCN111-06, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 68333 MB
+#-----------------------------------------------------------
+source t_flipflop.tcl -notrace

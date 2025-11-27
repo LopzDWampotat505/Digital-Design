@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Nov 26 17:15:57 2025
+| Host         : PCCN111-06 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file t_flipflop_methodology_drc_routed.rpt -pb t_flipflop_methodology_drc_routed.pb -rpx t_flipflop_methodology_drc_routed.rpx
+| Design       : t_flipflop
+| Device       : xc7a35tlcpg236-2L
+| Speed File   : -2L
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++-----------+------------------+---------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                             | Violations |
++-----------+------------------+---------------------------------------------------------+------------+
+| TIMING-14 | Critical Warning | LUT on the clock tree                                   | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                           | 1          |
+| TIMING-50 | Warning          | Unrealistic path requirement between same-level latches | 1          |
+| LATCH-1   | Advisory         | Existing latches in the design                          | 1          |
++-----------+------------------+---------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-14#1 Critical Warning
+LUT on the clock tree  
+The LUT q_int_reg_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on q relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-50#1 Warning
+Unrealistic path requirement between same-level latches  
+There is a timing paths between the source pin q_int_reg/G and the destination pin q_int_reg/D. The two latches are positive level-sensitive with a 0ns path requirement. The 0ns path requirement is coming from the conservative latch analysis and could severely impact the runtime due to time borrowing calculation. It is not recommended to have such topology unless there is a multicycle path constraint to adjust the path requirement to a realistic value (at least half clock period).
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 1 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+
