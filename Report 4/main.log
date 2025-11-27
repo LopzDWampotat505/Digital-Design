@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.21)  21 OCT 2025 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.21)  21 OCT 2025 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,24 +477,24 @@ l.156 \end{itemize}
                     [1]
 
 [2]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 193.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 217.
  (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 193.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 217.
  (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\juanp\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 210.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 234.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 210--210
+Overfull \hbox (6.0pt too wide) in paragraph at lines 234--234
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 210--210
+Overfull \hbox (6.0pt too wide) in paragraph at lines 234--234
 [][][][][][][] 
  []
 
@@ -508,47 +508,47 @@ File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 21.
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 212--212
+Overfull \hbox (6.0pt too wide) in paragraph at lines 236--236
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 212--212
+Overfull \hbox (6.0pt too wide) in paragraph at lines 236--236
 [][][][][][][] 
  []
 
 (codigos/VHDL/Half/testbench.vhd
 
 [4])
-<Imagenes/Half Wave.png, id=225, 1400.98407pt x 126.4725pt>
+<Imagenes/Half Wave.png, id=216, 1400.98407pt x 126.4725pt>
 File: Imagenes/Half Wave.png Graphic file (type png)
 <use Imagenes/Half Wave.png>
-Package pdftex.def Info: Imagenes/Half Wave.png  used on input line 217.
+Package pdftex.def Info: Imagenes/Half Wave.png  used on input line 241.
 (pdftex.def)             Requested size: 483.69687pt x 43.66393pt.
-<Imagenes/HalfBasys3.jpg, id=227, 1606.0pt x 1204.5pt>
+<Imagenes/HalfBasys3.jpg, id=218, 1606.0pt x 1204.5pt>
 File: Imagenes/HalfBasys3.jpg Graphic file (type jpg)
 <use Imagenes/HalfBasys3.jpg>
-Package pdftex.def Info: Imagenes/HalfBasys3.jpg  used on input line 224.
+Package pdftex.def Info: Imagenes/HalfBasys3.jpg  used on input line 248.
 (pdftex.def)             Requested size: 193.47578pt x 145.10352pt.
 
 
 [5 <./Imagenes/Half Wave.png> <./Imagenes/HalfBasys3.jpg>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 255--255
+Overfull \hbox (6.0pt too wide) in paragraph at lines 279--279
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 255--255
+Overfull \hbox (6.0pt too wide) in paragraph at lines 279--279
 [][][][][][][] 
  []
 
 (codigos/VHDL/Mult/design.vhd)
-Overfull \hbox (6.0pt too wide) in paragraph at lines 257--257
+Overfull \hbox (6.0pt too wide) in paragraph at lines 281--281
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 257--257
+Overfull \hbox (6.0pt too wide) in paragraph at lines 281--281
 [][][][][][][] 
  []
 
@@ -557,120 +557,122 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 257--257
 [6]
 
 [7])
-<Imagenes/Mult Wave.png, id=336, 1395.71437pt x 119.69719pt>
+<Imagenes/Mult Wave.png, id=327, 1395.71437pt x 119.69719pt>
 File: Imagenes/Mult Wave.png Graphic file (type png)
 <use Imagenes/Mult Wave.png>
-Package pdftex.def Info: Imagenes/Mult Wave.png  used on input line 262.
+Package pdftex.def Info: Imagenes/Mult Wave.png  used on input line 286.
 (pdftex.def)             Requested size: 483.69687pt x 41.48186pt.
-<Imagenes/MultBasys3.jpg, id=337, 1606.0pt x 1204.5pt>
+<Imagenes/MultBasys3.jpg, id=328, 1606.0pt x 1204.5pt>
 File: Imagenes/MultBasys3.jpg Graphic file (type jpg)
 <use Imagenes/MultBasys3.jpg>
-Package pdftex.def Info: Imagenes/MultBasys3.jpg  used on input line 269.
+Package pdftex.def Info: Imagenes/MultBasys3.jpg  used on input line 293.
 (pdftex.def)             Requested size: 193.47578pt x 145.10352pt.
 
 
 [8 <./Imagenes/Mult Wave.png>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 296--296
+Overfull \hbox (6.0pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 296--296
+Overfull \hbox (6.0pt too wide) in paragraph at lines 320--320
 [][][][][][][] 
  []
 
 (codigos/VHDL/Demult/design.vhd
 
 [9 <./Imagenes/MultBasys3.jpg>])
-Overfull \hbox (6.0pt too wide) in paragraph at lines 298--298
+Overfull \hbox (6.0pt too wide) in paragraph at lines 322--322
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 298--298
+Overfull \hbox (6.0pt too wide) in paragraph at lines 322--322
 [][][][][][][] 
  []
 
 (codigos/VHDL/Demult/testbench.vhd
 
 [10])
-<Imagenes/Demult Wave.png, id=440, 1396.4672pt x 118.19156pt>
+<Imagenes/Demult Wave.png, id=431, 1396.4672pt x 118.19156pt>
 File: Imagenes/Demult Wave.png Graphic file (type png)
 <use Imagenes/Demult Wave.png>
-Package pdftex.def Info: Imagenes/Demult Wave.png  used on input line 303.
+Package pdftex.def Info: Imagenes/Demult Wave.png  used on input line 327.
 (pdftex.def)             Requested size: 483.69687pt x 40.93843pt.
-<Imagenes/DemultBasys3.jpg, id=441, 1606.0pt x 1204.5pt>
+<Imagenes/DemultBasys3.jpg, id=432, 1606.0pt x 1204.5pt>
 File: Imagenes/DemultBasys3.jpg Graphic file (type jpg)
 <use Imagenes/DemultBasys3.jpg>
-Package pdftex.def Info: Imagenes/DemultBasys3.jpg  used on input line 310.
+Package pdftex.def Info: Imagenes/DemultBasys3.jpg  used on input line 334.
 (pdftex.def)             Requested size: 193.47578pt x 145.10352pt.
 
 
 [11 <./Imagenes/Demult Wave.png> <./Imagenes/DemultBasys3.jpg>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 336--336
+Overfull \hbox (6.0pt too wide) in paragraph at lines 360--360
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 336--336
+Overfull \hbox (6.0pt too wide) in paragraph at lines 360--360
 [][][][][][][] 
  []
 
 (codigos/VHDL/Comp/design.vhd)
-Overfull \hbox (6.0pt too wide) in paragraph at lines 338--338
+Overfull \hbox (6.0pt too wide) in paragraph at lines 362--362
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 338--338
+Overfull \hbox (6.0pt too wide) in paragraph at lines 362--362
 [][][][][][][] 
  []
 
 (codigos/VHDL/Comp/testbench.vhd
 
 [12])
-<Imagenes/Comp Wave.png, id=500, 1394.20876pt x 146.04562pt>
+<Imagenes/Comp Wave.png, id=491, 1394.20876pt x 146.04562pt>
 File: Imagenes/Comp Wave.png Graphic file (type png)
 <use Imagenes/Comp Wave.png>
-Package pdftex.def Info: Imagenes/Comp Wave.png  used on input line 343.
+Package pdftex.def Info: Imagenes/Comp Wave.png  used on input line 367.
 (pdftex.def)             Requested size: 483.69687pt x 50.66656pt.
 
 
 [13]
-<Imagenes/CompBasys3.jpg, id=548, 1606.0pt x 1204.5pt>
+<Imagenes/CompBasys3.jpg, id=539, 1606.0pt x 1204.5pt>
 File: Imagenes/CompBasys3.jpg Graphic file (type jpg)
 <use Imagenes/CompBasys3.jpg>
-Package pdftex.def Info: Imagenes/CompBasys3.jpg  used on input line 350.
+Package pdftex.def Info: Imagenes/CompBasys3.jpg  used on input line 374.
 (pdftex.def)             Requested size: 193.47578pt x 145.10352pt.
 
 
 [14 <./Imagenes/Comp Wave.png> <./Imagenes/CompBasys3.jpg>]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\to' on input line 380.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
-
-
-
 [15]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 469.
+
+
 
 [16]
 
-[17] (main.bbl
+[17]
+
+[18] (main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 31--34
 []\OT1/cmr/m/n/12 Intel Cor-po-ra-tion, ``Vhdl def-i-ni-tion,'' [][]$https : / / www . intel . com / content / www / us / en /
  []
 
 )
 
-[18
+[19
 
 ] (main.aux)
  ***********
@@ -682,20 +684,20 @@ L3 programming layer <2025-09-02>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 62ED86EC0B9AF4BC4BB5A8D82F0EEDDB;4648.
+(rerunfilecheck)             Checksum: 8A334DA24D30F1427F4F18819A948D26;5024.
  ) 
 Here is how much of TeX's memory you used:
- 15879 strings out of 468081
- 251976 string characters out of 5425788
- 874114 words of memory out of 5000000
- 43930 multiletter control sequences out of 15000+600000
+ 15873 strings out of 468081
+ 251911 string characters out of 5425788
+ 874082 words of memory out of 5000000
+ 43928 multiletter control sequences out of 15000+600000
  638924 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,672b,2122s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (19 pages, 1395253 bytes).
+ <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\juanp\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (20 pages, 1407862 bytes).
 PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 389 named destinations out of 1000 (max. 500000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 385 named destinations out of 1000 (max. 500000)
  286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

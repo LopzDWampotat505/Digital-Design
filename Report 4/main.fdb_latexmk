@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1761082389.53329 "main.aux" "main.bbl" "main" 1761082392.8716 0
+["bibtex main"] 1761085207.48772 "main.aux" "main.bbl" "main" 1761085212.89066 0
   "./bib/bibliografia.bib" 1761057605 6041 1dc17ad271e389c82ddd7d3a4d79471a ""
   "./bst/IEEEtran.bst" 1761057605 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1761082391 8916 436f4cf1da721134ceac044ab353a7ff "pdflatex"
+  "main.aux" 1761085211 9420 83c0b00416ccc68c7139d22ca4f3f922 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761082389.90288 "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" "main.pdf" "main" 1761082392.87314 0
+["pdflatex"] 1761085208.17976 "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" "main.pdf" "main" 1761085212.89232 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1761057982 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1761057991 14064 cb71bd0d4641a8d8fbaebe60490046fb ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1761057989 17172 07c379091c5273b7361bfdc86a196796 ""
@@ -43,6 +43,7 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1247596666 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -128,7 +129,7 @@
   "Imagenes/Mult Wave.png" 1761057605 7879 f84b0b90ea266b046a02ec7ef5956c96 ""
   "Imagenes/MultBasys3.jpg" 1761057605 244490 b8b1b1c9dcf21e7db152ab8bf42cbfee ""
   "Imagenes/UDLAP.eps" 1761057605 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" 1761082385 28538 31da11158ec21f03df0d92a817e2080f ""
+  "c:/Users/juanp/OneDrive/Documentos/Digital-Design/Report 4/main.tex" 1761085200 31475 aa22fdb0132886481aff47228728832b ""
   "codigos/VHDL/Comp/design.vhd" 1761057605 486 a608cc24222006944e4a1c1517b84e6a ""
   "codigos/VHDL/Comp/testbench.vhd" 1761057605 810 fa91b15f36546fc1ba40a53604991d32 ""
   "codigos/VHDL/Demult/design.vhd" 1761057605 432 c954a92c12ab31da07d42540804c6837 ""
@@ -137,10 +138,10 @@
   "codigos/VHDL/Half/testbench.vhd" 1761057605 735 08131fa0ca600bf242b0dd0145fbe0f9 ""
   "codigos/VHDL/Mult/design.vhd" 1761057605 404 6e364b7588d0be7a99d091b68aad4b9a ""
   "codigos/VHDL/Mult/testbench.vhd" 1761057605 1161 cbcd138faeb29b6f64b6056fef1352da ""
-  "main.aux" 1761082391 8916 436f4cf1da721134ceac044ab353a7ff "pdflatex"
-  "main.bbl" 1761082389 1619 c65c555b61540aaa1eb0ba08faff9abf "bibtex main"
-  "main.out" 1761082391 4648 62ed86ec0b9af4bc4bb5a8d82f0eeddb "pdflatex"
-  "main.tex" 1761082385 28538 31da11158ec21f03df0d92a817e2080f ""
+  "main.aux" 1761085211 9420 83c0b00416ccc68c7139d22ca4f3f922 "pdflatex"
+  "main.bbl" 1761085208 1619 c65c555b61540aaa1eb0ba08faff9abf "bibtex main"
+  "main.out" 1761085211 5024 8a334da24d30f1427f4f18819a948d26 "pdflatex"
+  "main.tex" 1761085200 31475 aa22fdb0132886481aff47228728832b ""
   (generated)
   "main.aux"
   "main.log"

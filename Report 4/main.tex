@@ -158,31 +158,55 @@ Of which, we must begin explaining combiantional logic circuits, which are very 
 VHDL, which has been used in previous labs, is a hardware description language that allows designers to describe the behavior and structure of digital systems. VHDL is widely used for designing FPGAs and ASICs (Application-Specific Integrated Circuits) due to its ability to model complex digital systems at various levels of abstraction.\cite{IntelVHDLDef}
 Finally,field programmable gate array (FPGA) is a versatile type of integrated circuit, which, unlike traditional logic devices such as application-specific integrated circuits (ASICs), is designed to be programmable (and often reprogrammable) to suit different purposes, notably high-performance computing (HPC) and prototyping.\cite{IBMFPGA} FPGA implementation involves programming the FPGA device with the designed VHDL code to realize the desired combinational logic circuit. This process includes synthesis, mapping, placement, and routing of the design onto the FPGA fabric. 
 \section{Methodology}
-The methodology applied in this laboratory practice was structured into three main phases: logical analysis, simulation in EDA Playground, and physical implementation on the Basys 3 board.
+The methodology applied in this laboratory practice was structured into
+three main phases: logical analysis, simulation in EDA Playground, and physical
+implementation on the Basys 3 board.
 
 \subsection{Logical Analysis Phase}
 During this first stage, the following activities were carried out:
-\begin{enumerate}
-    \item The truth tables corresponding to the half-subtractor, multiplexer, magnitude comparator, and demultiplexer circuits, all of one bit, were obtained.
-    \item Based on the truth tables, the corresponding Karnaugh maps were developed in order to simplify the Boolean expressions and obtain the minimal logical function for each circuit.
-    \item Finally, the obtained results were documented for use in the subsequent simulation and programming phases.
-\end{enumerate}
+\begin{itemize}
+    \item The truth
+        tables corresponding to the half-subtractor, multiplexer, magnitude
+        comparator, and demultiplexer circuits, all of one bit, were obtained.
+    \item Based on the
+        truth tables, the corresponding Karnaugh maps were developed in order to
+        simplify the Boolean expressions and obtain the minimal logical function
+        for each circuit.
+    \item Finally, the
+        obtained results were documented for use in the subsequent simulation and
+        programming phases.
+\end{itemize}
 
 \subsection{EDA Playground Simulation Phase}
-In the EDA Playground digital simulation environment, the following procedures were performed:
-\begin{enumerate}
-    \item The half-subtractor, multiplexer, magnitude comparator, and demultiplexer circuits were programmed using the VHDL language.
-    \item Testbenches were developed to verify the behavior of each circuit under all possible input combinations.
-    \item The results obtained from the simulations were analyzed and compared with the previously developed truth tables and simplified functions, ensuring the correct logical implementation of each design.
-\end{enumerate}
+In the EDA Playground digital simulation environment, the following
+procedures were performed:
+\begin{itemize}
+    \item The
+        half-subtractor, multiplexer, magnitude comparator, and demultiplexer
+        circuits were programmed using the VHDL language.
+    \item Testbenches
+        were developed to verify the behavior of each circuit under all possible
+        input combinations.
+    \item The results
+        obtained from the simulations were analyzed and compared with the
+        previously developed truth tables and simplified functions, ensuring the
+        correct logical implementation of each design.
+\end{itemize}
 
 \subsection{Basys 3 Board Implementation Phase}
-Finally, the physical implementation of the circuits was carried out on the Basys 3 board, following the steps described below:
-\begin{enumerate}
-    \item The code for each circuit was synthesized, and the corresponding bitstream files were generated.
-    \item Pin constraints (\texttt{.xdc} file) were assigned to map the logical signals to the physical components of the board (switches, LEDs, and displays).
-    \item The designs were loaded onto the Basys 3 board, verifying their correct operation through practical input and output tests.
-\end{enumerate}
+Finally, the physical implementation of the circuits was carried out on
+the Basys 3 board, following the steps described below:
+\begin{itemize}
+    \item The code for
+        each circuit was synthesized, and the corresponding bitstream files were
+        generated.
+    \item Pin constraints
+        (\texttt{.xdc} file) were assigned to map the logical signals to the physical
+        components of the board (switches, LEDs, and displays).
+    \item The designs
+        were loaded onto the Basys 3 board, verifying their correct operation
+        through practical input and output tests.
+\end{itemize}
 
 \section{Results} %Resultados obtenidos
 In this lab, the physical circuits were not built, but based on certain truth tables, EDAWaves were generated in order to accomplish every single combinational circuit given.:
@@ -351,54 +375,171 @@ Finally, the code was synthezised and implemented in the Basys 3 board, obtainin
   \caption{Evidence of the functioning of the Magnitud Comparator in the Basys 3 board.}
   \label{fig:schematic_2}
 \end{figure}
+
 \section{Analysis of Results}
-In this laboratory practice, four fundamental digital circuits were analyzed---half-subtractor, 2:1 multiplexer, 1$\to$2 demultiplexer, and 1-bit magnitude comparator---following three stages: logical analysis through truth tables, simulation in EDA Playground using VHDL, and practical verification on the Basys 3 board. The observed behavior in each phase is described in detail below.
+In this laboratory practice, four fundamental digital
+circuits were analyzed---half-subtractor, 2:1 multiplexer, 1$\to$2 demultiplexer, and
+1-bit magnitude comparator---following three stages: logical analysis through
+truth tables, simulation in EDA Playground using VHDL, and practical
+verification on the Basys 3 board. The observed behavior in each phase is
+described in detail below.
 
 \subsection{Half-Subtractor}
-\subsubsection{Truth Table Analysis}
-The half-subtractor possesses inputs $A$ (minuend) and $B$ (subtrahend) and generates two outputs: $R$, representing the logical difference ($A - B$), and $AC$, which indicates whether a borrow was required.
-When both inputs are zero, no difference or borrow occurs, and both outputs remain inactive. If $A = 0$ and $B = 1$, subtracting a larger number from a smaller one yields a difference ($R$) equal to one and activates the borrow ($AC = 1$), reflecting the necessity of borrowing from the higher-order bit. When $A = 1$ and $B = 0$, no borrow is required, and the difference equals one, activating only $R$. Finally, when $A = 1$ and $B = 1$, the inputs are equal, the subtraction results in zero, and no output is activated.
-The observed behavior confirms that $R$ functions as an XOR operation and $AC$ as an AND operation with inversion of the minuend.
+
+\subsubsection{Truth Table and Karnaugh Map Analysis}
+The half-subtractor possesses inputs $A$ (minuend) and $B$
+(subtrahend) and generates two outputs: $R$, representing the logical
+difference ($A-B$), and $AC$, which indicates whether a borrow was
+required. When both inputs are zero, no difference or borrow occurs, and both
+outputs remain inactive. If $A = 0$ and $B = 1$, subtracting a larger number from a
+smaller one yields a difference ($R$) equal to one and activates the borrow ($AC = 1$), 
+reflecting the necessity of borrowing from the higher-order bit. When $A = 1$
+and $B = 0$, no borrow is required, and the difference equals one, activating
+only $R$. Finally, when $A = 1$ and $B = 1$, the inputs are equal, the subtraction
+results in zero, and no output is activated. The observed behavior confirms
+that $R$ functions as an XOR operation and $AC$ as an AND operation with inversion
+of the minuend.
+
+\paragraph{Karnaugh Map Analysis:}
+To simplify and visualize the logical relationships, Karnaugh maps were
+constructed for both outputs.
+\begin{itemize}
+    \item For $R$, the map highlights active cells where $A$ and $B$
+        differ (01 and 10). These diagonally positioned ones simplify to the
+        Boolean expression $R = A \oplus B$, confirming that the result
+        corresponds to an XOR operation.
+    \item For $AC$, active cells appear only when $A = 0$ and $B = 1$.
+        This region directly simplifies to $AC = A'B$, representing the
+        borrow condition.
+\end{itemize}
+The Karnaugh maps thus provide a graphical confirmation of the theoretical
+analysis and demonstrate that the minimal expressions align with those
+implemented in the simulation and hardware stages.
 
 \subsubsection{EDA Playground Analysis}
-During simulation, the generated waveforms matched the expected values precisely. The $R$ output activated only when the inputs differed, while $AC$ activated exclusively when $A$ was less than $B$. State transitions occurred without delays or interference, validating the correct implementation of the logical equations in the VHDL code.
+During simulation, the generated waveforms matched the
+expected values precisely. The $R$ output activated only when the inputs
+differed, while $AC$ activated exclusively when $A$ was less than $B$. State
+transitions occurred without delays or interference, validating the correct
+implementation of the logical equations in the VHDL code.
 
 \subsubsection{Basys 3 Implementation}
-On the Basys 3 board, switches were employed to represent inputs $A$ and $B$, while LEDs displayed outputs $AC$ and $R$. Physical testing demonstrated that the LED corresponding to $R$ illuminated when the inputs differed, and $AC$ lit solely when subtracting 1 from 0. The observed behavior fully coincided with simulation and theoretical expectations, demonstrating correct and stable implementation.
+On the Basys 3 board, switches were employed to represent
+inputs $A$ and $B$, while LEDs displayed outputs $AC$ and $R$. Physical testing
+demonstrated that the LED corresponding to $R$ illuminated when the inputs
+differed, and $AC$ lit solely when subtracting 1 from 0. The observed behavior
+fully coincided with simulation and theoretical expectations, demonstrating
+correct and stable implementation.
 
 \subsection{2:1 Multiplexer}
-\subsubsection{Truth Table Analysis}
-The 2:1 multiplexer features three inputs: the selection signal $Se$ and data inputs $I1$ and $I0$. Its output, $out$, reflects the value of one of the two inputs depending on the state of $Se$.
-When $Se = 0$, the output adopts the value of $I0$, disregarding $I1$. Conversely, when $Se = 1$, the output assumes the value of $I1$. This behavior confirms that the output is solely dependent on the selector.
+
+\subsubsection{Truth Table and Karnaugh Map Analysis}
+The 2:1 multiplexer features three inputs: the selection
+signal $Se$ and data inputs $I1$ and $I0$.
+Its output, $Out$, reflects the value of one of the two inputs
+depending on the state of $Se$. When $Se = 0$, the output adopts the
+value of $I0$, disregarding $I1$. Conversely, when $Se = 1$, the output assumes the
+value of $I1$. This behavior confirms that the output is solely dependent on the
+selector.
+
+\paragraph{Karnaugh Map Analysis:}
+By representing the multiplexer’s output in a three-variable Karnaugh map ($Se$,
+$I1$, $I0$), the ones appear in regions where the output equals the selected input.
+The simplification process directly yields the canonical equation:
+$Out = (\neg Se \cdot I0) + (Se \cdot I1)$.
+
+This graphical verification reinforces that the circuit performs a controlled
+data selection based on the selector’s logic level, validating the expected
+multiplexing function.
 
 \subsubsection{EDA Playground Analysis}
-During simulation, the waveforms exhibited precise switching between data inputs as $Se$ varied. When the selector was low, the output followed $I0$; when high, it followed $I1$. No overshoots or indeterminate signals were observed, validating the correct VHDL implementation.
+During simulation, the waveforms exhibited precise
+switching between data inputs as $Se$ varied. When the selector was low, the
+output followed $I0$; when high, it followed $I1$. No overshoots or indeterminate
+signals were observed, validating the correct VHDL implementation.
 
 \subsubsection{Basys 3 Implementation}
-In the physical test, the board switches controlled $Se$, $I1$, and $I0$, and the LED displayed the output. The observed results aligned with theoretical expectations: with the selector at 0, the output reproduced $I0$; with the selector at 1, it reproduced $I1$. The response was immediate, without switching errors, confirming the accuracy of the logical design and proper pin assignment.
+In the physical test, the board switches controlled $Se$, $I1$,
+and $I0$, and the LED displayed the output. The observed results aligned with
+theoretical expectations: with the selector at 0, the output reproduced $I0$;
+with the selector at 1, it reproduced $I1$. The response was immediate, without
+switching errors, confirming the accuracy of the logical design and proper pin
+assignment.
 
 \subsection{1$\to$2 Demultiplexer}
-\subsubsection{Truth Table Analysis}
-The demultiplexer receives the selection signal $Se$ and data input $I0$, generating two outputs: $O1$ and $O0$.
-When $Se = 0$, the input data is directed exclusively to $O0$, while $O1$ remains low. When $Se = 1$, the signal is transferred to $O1$, and $O0$ is deactivated. This confirms that the circuit directs the input to a single active output based on the selector.
+
+\subsubsection{Truth Table and Karnaugh Map Analysis}
+The demultiplexer receives the selection signal $Se$ and
+data input $I0$, generating two outputs: $O1$ and $O0$.
+When $Se = 0$, the input data is directed exclusively to $O0$, while $O1$ remains
+low. When $Se = 1$, the signal is transferred to $O1$, and $O0$ is deactivated. This
+confirms that the circuit directs the input to a single active output based on
+the selector.
+
+\paragraph{Karnaugh Map Analysis:}
+Two separate Karnaugh maps were used for outputs $O0$ and $O1$.
+\begin{itemize}
+    \item For $O0$, the active cells correspond to $Se = 0$, which
+        simplifies to $O0 = I0 \cdot \neg Se$.
+    \item For $O1$, the active cells appear when $Se = 1$, simplifying
+        to $O1 = I0 \cdot Se$.
+\end{itemize}
+This confirms that each output behaves as a mutually exclusive product
+term, clearly separating the signal paths based on the selector,
+consistent with the theoretical design of a demultiplexer.
 
 \subsubsection{EDA Playground Analysis}
-Simulation verified that both outputs were never active simultaneously. When the selector changed, the active output correctly switched between $O0$ and $O1$ according to input $I0$. Waveforms demonstrated clean transitions, free of residual signals or timing errors.
+Simulation verified that both outputs were never active
+simultaneously. When the selector changed, the active output correctly switched
+between $O0$ and $O1$ according to input $I0$. Waveforms demonstrated clean
+transitions, free of residual signals or timing errors.
 
 \subsubsection{Basys 3 Implementation}
-For the physical implementation, switches were assigned to $Se$ and $I0$, and LEDs indicated outputs $O1$ and $O0$. Testing confirmed that when the selector was low, only $O0$ responded to the input; when high, the response transferred to $O1$. These results corroborated the correct distribution of the signal and the fidelity of the logical design relative to the simulation.
+For the physical implementation, switches were assigned to
+$Se$ and $I0$, and LEDs indicated outputs $O1$ and $O0$. Testing confirmed that when
+the selector was low, only $O0$ responded to the input; when high, the response
+transferred to $O1$. These results corroborated the correct distribution of the
+signal and the fidelity of the logical design relative to the simulation.
 
 \subsection{1-bit Magnitude Comparator}
-\subsubsection{Truth Table Analysis}
-The magnitude comparator receives two input bits, $A$ and $B$, and produces three outputs: $A > B$, $A = B$, and $A < B$.
-When both inputs are zero, they are equal, activating the $A = B$ output. If $A = 0$ and $B = 1$, $A$ is smaller, activating $A < B$. If $A = 1$ and $B = 0$, $A$ is greater, activating $A > B$. Finally, when both inputs are 1, $A = B$ is activated again.
-In all cases, only one output remains active, confirming the exclusive nature of the comparator's design.
+
+\subsubsection{Truth Table and Karnaugh Map Analysis}
+The magnitude comparator receives two input bits, $A$ and $B$,
+and produces three outputs: $A > B$, $A = B$, and $A < B$. When both inputs are zero, 
+they are equal, activating the $A = B$ output. If $A = 0$ and $B = 1$, $A$ is smaller, 
+activating $A < B$. If $A = 1$ and $B = 0$, $A$ is greater, activating $A > B$. 
+Finally, when both inputs are 1, $A = B$ is activated again. In all cases, 
+only one output remains active, confirming the
+exclusive nature of the comparator’s design.
+
+\paragraph{Karnaugh Map Analysis:}
+The comparator’s three outputs can be visualized through a two-variable
+Karnaugh map.
+\begin{itemize}
+    \item For $A > B$, active cells appear only when $A = 1$ and $B = 0$, 
+        simplifying to $A > B = A \cdot \neg B$.
+    \item For $A < B$, the active region occurs at $A = 0$ and $B = 1$, 
+        simplifying to $A < B = \neg A \cdot B$.
+    \item For $A = B$, the map contains ones in positions where both
+        inputs are equal (00 and 11), leading to $A = B = (A'\cdot B') + (A\cdot B)$.
+\end{itemize}
+The graphical verification validates that the outputs are mutually exclusive
+and that each represents a unique logical condition, perfectly matching
+the comparator’s theoretical model.
 
 \subsubsection{EDA Playground Analysis}
-Simulation waveforms exhibited clear and stable behavior. Each output responded exclusively to the corresponding relationship between inputs, without overlapping signals. The circuit reacted instantly to changes in $A$ and $B$, demonstrating precise logic without coding errors.
+Simulation waveforms exhibited clear and stable behavior.
+Each output responded exclusively to the corresponding relationship between
+inputs, without overlapping signals. The circuit reacted instantly to changes
+in $A$ and $B$, demonstrating precise logic without coding errors.
 
 \subsubsection{Basys 3 Implementation}
-In the physical test, switches represented inputs $A$ and $B$, and three LEDs displayed outputs $A > B$, $A = B$, and $A < B$. Observations indicated that each LED activated solely under its corresponding condition: “greater” when $A$ exceeded $B$, “equal” when inputs matched, and “less” when $B$ exceeded $A$. The complete agreement between simulation and practice confirmed the correct synthesis and mapping of the comparator.
+In the physical test, switches represented inputs $A$ and $B$,
+and three LEDs displayed outputs $A > B$, $A = B$, and $A < B$. Observations
+indicated that each LED activated solely under its corresponding condition:
+“greater” when $A$ exceeded $B$, “equal” when inputs matched, and “less” when $B$
+exceeded $A$. The complete agreement between simulation and practice confirmed
+the correct synthesis and mapping of the comparator.
 
 \section{Conclusion}
 This laboratory practice allowed for the analysis, simulation, and implementation of four fundamental digital circuits: half-subtractor, 2:1 multiplexer, 1$\to$2 demultiplexer, and 1-bit magnitude comparator. By comparing theoretical results, simulations in EDA Playground, and physical verification on the Basys 3 board, it was confirmed that all circuits functioned according to the intended designs.
