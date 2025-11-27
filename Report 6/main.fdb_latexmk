@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1764215339.40016 "main.aux" "main.bbl" "main" 1764215341.736 0
+["bibtex main"] 1764215339.40016 "main.aux" "main.bbl" "main" 1764218266.84567 0
   "./bib/bibliografia.bib" 1764206745 6539 8d26f528bc25331029f3cea81206c121 ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1764215341 8787 34b90f50122ddd163400c6ea62e1a392 "pdflatex"
+  "main.aux" 1764218266 8787 34b90f50122ddd163400c6ea62e1a392 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1764215339.65024 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" "main.pdf" "main" 1764215341.73667 0
+["pdflatex"] 1764218264.66783 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" "main.pdf" "main" 1764218266.84638 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763748512 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -132,7 +132,7 @@
   "Imagenes/T Basys.png" 1764207818 1011610 6731a02175f2117cef76387a7868759e ""
   "Imagenes/T Wave.png" 1764207715 6498 9d4e6d8a15eb5632d08e912d3d6be322 ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" 1764215336 29741 4b42e9a5a96aa22afe490a3f120d39fa ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" 1764218263 29747 71240ad4479d0c63a601dcffe44d0549 ""
   "codigos/VHDL/D/design.vhd" 1764206195 503 f7f6549a634d91d2223e4d34d450d54d ""
   "codigos/VHDL/D/testbench.vhd" 1764207989 881 bec2e0916f54b2a053c7bef3f9667cc1 ""
   "codigos/VHDL/JK/design.vhd" 1764207989 764 ce0b83801089ae2e4e6f51c4e71f74d0 ""
@@ -141,10 +141,10 @@
   "codigos/VHDL/RS/testbench.vhd" 1764206884 1380 3747f4882905d2f9d9b1e86f15e23840 ""
   "codigos/VHDL/T/design.vhd" 1764207989 576 5289cfc13703f66b2a835178eddc6987 ""
   "codigos/VHDL/T/testbench.vhd" 1764206186 1020 ab141453fe523bad7b78a65b6225ba83 ""
-  "main.aux" 1764215341 8787 34b90f50122ddd163400c6ea62e1a392 "pdflatex"
+  "main.aux" 1764218266 8787 34b90f50122ddd163400c6ea62e1a392 "pdflatex"
   "main.bbl" 1764215339 1856 fc1b9f652d3a9820a20080bc8f4ca07d "bibtex main"
-  "main.out" 1764215341 4514 64f86bb5936c69d06d5ea7d3cd5080ff "pdflatex"
-  "main.tex" 1764215336 29741 4b42e9a5a96aa22afe490a3f120d39fa ""
+  "main.out" 1764218266 4514 64f86bb5936c69d06d5ea7d3cd5080ff "pdflatex"
+  "main.tex" 1764218263 29747 71240ad4479d0c63a601dcffe44d0549 ""
   (generated)
   "main.aux"
   "main.log"
