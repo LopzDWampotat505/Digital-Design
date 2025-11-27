@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1764207994.78027 "main.aux" "main.bbl" "main" 1764207997.35171 0
+["bibtex main"] 1764215339.40016 "main.aux" "main.bbl" "main" 1764215341.736 0
   "./bib/bibliografia.bib" 1764206745 6539 8d26f528bc25331029f3cea81206c121 ""
   "./bst/IEEEtran.bst" 1757292874 61700 ecf8636bea4ce51d68654ad2d775e2ea ""
-  "main.aux" 1764207996 8806 0ff875aceccf7d4cb6ecfcd2f840c6ec "pdflatex"
+  "main.aux" 1764215341 8787 34b90f50122ddd163400c6ea62e1a392 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1764207995.03872 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" "main.pdf" "main" 1764207997.35239 0
+["pdflatex"] 1764215339.65024 "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" "main.pdf" "main" 1764215341.73667 0
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763748512 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1757294292 14064 7aa430d8912a662fe883be105caa9e25 ""
   "C:/Users/juanp/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1757294291 17172 c5a65524c6a202079a79c6c1ab22ebd1 ""
@@ -20,10 +20,8 @@
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233951854 908 2921f8a10601f252058503cc6570e581 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx6.tfm" 1136765053 1344 8a0be4fe4d376203000810ad4dc81558 ""
-  "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx7.tfm" 1136765053 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx8.tfm" 1136765053 1332 1fde11373e221473104d6cc5993f046e ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmcsc10.tfm" 1136765053 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "C:/Users/juanp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -134,7 +132,7 @@
   "Imagenes/T Basys.png" 1764207818 1011610 6731a02175f2117cef76387a7868759e ""
   "Imagenes/T Wave.png" 1764207715 6498 9d4e6d8a15eb5632d08e912d3d6be322 ""
   "Imagenes/UDLAP.eps" 1757294261 10305161 baf78351cd457d95486b83f6d650f17a ""
-  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" 1764207952 29432 06ed77a88750a93b00e1c34a7ee9e1fa ""
+  "c:/Users/juanp/OneDrive/Documentos/GitHub/Digital-Design/Report 6/main.tex" 1764215336 29741 4b42e9a5a96aa22afe490a3f120d39fa ""
   "codigos/VHDL/D/design.vhd" 1764206195 503 f7f6549a634d91d2223e4d34d450d54d ""
   "codigos/VHDL/D/testbench.vhd" 1764207989 881 bec2e0916f54b2a053c7bef3f9667cc1 ""
   "codigos/VHDL/JK/design.vhd" 1764207989 764 ce0b83801089ae2e4e6f51c4e71f74d0 ""
@@ -143,10 +141,10 @@
   "codigos/VHDL/RS/testbench.vhd" 1764206884 1380 3747f4882905d2f9d9b1e86f15e23840 ""
   "codigos/VHDL/T/design.vhd" 1764207989 576 5289cfc13703f66b2a835178eddc6987 ""
   "codigos/VHDL/T/testbench.vhd" 1764206186 1020 ab141453fe523bad7b78a65b6225ba83 ""
-  "main.aux" 1764207996 8806 0ff875aceccf7d4cb6ecfcd2f840c6ec "pdflatex"
-  "main.bbl" 1764207994 1856 fc1b9f652d3a9820a20080bc8f4ca07d "bibtex main"
-  "main.out" 1764207996 4592 b3b7e6cace096ec0275bb50ca74d9822 "pdflatex"
-  "main.tex" 1764207952 29432 06ed77a88750a93b00e1c34a7ee9e1fa ""
+  "main.aux" 1764215341 8787 34b90f50122ddd163400c6ea62e1a392 "pdflatex"
+  "main.bbl" 1764215339 1856 fc1b9f652d3a9820a20080bc8f4ca07d "bibtex main"
+  "main.out" 1764215341 4514 64f86bb5936c69d06d5ea7d3cd5080ff "pdflatex"
+  "main.tex" 1764215336 29741 4b42e9a5a96aa22afe490a3f120d39fa ""
   (generated)
   "main.aux"
   "main.log"

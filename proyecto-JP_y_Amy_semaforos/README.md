@@ -158,13 +158,14 @@ Diagrama esquemático y tabla de conexiones entre componentes:
 
 Esta es la sección más común para realizar ajustes rápidos sin tocar la lógica compleja. Se encuentra al inicio de la entity.
 
+```vhdl
 generic (
     C_DIVISOR : natural := 2500000;  -- Define la velocidad del "Tick" (0.05s)
     C_GREEN_TICKS : natural := 100;  -- Duración de la luz Verde
     C_YELLOW_TICKS : natural := 40;  -- Duración de la luz Amarilla
     C_RED_STATE_TICKS : natural := 100 -- Duración del modo STOP
 );
-
+```
 
 ¿Cómo modificarlo?
 
@@ -176,6 +177,7 @@ Para cambiar la duración de las luces: Modifica los valores de C_GREEN_TICKS o 
 
 Aquí se definen las conexiones físicas del chip hacia el mundo exterior (Relés, Arduino, Buzzer).
 
+```vhdl
 Port ( 
     -- Entradas
     CLK, RESET, BTN_STOP : in STD_LOGIC;
@@ -186,7 +188,7 @@ Port (
     OUT_BUZZER : out STD_LOGIC;        -- Salida de Audio
     ...
 );
-
+```
 
 Nota Importante: Si agregas una nueva entrada o salida aquí, debes asignarle un pin físico en el archivo .xdc, o Vivado dará error.
 
@@ -198,13 +200,14 @@ A. Definición de Estados
 
 Se encuentra en la arquitectura, antes del begin.
 
+```vhdl
 type t_traffic_state is (
     ST_N_GREEN, ST_N_YELLOW,  -- Norte
     ST_S_GREEN, ST_S_YELLOW,  -- Sur
     ST_E_GREEN, ST_E_YELLOW,  -- Este
     ST_W_GREEN, ST_W_YELLOW   -- Oeste
 );
-
+```
 
 Si quieres cambiar el orden de encendido (ej. que después del Norte siga el Este en vez del Sur), debes cambiar el orden en la lógica del case dentro del Proceso 2.
 
@@ -212,10 +215,11 @@ B. Lógica de Transición (Sticky Logic)
 
 Aquí es donde detectamos si el Arduino o el botón piden parada. Usamos lógica "Sticky" (pegajosa) para no perder la señal si el ciclo va a la mitad.
 
+```vhdl
 if ARDUINO_ALERT = '1' or BTN_STOP = '1' then
     s_stop_request <= '1'; -- Se guarda la petición
 end if;
-
+```
 
 Si quieres agregar otro sensor (ej. SENSOR_PEATON), solo añádelo a esta condición or.
 
@@ -223,12 +227,13 @@ Si quieres agregar otro sensor (ej. SENSOR_PEATON), solo añádelo a esta condic
 
 Aquí es donde decides qué luces se prenden en cada estado. Es la "traducción" del estado lógico a electricidad.
 
+```vhdl
 case s_traffic_state is
     when ST_N_GREEN =>  N_GREEN <= '1'; -- Solo prende el verde Norte
     when ST_N_YELLOW => N_YELLOW <= '1';
     ...
 end case;
-
+```
 
 Modificación Común: Si quieres que en el estado de STOP (Blackout) se prenda una luz específica (ej. todas las amarillas parpadeando o todas las rojas), debes modificar la sección when ST_STOP_MODE => dentro de este proceso. Actualmente está en null (todo apagado).
 
@@ -236,12 +241,13 @@ Modificación Común: Si quieres que en el estado de STOP (Blackout) se prenda u
 
 El buzzer tiene una lógica independiente del estado del semáforo. Responde directamente a la entrada.
 
+```vhdl
 if ARDUINO_ALERT = '1' then
     OUT_BUZZER <= '1'; -- Sonido continuo
 else
     OUT_BUZZER <= '0';
 end if;
-
+```
 
 Si quieres que el buzzer suene intermitente (beep-beep), necesitarás reintroducir un contador o usar la señal s_tick para modular la salida.
 
