@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="juanp" Host="LOPZDWAMPOTAT" Pid="11592" HostCore="16" HostMemory="0102992969728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="juanp" Host="LOPZDWAMPOTAT" Pid="25372" HostCore="16" HostMemory="0102992969728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="juanp" Host="LOPZDWAMPOTAT" Pid="9188" HostCore="16" HostMemory="0102992969728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="juanp" Host="LOPZDWAMPOTAT" Pid="19780" HostCore="16" HostMemory="0102992969728">
+    </Process>
+</ProcessHandle>
