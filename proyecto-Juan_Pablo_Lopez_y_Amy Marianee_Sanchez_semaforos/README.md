@@ -7,7 +7,7 @@
 
 
 Prueba
-![Semáforo Calzada Zavaleta](.../media/images/semaforo_zavaleta)
+![Semáforo Calzada Zavaleta](.../media/images/semaforo_zavaleta.png)
 
 
 
