@@ -60,7 +60,11 @@ La maqueta está formada en forma de un crucero de 4 semáforos, basada en las i
 
 ## 📖 Introducción
 
-Explicación del propósito del proyecto, para qué sirve, posibles aplicaciones y motivación para construirlo.
+El proyecto desarrollado tuvo como objetivo replicar un sistema funcional de crucero a base de semáforos, siguiendo una secuencia específica creada a base de máquinas de estados y lógica binaria. La manera en la que funciona el semáforo es mediante una Basys 3, es decir, una FPGA. Se programa un sistema de 4 semáforos viales (uno por calle) y 4 semáforos peatonales (1 por cruce), para así tener un sistema funcional, el cual fue representado mediante una maqueta.
+
+<img src="media/images/Maqueta_final.jpg" width="300" alt="Pruebas iniciales">
+
+Los usos de este proyecto incluyen, pero no se limitan, a la explicación de la funcionalidad de un sistema vial convencional en intersecciones, a la explicación, desarrollo e implementación de un programa estructural con apartados secuenciales y combinacionales, e incluso la demostración de las aplicaciones cotidianas de estructuras, como las FPGAs, para solucionar problemas y mantener cierto orden.
 
 ---
 
@@ -140,7 +144,27 @@ Para Ultimaker:
 
 ### 🔌 Conexiones Eléctricas
 
-Diagrama esquemático y tabla de conexiones entre componentes:
+Para facilidad de uso, nosotros nos basamos en los siguientes diagramas para realizar la maqueta, los cuáles están simpificados para un entendimiento sencillo y eficiente:
+
+<img src="media/images/Lógica_simple_leds_semaforo.jpg" alt="Diagrama semáforos principales" width="400">
+
+Este primer diagrama representa el circuito simplificado de lo que corresponde al sistema de los semáforos principales, sin el uso de los relés.
+
+<img src="media/images/Lógica_simple_leds_peatones.jpg" alt="Diagrama semáforos peatonales" width="400">
+
+De la misma manera, este diagrama muestra el cableado básico de los semáforos peatonales
+
+<img src="media/images/Sistema_con_rele.jpg" alt="Diagrama relés de los semáforos principales" width="400">
+
+Por otro lado, este es el diagrama de la conexión de los semáforos a relés (se ocupan 8 relés para los 12 LEDs de los semáforos principales)
+
+<img src="media/images/Sistema_con_rele_peatones.jpg" alt="Diagrama relés de los semáforos peatonales" width="400">
+
+Contrario a lo anterior, este es el diagrama de la conexión de los semáforos a relés (se ocupan 2 relés para los 12 LEDs de los semáforos principales), en donde se peuden notar varios relés, el equipo usó únicamente 2 relés, con la opción de que con 1 funcionara.
+
+
+
+
 
 ---
 
@@ -255,7 +279,11 @@ Esta línea asegura que, sin importar cuánto dure el tiempo de parada (5s o 20s
 
 ## ✅ Conclusión
 
-Resumen de lo que se logró construir, aprendizajes obtenidos y posibles mejoras o versiones futuras del proyecto.
+Durante este proyecto el equipo fue capaz de crear una maqueta completa con diferentes componentes electrónicos, creando conexiones completas y organizadas para poder lograr completar un modelo completo para demostrar la secuencia programada.
+
+El equipo aprendió no solamente a programar un código estructural, incorporando tanto segmentos secuenciales como combinacionales, sino también a hacer diagramas eléctricos y planeaciones organizacionales.
+
+Hay muchas formas de mejorar el proyecto, entre las cuales sería la implementación de sistemas inteligentes que dicten el número de tics o la forma en la que funcione el ciclo, incluso, de manera más sencilla, una distribución o independización de los sistemas incluidos en el sistema.
 
 ---
 
@@ -277,6 +305,10 @@ Como se indica en la licencia MIT, este software/hardware se proporciona **sin n
 
 ## 📚 Recursos Adicionales
 
+LaMeres, B. J., & SpringerLink (Online service). (2019). Quick Start Guide to
+          VHDL [electronic resource] / by Brock J. LaMeres (1st ed. 2019.). Springer
+          International Publishing. 
+
 ---
 
 ## 👥 Autores del proyecto
@@ -292,6 +324,8 @@ Amy Marianee Ramírez Sánchez
 ¿Tienes dudas o sugerencias?
 
 - 📧 Correo electrónico: juan.lopezmo@udlap.mx
+
+- 📧 Correo electrónico: amy.ramiresz@udlap.mx
 
 ---
 
