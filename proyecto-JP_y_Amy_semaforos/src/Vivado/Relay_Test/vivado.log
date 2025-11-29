@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 28 22:32:50 2025
+# Process ID: 76340
+# Current directory: C:/Users/183339/Downloads/Relay_Test/Relay_Test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6328 C:\Users\183339\Downloads\Relay_Test\Relay_Test\Relay_Test.xpr
+# Log file: C:/Users/183339/Downloads/Relay_Test/Relay_Test/vivado.log
+# Journal file: C:/Users/183339/Downloads/Relay_Test/Relay_Test\vivado.jou
+# Running On: PCCN113-02, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 137044 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/183339/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp'.
+WARNING: [Project 1-865] Could not find the file C:/Users/183339/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file C:/Users/183339/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/183339/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1530.414 ; gain = 309.539
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/183339/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 C:/Users/183339/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp
+export_ip_user_files -of_objects  [get_files C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1/traffic_light_relays.dcp
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.runs/synth_1/traffic_light_relays.dcp to C:/Users/183339/Relay_Test/Relay_Test.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+[Fri Nov 28 22:34:51 2025] Launched synth_1...
+Run output will be captured here: C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.runs/synth_1/runme.log
+[Fri Nov 28 22:34:51 2025] Launched impl_1...
+Run output will be captured here: C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.runs/impl_1/runme.log
+open_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 28 22:36:38 2025...

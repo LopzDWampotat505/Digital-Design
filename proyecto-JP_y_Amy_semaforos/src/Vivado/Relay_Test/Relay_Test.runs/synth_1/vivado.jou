@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 28 22:34:54 2025
+# Process ID: 33192
+# Current directory: C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.runs/synth_1
+# Command line: vivado.exe -log traffic_light_relays.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source traffic_light_relays.tcl
+# Log file: C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.runs/synth_1/traffic_light_relays.vds
+# Journal file: C:/Users/183339/Downloads/Relay_Test/Relay_Test/Relay_Test.runs/synth_1\vivado.jou
+# Running On: PCCN113-02, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 137044 MB
+#-----------------------------------------------------------
+source traffic_light_relays.tcl -notrace
