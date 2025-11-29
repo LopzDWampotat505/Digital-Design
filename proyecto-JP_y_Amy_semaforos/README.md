@@ -289,7 +289,7 @@ Hay muchas formas de mejorar el proyecto, entre las cuales sería la implementac
 
 ## 🔜 Mejoras futuras
 
-- Mejorar el código para establecer tiempos variables por cada semáfor
+- Mejorar el código para establecer tiempos variables por cada semáforo
 
 - Establecer mejores conexiones
 
@@ -325,7 +325,7 @@ Amy Marianee Ramírez Sánchez
 
 - 📧 Correo electrónico: juan.lopezmo@udlap.mx
 
-- 📧 Correo electrónico: amy.ramiresz@udlap.mx
+- 📧 Correo electrónico: amy.ramirezsz@udlap.mx
 
 ---
 
